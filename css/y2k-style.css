@@ -1,21 +1,24 @@
-/* Y2K Inspired CSS for Petrafied.ink */
+/* Y2K Inspired CSS for Petrafied.ink - Responsive Version */
 
-/* General Styles */
-@font-face {
-  font-family: 'Comic Sans MS';
-  src: url('fonts/ComicSansMS.ttf') format('truetype');
-}
-
+/* Font Imports */
 @font-face {
   font-family: 'Metal Mania';
-  src: url('fonts/MetalMania-Regular.ttf') format('truetype');
+  src: url('../fonts/MetalMania-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Stylish';
-  src: url('fonts/Stylish-Regular.ttf') format('truetype');
+  src: url('../fonts/Stylish-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset and Basic Styles */
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +26,7 @@
 }
 
 body {
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   background-color: #000033;
   background-image: url('../images/stars-bg.gif');
   color: #ffffff;
@@ -43,9 +46,31 @@ body {
   opacity: 0.5;
 }
 
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.mobile-menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ff66ff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #ff00ff;
+}
+
 /* Page Layout */
 .page-container {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 10px;
   background-color: rgba(0, 0, 51, 0.7);
@@ -98,25 +123,27 @@ marquee {
 }
 
 .sidebar {
-  width: 30%;
+  width: 22%;
   vertical-align: top;
 }
 
 .main-content {
-  width: 70%;
+  width: 56%;
+  vertical-align: top;
+}
+
+.right-sidebar {
+  width: 22%;
   vertical-align: top;
 }
 
 /* Profile Section */
-.profile-section {
-  margin-bottom: 15px;
-}
-
 .profile-box {
   background-color: #330066;
   border: 2px solid #00ccff;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .profile-header {
@@ -247,7 +274,8 @@ marquee {
 }
 
 /* About Me Section */
-.about-me {
+.about-me,
+.booking-info {
   background-color: #330066;
   border: 2px solid #00ccff;
   border-radius: 8px;
@@ -255,42 +283,7 @@ marquee {
   margin-bottom: 15px;
 }
 
-.about-header {
-  background-color: #6600cc;
-  padding: 5px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px #000000;
-  font-family: 'Stylish', sans-serif;
-}
-
-.about-header img {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-
-.about-content {
-  padding: 10px;
-  font-size: 14px;
-}
-
-.about-content p {
-  margin-bottom: 5px;
-}
-
-/* Booking Info Section */
-.booking-info {
-  background-color: #330066;
-  border: 2px solid #00ccff;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
+.about-header,
 .booking-header {
   background-color: #6600cc;
   padding: 5px;
@@ -304,21 +297,22 @@ marquee {
   font-family: 'Stylish', sans-serif;
 }
 
+.about-header img,
 .booking-header img {
   width: 20px;
   height: 20px;
   margin: 0 5px;
 }
 
+.about-content,
 .booking-content {
   padding: 10px;
   font-size: 14px;
 }
 
+.about-content p,
 .booking-content p {
   margin-bottom: 5px;
-  display: flex;
-  align-items: center;
 }
 
 /* Main Content Sections */
@@ -346,46 +340,19 @@ marquee {
   color: #ffcc00;
   text-shadow: 1px 1px 2px #000000;
   font-family: 'Stylish', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-star {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
 }
 
 /* Portfolio Section */
 .portfolio-section {
-  background-color: #330066;
-  border: 2px solid #ff66ff;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.portfolio-container {
-  padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
-.portfolio-item img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  border: 2px solid #00ffff;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.portfolio-item img:hover {
-  transform: scale(1.05);
-  border-color: #ffff00;
-  box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
-}
-
-.portfolio-button {
-  padding: 0 15px 15px;
-  text-align: center;
-}
-
-/* Links Section */
-.links-section {
   background-color: #330066;
   border: 2px solid #ff66ff;
   border-radius: 8px;
@@ -412,10 +379,67 @@ marquee {
   margin: 0 5px;
 }
 
+.portfolio-container {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-hover {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(102, 0, 204, 0.8);
+  color: #ffcc00;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+  border-color: #ffff00;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+.portfolio-item:hover .portfolio-hover {
+  bottom: 0;
+}
+
+.portfolio-button {
+  padding: 0 15px 15px;
+  text-align: center;
+}
+
+/* Links Section */
+.links-section {
+  background-color: #330066;
+  border: 2px solid #ff66ff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
 .buttons-container {
   padding: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
 }
 
@@ -432,162 +456,4 @@ marquee {
   border-radius: 8px;
   background: linear-gradient(to bottom, #9966ff, #6600cc);
   border: 2px solid #00ffff;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-  transition: all 0.2s ease;
-}
-
-.y2k-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);
-  border-color: #ffff00;
-}
-
-.y2k-button img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-.y2k-button span {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 16px;
-  text-shadow: 1px 1px 2px #000000;
-}
-
-/* Reviews Section */
-.reviews-section {
-  background-color: #330066;
-  border: 2px solid #ff66ff;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-.reviews-container {
-  padding: 15px;
-}
-
-.review {
-  background-color: rgba(0, 0, 51, 0.5);
-  border: 1px solid #00ffff;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.review-stars {
-  color: #ffff00;
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-.review-text {
-  font-size: 14px;
-  font-style: italic;
-  margin-bottom: 5px;
-}
-
-.review-author {
-  font-size: 14px;
-  color: #ff99ff;
-  text-align: right;
-}
-
-/* FAQ Section */
-.faq-section {
-  background-color: #330066;
-  border: 2px solid #ff66ff;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.faq-content {
-  padding: 15px;
-}
-
-.faq-item {
-  margin-bottom: 15px;
-}
-
-.faq-question {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  color: #00ffff;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.faq-question img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-
-.faq-answer {
-  padding-left: 30px;
-  font-size: 14px;
-}
-
-/* Flash Banner */
-.flash-banner {
-  background-color: #660000;
-  border: 2px dashed #ffff00;
-  border-radius: 8px;
-  padding: 10px;
-  margin: 15px 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #ffffff;
-  font-family: 'Stylish', sans-serif;
-}
-
-.flash-banner img {
-  width: 30px;
-  height: 30px;
-  margin: 0 10px;
-}
-
-/* Footer Styles */
-.footer {
-  text-align: center;
-  margin-top: 20px;
-  padding-top: 10px;
-}
-
-.divider {
-  margin-bottom: 10px;
-}
-
-.divider img {
-  width: 100%;
-  height: 20px;
-}
-
-.footer-text {
-  font-size: 14px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-text img {
-  width: 15px;
-  height: 15px;
-  margin: 0 5px;
-}
-
-.disclaimer {
-  font-size: 12px;
-  color: #cccccc;
-}
-
-.rainbow-line {
-  width: 50%;
-  height: 10px;
-  margin: 5px 0;
+  box-shadow: 0 0
