@@ -1,0 +1,592 @@
+/* Y2K Inspired CSS for LittleLink */
+
+/* General Styles */
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('fonts/ComicSansMS.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pixel';
+  src: url('fonts/pixel.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', sans-serif;
+  background-color: #000033;
+  background-image: url('../images/stars-bg.gif');
+  color: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+
+/* Stars Background */
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('../images/starfield.gif');
+  opacity: 0.5;
+}
+
+/* Page Layout */
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 51, 0.7);
+  border: 3px solid #ff66ff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+/* Banner */
+.top-banner {
+  background-color: #000066;
+  border: 2px solid #00ffff;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+marquee {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Visitor Counter */
+.counter-box {
+  text-align: center;
+  background-color: #330033;
+  border: 1px solid #ff00ff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Main Layout Table */
+.main-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+.sidebar {
+  width: 30%;
+  vertical-align: top;
+}
+
+.main-content {
+  width: 70%;
+  vertical-align: top;
+}
+
+/* Profile Section */
+.profile-section {
+  margin-bottom: 15px;
+}
+
+.profile-box {
+  background-color: #330066;
+  border: 2px solid #00ccff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.profile-header {
+  background-color: #6600cc;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.profile-header img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.profile-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ff66ff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sparkle {
+  width: 20px;
+  height: 20px;
+}
+
+.username {
+  font-size: 18px;
+  color: #ff99ff;
+  margin: 0 5px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.status-box {
+  background-color: #000033;
+  border: 1px solid #3366ff;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 8px;
+  color: #00ffff;
+  font-size: 12px;
+}
+
+.mood {
+  font-size: 14px;
+  color: #ffcc00;
+}
+
+/* Music Player */
+.music-player {
+  background-color: #330066;
+  border: 2px solid #00ccff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.player-header {
+  background-color: #6600cc;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.player-header img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.player-content {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.volume-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.volume-level {
+  width: 100px;
+  height: 8px;
+  background-color: #000033;
+  border: 1px solid #3366ff;
+  border-radius: 4px;
+  margin-left: 5px;
+  overflow: hidden;
+}
+
+.volume-fill {
+  width: 70%;
+  height: 100%;
+  background-color: #00ff00;
+  background-image: linear-gradient(to right, #00ff00, #ffff00, #ff0000);
+}
+
+/* About Me Section */
+.about-me {
+  background-color: #330066;
+  border: 2px solid #00ccff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.about-header {
+  background-color: #6600cc;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.about-header img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.about-content {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.about-content p {
+  margin-bottom: 5px;
+}
+
+/* Main Content Sections */
+.welcome-banner {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.welcome-banner img {
+  max-width: 100%;
+  border: 2px solid #ff66ff;
+  border-radius: 8px;
+}
+
+.guestbook-banner {
+  background-color: #6600cc;
+  border: 2px dashed #ff00ff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffcc00;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/* Links Section */
+.links-section {
+  background-color: #330066;
+  border: 2px solid #ff66ff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.section-header {
+  background-color: #6600cc;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.section-header img {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.buttons-container {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 15px;
+}
+
+/* Y2K Button Styles */
+.button-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.y2k-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #9966ff, #6600cc);
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transition: all 0.2s ease;
+}
+
+.y2k-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);
+  border-color: #ffff00;
+}
+
+.y2k-button img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.y2k-button span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/* Friends Section */
+.friends-section {
+  background-color: #330066;
+  border: 2px solid #ff66ff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.friends-container {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 10px;
+  text-align: center;
+}
+
+.friend img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.friend p {
+  font-size: 14px;
+  color: #ffcc00;
+}
+
+/* Guestbook Section */
+.guestbook {
+  background-color: #330066;
+  border: 2px solid #ff66ff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.guestbook-form {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Construction Banner */
+.construction {
+  background-color: #660000;
+  border: 2px dashed #ffff00;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 15px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.construction img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.divider {
+  margin-bottom: 10px;
+}
+
+.divider img {
+  width: 100%;
+  height: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text img {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.rainbow-line {
+  width: 50%;
+  height: 10px;
+  margin: 5px 0;
+}
+
+.disclaimer a {
+  color: #ff99ff;
+  text-decoration: none;
+}
+
+.disclaimer a:hover {
+  text-decoration: underline;
+  color: #00ffff;
+}
+
+/* Fixed Elements */
+.fixed-elements {
+  position: fixed;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.butterfly {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 20px;
+  animation: fly 30s linear infinite;
+}
+
+.butterfly-2 {
+  top: 100px;
+  left: auto;
+  right: 30px;
+  animation-delay: -15s;
+  animation-duration: 40s;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(calc(100vw - 100px), 150px) rotate(10deg);
+  }
+  50% {
+    transform: translate(calc(100vw - 150px), calc(100vh - 150px)) rotate(-10deg);
+  }
+  75% {
+    transform: translate(100px, calc(100vh - 100px)) rotate(10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.cursor-trail {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .main-table {
+    display: block;
+  }
+  
+  .sidebar, .main-content {
+    display: block;
+    width: 100%;
+  }
+  
+  .sidebar {
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .friends-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Button Variations */
+.instagram {
+  background: linear-gradient(to bottom, #ff6600, #cc3366);
+}
+
+.twitter {
+  background: linear-gradient(to bottom, #1da1f2, #0c85d0);
+}
+
+.youtube {
+  background: linear-gradient(to bottom, #ff0000, #cc0000);
+}
+
+.facebook {
+  background: linear-gradient(to bottom, #3b5998, #2d4373);
+}
+
+.spotify {
+  background: linear-gradient(to bottom, #1db954, #1aa34a);
+}
+
+.pinterest {
+  background: linear-gradient(to bottom, #e60023, #c8001e);
+}
+
+.discord {
+  background: linear-gradient(to bottom, #7289da, #5c6fb1);
+}
+
+.kofi {
+  background: linear-gradient(to bottom, #ff5e5b, #ff2b26);
+}
