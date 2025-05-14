@@ -452,8 +452,4 @@ marquee {
 .y2k-button {
   display: flex;
   align-items: center;
-  padding: 8px 15px;
-  border-radius: 8px;
-  background: linear-gradient(to bottom, #9966ff, #6600cc);
-  border: 2px solid #00ffff;
-  box-shadow: 0 0
+  padding: 8px
