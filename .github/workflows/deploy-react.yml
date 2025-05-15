@@ -8,6 +8,11 @@ on:
       - 'tree'
       - '**.md'
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -20,10 +25,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
-          
+          # Remove the cache option that was looking for a lock file
+      
       - name: Install dependencies
-        run: npm ci
+        # Use npm install instead of npm ci to generate a lock file
+        run: npm install
         
       - name: Build React app
         run: npm run build
