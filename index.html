@@ -13,23 +13,12 @@
   <link rel="icon" type="image/jpg" href="images/petrafiedlogo.jpg">
 
   <style>
-    /* Custom cursor - reduced to 25% size */
+    /* Fixed background with animation */
     body {
-      cursor: url('images/labubu.cur') 8 8, auto !important; /* Setting hotspot and forcing small size */
+      background-color: #1a1a1a;
+      position: relative;
     }
 
-    a, button, .portfolio-item, .y2k-button, .mobile-menu-toggle {
-      cursor: url('images/labubu.cur') 8 8, pointer !important;
-    }
-
-    /* Custom cursor size adjustments */
-    @supports (-moz-appearance:none) {
-      body, a, button, .portfolio-item, .y2k-button, .mobile-menu-toggle {
-        cursor: url('images/labubu.cur'), auto !important; /* Firefox fallback */
-      }
-    }
-
-    /* Enhanced animated background with effects - made dimmer and more distant */
     body:before {
       content: "";
       position: fixed;
@@ -37,93 +26,28 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -3;
+      z-index: -2;
       background-image: url('images/graphix/bgs/checkered.gif');
-      opacity: 0.15; /* Reduced opacity */
-      filter: blur(1px); /* Add slight blur for distance */
-      transform: scale(1.5); /* Make pattern appear more distant */
-      animation: pulse 20s infinite alternate; /* Slower animation */
+      opacity: 0.3;
     }
 
-    /* Primary animated background layer - reduced visibility */
+    /* Animated texture overlay */
     .animated-bg {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -2;
-      background: url('images/graphix/bgs/water.gif');
-      opacity: 0.08; /* Reduced opacity */
-      pointer-events: none;
-      animation: scrollBg 120s linear infinite; /* Slower animation */
-      mix-blend-mode: screen;
-      filter: blur(0.5px); /* Slight blur */
-    }
-
-    /* Secondary overlay for extra effect - more subtle */
-    .animated-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
       z-index: -1;
-      background: radial-gradient(circle at 50% 50%, rgba(153, 102, 204, 0.05), rgba(26, 26, 26, 0.2));
+      background: url('images/stars-bg.gif');
+      opacity: 0.15;
       pointer-events: none;
-      animation: pulse 15s infinite alternate; /* Slower animation */
+      animation: scrollBg 60s linear infinite;
     }
 
-    /* Fixed animations for a more sporadic feel */
     @keyframes scrollBg {
-      0% { background-position: 0 0; }
-      25% { background-position: -100px -150px; } /* Random movement */
-      50% { background-position: -300px -200px; }
-      75% { background-position: -150px -350px; }
-      100% { background-position: -500px -500px; }
-    }
-
-    @keyframes pulse {
-      0% { opacity: 0.05; }
-      40% { opacity: 0.05; } /* Long pause at low opacity */
-      50% { opacity: 0.12; } /* Quick flash */
-      60% { opacity: 0.06; }
-      100% { opacity: 0.08; }
-    }
-
-    /* Reduced frequency for animated elements */
-    .butterfly, .cursor-trail {
-      animation-duration: 30s !important; /* Slower animation */
-      opacity: 0.6; /* Reduced visibility */
-    }
-
-    .butterfly-2 {
-      animation-duration: 45s !important; /* Even slower for second element */
-      animation-delay: 15s !important;
-    }
-
-    /* Portfolio gallery fixed styling */
-    .portfolio-container {
-      display: grid !important;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
-      gap: 15px !important;
-      padding: 15px !important;
-    }
-
-    .portfolio-item {
-      position: relative !important;
-      overflow: hidden !important;
-      border: 2px solid #9966cc !important;
-      border-radius: 5px !important;
-      background-color: #1a1a1a !important;
-      height: 120px !important;
-    }
-
-    .portfolio-item img {
-      width: 100% !important;
-      height: 100% !important;
-      object-fit: cover !important;
-      display: block !important;
+      from { background-position: 0 0; }
+      to { background-position: -500px -500px; }
     }
 
     /* Windows 98 style image viewer */
@@ -138,60 +62,6 @@
       z-index: 9999;
       align-items: center;
       justify-content: center;
-    }
-
-    /* Combined damage box and cat spell */
-    .damage-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: rgba(67, 51, 99, 0.6);
-      border: 2px solid #9966cc;
-      border-radius: 8px;
-      padding: 10px;
-      margin-bottom: 15px;
-    }
-
-    .damage-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 8px;
-      width: 100%;
-    }
-
-    .damage-box img {
-      width: 30px;
-      height: 30px;
-    }
-
-    .cat-spell-link {
-      font-family: 'Metal Mania', cursive;
-      color: #ff00cc;
-      text-decoration: none;
-      text-shadow: 0 0 5px #9966cc;
-      font-size: 16px;
-      letter-spacing: 1px;
-      transition: all 0.3s ease;
-    }
-
-    .cat-spell-link:hover {
-      color: #ff66ff;
-      text-shadow: 0 0 8px #ff00ff;
-      transform: scale(1.05);
-    }
-
-    .cat-spell-fail {
-      font-size: 20px;
-      font-weight: bold;
-      color: #ff0000;
-      text-shadow: 0 0 10px #ff6666;
-      animation: pulse 1s infinite alternate;
-      text-align: center;
-      margin: 8px 0;
-      font-family: 'Metal Mania', cursive;
-      display: none;
     }
 
     .win98-window {
@@ -222,7 +92,7 @@
       height: 20px;
       text-align: center;
       line-height: 16px;
-      cursor: url('images/labubu.cur') 8 8, pointer !important;
+      cursor: pointer;
     }
 
     .win98-content {
@@ -249,7 +119,7 @@
       color: #000;
     }
 
-    /* Fix for large elements on desktop */
+    /* Larger elements on desktop */
     .music-player .player-content {
       padding: 15px 10px;
     }
@@ -258,14 +128,13 @@
       height: 180px;
     }
 
-    /* Better scaled icons - reduced frequency */
+    /* Better scaled icons */
     .random-icon {
-      min-width: 16px;
-      min-height: 16px;
-      max-width: 24px;
-      max-height: 24px;
+      min-width: 20px;
+      min-height: 20px;
+      max-width: 32px;
+      max-height: 32px;
       object-fit: contain;
-      opacity: 0.85; /* Slightly transparent */
     }
 
     /* Improved banner text contrast */
@@ -277,23 +146,6 @@
       font-weight: bold;
     }
 
-    /* Simplified and more uniform button styling */
-    .y2k-button {
-      display: flex;
-      align-items: center;
-      padding: 8px 12px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-family: 'Fredoka', sans-serif;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      transition: all 0.2s ease;
-      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 8px; /* Consistent spacing */
-    }
-
     /* Additional responsive improvements */
     @media (min-width: 992px) {
       .sidebar {
@@ -301,19 +153,19 @@
       }
 
       .y2k-button {
-        padding: 10px 12px;
-        font-size: 15px;
+        padding: 12px 15px;
+        font-size: 16px;
       }
 
       .y2k-button img {
-        width: 24px;
-        height: 24px;
+        width: 28px;
+        height: 28px;
       }
     }
 
-    /* Better portfolio styling - moved to the common styles section above */
+    /* Better portfolio styling */
     .portfolio-item {
-      cursor: url('images/labubu.cur') 8 8, pointer !important;
+      cursor: pointer;
       transition: all 0.2s ease;
     }
 
@@ -322,73 +174,137 @@
       z-index: 2;
     }
 
-    /* Links section single column */
+    .portfolio-item img {
+      height: 140px;
+    }
+
+    /* Links section styling */
     .buttons-container {
       grid-template-columns: 1fr !important; /* Force single column */
-      padding: 12px !important;
-      gap: 8px !important;
     }
 
     /* Instagram embed styling */
     .instagram-embed-container {
-      padding: 0 12px;
+      padding: 0 15px;
       margin-bottom: 15px;
       width: 100%;
     }
 
-    /* Video overlay - simplified */
+    /* Spinning cat button */
+    .cat-spell-button {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 25px;
+      background: linear-gradient(45deg, #9966cc, #c9a3e6);
+      color: #ffffff;
+      border: 3px solid #b083d5;
+      border-radius: 10px;
+      font-family: 'Metal Mania', cursive;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 0 15px #9966cc;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      transition: all 0.3s ease;
+    }
+
+    .cat-spell-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #9966cc;
+    }
+
+    .cat-spell-fail {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff0000;
+      text-shadow: 0 0 10px #ff6666;
+      animation: pulse 1s infinite alternate;
+      text-align: center;
+      margin: 20px 0;
+      font-family: 'Metal Mania', cursive;
+    }
+
+    /* Spinning cat video overlay */
     .video-overlay {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.85);
+      background-color: rgba(0, 0, 0, 0.8);
       z-index: 10000;
       display: none;
       align-items: center;
       justify-content: center;
+      opacity: 0;
     }
 
     .video-container {
       width: 90%;
-      max-width: 640px;
+      max-width: 800px;
+      transform: scale(0.1);
+      transition: transform 60s ease-in;
     }
 
-    /* Fix for iOS Safari and other mobile browsers */
-    @supports (-webkit-touch-callout: none) {
+    .damage-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .damage-box img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Fix for image loading issues */
+    img.error {
+      display: none;
+    }
+
+    /* Mobile responsiveness improvements */
+    @media (max-width: 576px) {
       .page-container {
-        width: 100vw;
-        overflow: hidden;
+        padding: 5px;
       }
 
-      body {
-        width: 100vw;
-        overflow-x: hidden;
+      .main-layout {
+        flex-direction: column;
       }
-    }
 
-    /* Portfolio gallery improvements */
-    .portfolio-container {
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
-      gap: 12px !important;
-    }
-
-    /* Fix for glowing effects on modern browsers */
-    @keyframes glow {
-      0% {
-        box-shadow: 0 0 5px #9966cc;
-        filter: drop-shadow(0 0 5px #9966cc);
+      .sidebar, .main-content, .right-sidebar {
+        min-width: 100%;
+        max-width: 100%;
       }
-      100% {
-        box-shadow: 0 0 15px #c9a3e6;
-        filter: drop-shadow(0 0 15px #c9a3e6);
+
+      .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .y2k-button {
+        margin-bottom: 10px;
+      }
+
+      .counter-box {
+        font-size: 12px;
+      }
+
+      .counter-box img {
+        width: 30px;
+      }
+
+      .win98-window {
+        width: 95%;
       }
     }
   </style>
 </head>
 
 <body>
+  <!-- Animated background texture -->
+  <div class="animated-bg"></div>
+
   <!-- Windows 98 Image Viewer Overlay -->
   <div class="win98-overlay" id="imageViewer">
     <div class="win98-window">
@@ -403,7 +319,7 @@
     </div>
   </div>
 
-  <!-- Video Overlay - Simplified -->
+  <!-- Spinning Cat Video Overlay -->
   <div class="video-overlay" id="catVideoOverlay">
     <div class="video-container" id="videoContainer">
       <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
@@ -416,41 +332,43 @@
     <!-- Top Banner -->
     <div class="top-banner">
       <marquee scrollamount="3" behavior="alternate">
-        <img src="images/graphix/favicons/skull.gif" alt="skull" height="20" class="random-icon">
+        <img src="images/graphix/favicons/skull.gif" alt="skull" height="20" class="random-icon" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
         <span class="metal-text">★彡 Welcome to Petrafied.ink - Alternative Tattoo Artist 彡★</span>
-        <img src="images/graphix/favicons/skull.gif" alt="skull" height="20" class="random-icon">
+        <img src="images/graphix/favicons/skull.gif" alt="skull" height="20" class="random-icon" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
       </marquee>
     </div>
 
-    <!-- Combined damage box and cat spell -->
-    <div class="damage-container">
+    <!-- Page counter -->
+    <div class="counter-box">
       <div class="damage-box">
         <span>pls take 4d6 psychic damage </span>
-        <img src="images/graphix/stamps/hex/confused.png" alt="4d6 psychic damage" onerror="this.src='images/Heart.png'">
+        <img src="images/Heart.png" alt="4d6 psychic damage" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg';">
       </div>
-      <a href="#" class="cat-spell-link" id="catSpellLink">✧･ﾟ: *✧･ﾟ:* click to cast spinning cat 10hrs *:･ﾟ✧*:･ﾟ✧</a>
-      <div class="cat-spell-fail" id="catSpellFail">IT FAILED THE CONSTITUTION SAVING THROW</div>
     </div>
 
-  <!-- Animated background texture - background elements moved here -->
-  <div class="animated-bg"></div>
-  <div class="animated-overlay"></div>
+    <!-- Spinning Cat Spell Button -->
+    <div id="catSpellContainer">
+      <button class="cat-spell-button" id="catSpellButton">click to cast spinning cat 10hrs</button>
+    </div>
+
+    <!-- Main Layout - Flexbox instead of table -->
+    <div class="main-layout">
       <!-- Sidebar -->
       <div class="sidebar">
         <!-- Profile Section -->
         <div class="profile-box">
           <div class="profile-header">
-            <img src="images/graphix/favicons/skull.gif" alt="skull" class="random-icon">
+            <img src="images/graphix/favicons/skull.gif" alt="skull" class="random-icon" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
             <span>~petrafied~</span>
-            <img src="images/graphix/favicons/skull.gif" alt="skull" class="random-icon">
+            <img src="images/graphix/favicons/skull.gif" alt="skull" class="random-icon" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
           </div>
           <div class="profile-content">
-            <img src="images/shmegl.jpg" alt="Petra's avatar" class="avatar">
+            <img src="images/shmegl.jpg" alt="Petra's avatar" class="avatar" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg';">
             <div class="profile-text">
               <div class="name-container">
-                <img src="images/graphix/favicons/star.gif" alt="sparkle" class="sparkle random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="sparkle" class="sparkle random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <h1 class="username">~*~Petra~*~</h1>
-                <img src="images/graphix/favicons/star.gif" alt="sparkle" class="sparkle random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="sparkle" class="sparkle random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
               </div>
               <div class="status-box">
                 <marquee scrollamount="2">
@@ -465,9 +383,9 @@
         <!-- Music Player -->
         <div class="music-player">
           <div class="player-header">
-            <img src="images/graphix/favicons/music.gif" alt="music note" class="random-icon">
+            <img src="images/graphix/favicons/music.gif" alt="music note" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>Studio Playlist</span>
-            <img src="images/graphix/favicons/music.gif" alt="music note" class="random-icon">
+            <img src="images/graphix/favicons/music.gif" alt="music note" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
           <div class="player-content">
             <iframe style="border-radius:12px; width:100%; max-width:100%; margin:0 auto; display:block;" src="https://open.spotify.com/embed/track/46bUjfJt7SVePcWtBVKa7W?utm_source=generator" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -477,9 +395,9 @@
         <!-- About Me -->
         <div class="about-me">
           <div class="about-header">
-            <img src="images/graphix/favicons/bluheart.gif" alt="heart" class="random-icon">
+            <img src="images/graphix/favicons/heart.gif" alt="heart" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>About Petra</span>
-            <img src="images/graphix/favicons/bluheart.gif" alt="heart" class="random-icon">
+            <img src="images/graphix/favicons/heart.gif" alt="heart" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
           <div class="about-content">
             <p>Pronouns: They/Them</p>
@@ -498,9 +416,9 @@
         <!-- Booking Info -->
         <div class="booking-info">
           <div class="booking-header">
-            <img src="images/graphix/favicons/calendar.gif" alt="calendar" class="random-icon" onerror="this.src='images/graphix/favicons/window.gif'">
+            <img src="images/graphix/favicons/calendar.gif" alt="calendar" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>Booking Info</span>
-            <img src="images/graphix/favicons/calendar.gif" alt="calendar" class="random-icon" onerror="this.src='images/graphix/favicons/window.gif'">
+            <img src="images/graphix/favicons/calendar.gif" alt="calendar" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
           <div class="booking-content">
             <p>⚡ Consultation required first</p>
@@ -514,16 +432,16 @@
         <!-- Links Section (moved here) -->
         <div class="links-section">
           <div class="section-header">
-            <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+            <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>Links</span>
-            <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+            <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
 
           <div class="buttons-container">
             <!-- Booking Button -->
             <a href="https://calendly.com" class="button-link" target="_blank">
               <div class="y2k-button booking">
-                <img src="images/icons/calendly.svg" alt="Booking">
+                <img src="images/icons/calendly.svg" alt="Booking" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>Book Consultation</span>
               </div>
             </a>
@@ -531,7 +449,7 @@
             <!-- Instagram Button -->
             <a href="https://instagram.com" class="button-link" target="_blank">
               <div class="y2k-button instagram">
-                <img src="images/icons/instagram.svg" alt="Instagram">
+                <img src="images/icons/instagram.svg" alt="Instagram" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>Instagram</span>
               </div>
             </a>
@@ -539,7 +457,7 @@
             <!-- TikTok Button -->
             <a href="https://tiktok.com" class="button-link" target="_blank">
               <div class="y2k-button tiktok">
-                <img src="images/icons/tiktok.svg" alt="TikTok">
+                <img src="images/icons/tiktok.svg" alt="TikTok" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>TikTok</span>
               </div>
             </a>
@@ -547,7 +465,7 @@
             <!-- Spotify Button -->
             <a href="https://spotify.com" class="button-link" target="_blank">
               <div class="y2k-button spotify">
-                <img src="images/icons/spotify.svg" alt="Spotify">
+                <img src="images/icons/spotify.svg" alt="Spotify" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>Studio Playlist</span>
               </div>
             </a>
@@ -555,7 +473,7 @@
             <!-- Email Button -->
             <a href="mailto:petrafied@thepaintedladyfw.com" class="button-link">
               <div class="y2k-button email">
-                <img src="images/icons/email.svg" alt="Email">
+                <img src="images/icons/email.svg" alt="Email" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>Email Me</span>
               </div>
             </a>
@@ -563,7 +481,7 @@
             <!-- Form Button -->
             <a href="#" class="button-link" target="_blank">
               <div class="y2k-button form">
-                <img src="images/graphix/favicons/notebook.gif" alt="Tattoo Form" class="random-icon">
+                <img src="images/Heart.png" alt="Tattoo Form" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>Tattoo Request Form</span>
               </div>
             </a>
@@ -571,7 +489,7 @@
             <!-- Aftercare Button -->
             <a href="#" class="button-link" target="_blank">
               <div class="y2k-button aftercare">
-                <img src="images/graphix/favicons/heart.gif" alt="Aftercare" class="random-icon">
+                <img src="images/Heart.png" alt="Aftercare" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>Aftercare Guide</span>
               </div>
             </a>
@@ -579,7 +497,7 @@
             <!-- Shop Button -->
             <a href="#" class="button-link" target="_blank">
               <div class="y2k-button shop">
-                <img src="images/icons/shop.svg" alt="Shop">
+                <img src="images/icons/shop.svg" alt="Shop" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>Merch Shop</span>
               </div>
             </a>
@@ -588,38 +506,38 @@
 
         <!-- Random Banner -->
         <div class="random-banner sidebar-banner">
-          <img src="images/banners/bizarread.gif" alt="Y2K banner" class="y2k-banner random-banner-img">
+          <img src="images/banners/findthequeen.gif" alt="Y2K banner" class="y2k-banner random-banner-img" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
         </div>
       </div>
 
       <!-- Main Content -->
       <div class="main-content">
         <div class="welcome-banner">
-          <img src="images/wow.jpg" alt="Welcome to Petrafied.ink">
+          <img src="images/wow.jpg" alt="Welcome to Petrafied.ink" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg';">
         </div>
 
         <div class="guestbook-banner">
-          <img src="images/graphix/favicons/star.gif" alt="star" class="banner-star random-icon">
+          <img src="images/graphix/blinkies/stars.gif" alt="star" class="banner-star random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           <p>❤️ Your skin is my canvas, let's create dark art together! ❤️</p>
-          <img src="images/graphix/favicons/star.gif" alt="star" class="banner-star random-icon">
+          <img src="images/graphix/blinkies/stars.gif" alt="star" class="banner-star random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
         </div>
 
         <!-- Portfolio Section -->
         <div class="portfolio-section">
           <div class="section-header">
-            <img src="images/graphix/favicons/gothicneedle.gif" alt="needle" class="random-icon" onerror="this.src='images/graphix/favicons/gothic.gif'">
+            <img src="images/Heart.png" alt="needle" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>Portfolio</span>
-            <img src="images/graphix/favicons/gothicneedle.gif" alt="needle" class="random-icon" onerror="this.src='images/graphix/favicons/gothic.gif'">
+            <img src="images/Heart.png" alt="needle" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
 
           <div class="portfolio-container" id="instagram-gallery">
-            <!-- Gallery images will be loaded dynamically from images/instagramposts/ -->
+            <!-- Gallery images will be loaded dynamically -->
           </div>
 
           <div class="portfolio-button">
             <a href="#" class="button-link" target="_blank">
               <div class="y2k-button portfolio-more">
-                <img src="images/graphix/favicons/more.gif" alt="More tattoos" class="random-icon" onerror="this.src='images/graphix/favicons/star.gif'">
+                <img src="images/Heart.png" alt="More tattoos" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 <span>See Full Portfolio</span>
               </div>
             </a>
@@ -629,9 +547,9 @@
         <!-- Instagram Reels Embed -->
         <div class="instagram-embed">
           <div class="section-header">
-            <img src="images/graphix/favicons/camera.gif" alt="instagram" class="random-icon" onerror="this.src='images/icons/instagram.svg'">
+            <img src="images/icons/instagram.svg" alt="instagram" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>Instagram Reels</span>
-            <img src="images/graphix/favicons/camera.gif" alt="instagram" class="random-icon" onerror="this.src='images/icons/instagram.svg'">
+            <img src="images/icons/instagram.svg" alt="instagram" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
 
           <div class="instagram-embed-container">
@@ -648,29 +566,29 @@
         <!-- Reviews Section -->
         <div class="reviews-section">
           <div class="section-header">
-            <img src="images/graphix/favicons/star.gif" alt="review" class="random-icon">
+            <img src="images/graphix/favicons/star.gif" alt="review" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>Happy Clients</span>
-            <img src="images/graphix/favicons/star.gif" alt="review" class="random-icon">
+            <img src="images/graphix/favicons/star.gif" alt="review" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
           <div class="reviews-container">
             <div class="review">
               <div class="review-stars">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
               </div>
               <p class="review-text">"Petra is amazing! They designed the most beautiful dark floral piece for my arm. Super professional and made me feel so comfortable!"</p>
               <p class="review-author">- Jessie K.</p>
             </div>
             <div class="review">
               <div class="review-stars">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
-                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+                <img src="images/graphix/favicons/starblue.gif" alt="star" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
               </div>
               <p class="review-text">"Been getting tattooed by Petra for 3 years now. They're the only artist I trust. Worth every penny and the wait!"</p>
               <p class="review-author">- Mike T.</p>
@@ -681,14 +599,14 @@
         <!-- FAQ Section -->
         <div class="faq-section">
           <div class="section-header">
-            <img src="images/graphix/favicons/question.gif" alt="question" class="random-icon" onerror="this.src='images/graphix/favicons/help.gif'">
+            <img src="images/Heart.png" alt="question" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>FAQ</span>
-            <img src="images/graphix/favicons/question.gif" alt="question" class="random-icon" onerror="this.src='images/graphix/favicons/help.gif'">
+            <img src="images/Heart.png" alt="question" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
           <div class="faq-content">
             <div class="faq-item">
               <div class="faq-question">
-                <img src="images/graphix/blinkies/question.gif" alt="bullet" class="random-icon" onerror="this.src='images/graphix/favicons/bullet.gif'">
+                <img src="images/graphix/favicons/skull.gif" alt="bullet" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 How much do you charge?
               </div>
               <div class="faq-answer">
@@ -697,7 +615,7 @@
             </div>
             <div class="faq-item">
               <div class="faq-question">
-                <img src="images/graphix/blinkies/question.gif" alt="bullet" class="random-icon" onerror="this.src='images/graphix/favicons/bullet.gif'">
+                <img src="images/graphix/favicons/skull.gif" alt="bullet" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
                 Do you do walk-ins?
               </div>
               <div class="faq-answer">
@@ -710,9 +628,9 @@
         <!-- Mini Buttons Section -->
         <div class="mini-buttons-section">
           <div class="section-header">
-            <img src="images/graphix/favicons/bluheart.gif" alt="heart" class="random-icon">
+            <img src="images/graphix/favicons/heart.gif" alt="heart" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
             <span>Buttons n stuff</span>
-            <img src="images/graphix/favicons/bluheart.gif" alt="heart" class="random-icon">
+            <img src="images/graphix/favicons/heart.gif" alt="heart" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
           </div>
           <div class="mini-buttons-container" id="random-button-container">
             <!-- Buttons will be inserted dynamically -->
@@ -723,49 +641,49 @@
       <!-- Right Sidebar (ads, etc.) -->
       <div class="right-sidebar">
         <div class="side-ad">
-          <img src="images/banners/nokia.gif" alt="Y2K style ad" class="random-banner-img">
+          <img src="images/banners/shop.gif" alt="Y2K style ad" class="random-banner-img" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
           <p>advertise with us</p>
         </div>
 
         <div class="random-banner sidebar-banner">
-          <img src="images/banners/findthequeen.gif" alt="Y2K banner" class="y2k-banner random-banner-img">
+          <img src="images/banners/chess.gif" alt="Y2K banner" class="y2k-banner random-banner-img" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
         </div>
 
         <div class="random-banner sidebar-banner">
-          <img src="images/banners/CHEQUEO-ONLINE-s.gif" alt="Y2K banner" class="y2k-banner random-banner-img">
+          <img src="images/banners/odd.gif" alt="Y2K banner" class="y2k-banner random-banner-img" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
         </div>
       </div>
     </div>
 
     <!-- Flash Designs Banner -->
     <div class="flash-banner">
-      <img src="images/graphix/favicons/lightning.gif" alt="Flash Designs" class="random-icon" onerror="this.src='images/graphix/favicons/flash.gif'">
+      <img src="images/graphix/favicons/skull.gif" alt="Flash Designs" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
       <span>Limited edition dark flash designs - Book quick before they're gone!</span>
-      <img src="images/graphix/favicons/lightning.gif" alt="Flash Designs" class="random-icon" onerror="this.src='images/graphix/favicons/flash.gif'">
+      <img src="images/graphix/favicons/skull.gif" alt="Flash Designs" class="random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
     </div>
 
     <!-- Footer -->
     <div class="footer">
       <div class="divider">
-        <img src="images/graphix/dividers/barbed wire.gif" alt="divider" width="100%" class="random-divider">
+        <img src="images/graphix/dividers/barbed wire.gif" alt="divider" width="100%" class="random-divider" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
       </div>
       <p class="footer-text">
         © 2025 Petrafied.ink • This program is proudly brought to you by gay people • Best viewed with Netscape Navigator
       </p>
       <p class="disclaimer">
-        <img src="images/divider.gif" alt="rainbow line" class="rainbow-line random-divider">
+        <img src="images/divider.gif" alt="rainbow line" class="rainbow-line random-divider" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
         <br>
         All tattoo designs and artwork are property of Petra
-        <img src="images/divider.gif" alt="rainbow line" class="rainbow-line random-divider">
+        <img src="images/divider.gif" alt="rainbow line" class="rainbow-line random-divider" onerror="this.onerror=null; this.src='images/petrafiedlogo.jpg'; this.classList.add('error');">
       </p>
     </div>
   </div>
 
   <!-- Fixed y2k elements -->
   <div class="fixed-elements">
-    <img src="images/butterfly.gif" alt="cursor trail" class="cursor-trail random-icon" onerror="this.src='images/graphix/characters/butterfly.gif'">
-    <img src="images/graphix/avi/angel1.gif" alt="angel" class="butterfly random-icon">
-    <img src="images/graphix/misc/networx.gif" alt="network" class="butterfly butterfly-2 random-icon">
+    <img src="images/graphix/favicons/butterfly1.gif" alt="cursor trail" class="cursor-trail random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+    <img src="images/butterfly.gif" alt="angel" class="butterfly random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
+    <img src="images/graphix/misc/global-wireframe.gif" alt="network" class="butterfly butterfly-2 random-icon" onerror="this.onerror=null; this.src='images/Heart.png'; this.classList.add('error');">
   </div>
 
   <!-- Mobile Menu Toggle -->
@@ -776,7 +694,7 @@
   </div>
 
   <script>
-    // Document load event
+    // Random graphics and animations loader
     document.addEventListener('DOMContentLoaded', function() {
       // Load Instagram photos for gallery
       loadInstagramPhotos();
@@ -784,23 +702,11 @@
       // Add the spinning cat button functionality
       setupCatSpellButton();
 
-      // Load random buttons in the mini-buttons section
-      loadRandomButtons();
+      // Add mini buttons
+      loadMiniButtons();
 
-      // Apply default random icons for any that failed to load
-      fixMissingImages();
-
-      // Mobile menu toggle functionality
-      document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-        document.querySelector('.sidebar').classList.toggle('show-mobile');
-      });
-
-      // Close Windows 98 viewer when clicking outside
-      document.getElementById('imageViewer').addEventListener('click', function(e) {
-        if (e.target === this) {
-          closeViewer();
-        }
-      });
+      // Mobile menu functionality
+      setupMobileMenu();
     });
 
     // Function to handle Windows 98 style viewer
@@ -831,105 +737,44 @@
       // Clear existing gallery
       gallery.innerHTML = '';
 
-      // Get a selection of actual images from the instagram posts folder
-      const instagramImageFiles = [
-        '273645561_1528224647577205_1551991876277087620_n.jpg',
-        '273927096_470496801320892_7579560579818134441_n.jpg',
-        '273941604_251603877147501_1336858463240587424_n.jpg',
-        '274034241_1885913691613431_7557607771455068492_n.jpg',
-        '274915468_280845017455315_8070249639219070957_n.jpg',
-        '275005311_404845818074637_4155656904181216174_n.jpg',
-        '275176528_2998734277105779_3321089143429238658_n.jpg',
-        '275387030_3220207658200056_4976510420632394024_n.jpg',
-        '275536323_439500957974187_6689055583437495766_n.jpg',
-        '275617270_623392399115158_3139039588832970143_n.jpg',
-        '275902073_3018334955094084_7904898773046665215_n.jpg',
-        '275910448_697180634799067_3422955018442662034_n.jpg'
+      // Use the actual image files from the instagramposts directory
+      const portfolioImages = [
+        // First check if we can find real images in the instagramposts directory
+        { src: 'images/instagramposts/272346960_2238759216266517_6848249917405318018_n.jpg', caption: 'Blackwork Skull' },
+        { src: 'images/instagramposts/273422494_697276414771416_5421823409682985424_n.jpg', caption: 'Neo-Traditional Rose' },
+        { src: 'images/instagramposts/273484627_271953115009784_497428608653904303_n.jpg', caption: 'Cybercygilism Circuit' },
+        { src: 'images/instagramposts/273645561_1528224647577205_1551991876277087620_n.jpg', caption: 'Illustrative Moon' },
+        { src: 'images/instagramposts/273927096_470496801320892_7579560579818134441_n.jpg', caption: 'Dotwork Mandala' },
+        { src: 'images/instagramposts/273941604_251603877147501_1336858463240587424_n.jpg', caption: 'Punk Rock Sleeve' }
       ];
 
-      // Generate captions
-      const captions = [
-        'Blackwork Skull & Roses',
-        'Neo-Traditional Wolf',
-        'Cyberpunk Circuit Pattern',
-        'Dark Floral Sleeve',
-        'Gothic Cathedral',
-        'Anime-Inspired Piece',
-        'Dotwork Mandala',
-        'Dark Fantasy Creature',
-        'Occult Symbols',
-        'Biomechanical Design',
-        'Horror Portrait',
-        'Abstract Linework'
-      ];
-
-      // Only use the first 6 images for the gallery
-      const displayCount = Math.min(6, instagramImageFiles.length);
-
-      // Add each photo to the gallery
-      for (let i = 0; i < displayCount; i++) {
-        const imgSrc = 'images/instagramposts/' + instagramImageFiles[i];
-        const caption = captions[i];
-
+      // Add each photo to the gallery with error handling
+      portfolioImages.forEach(image => {
         const item = document.createElement('div');
         item.className = 'portfolio-item';
         item.onclick = function() {
-          openViewer(imgSrc, caption);
+          openViewer(image.src, image.caption);
         };
 
         const img = document.createElement('img');
-        img.src = imgSrc;
-        img.alt = caption;
+        img.src = image.src;
+        img.alt = image.caption;
+
+        // Error handler for images
         img.onerror = function() {
-          // Fallback to a default image if the Instagram post doesn't load
+          // Fall back to a default image
           this.src = 'images/petrafiedlogo.jpg';
+          this.classList.add('error');
         };
 
         const hover = document.createElement('div');
         hover.className = 'portfolio-hover';
-        hover.textContent = caption;
+        hover.textContent = image.caption;
 
         item.appendChild(img);
         item.appendChild(hover);
         gallery.appendChild(item);
-      }
-    }
-
-    // Function to load random buttons
-    function loadRandomButtons() {
-      const buttonContainer = document.getElementById('random-button-container');
-      // Clear existing buttons first
-      buttonContainer.innerHTML = '';
-
-      // List of actual button images from the repository
-      const buttonImages = [
-        'images/graphix/buttons/badapple.gif',
-        'images/graphix/buttons/bi.png',
-        'images/graphix/buttons/blackmagic.gif',
-        'images/graphix/buttons/chrome-suck.gif',
-        'images/graphix/buttons/clancthulhu.gif',
-        'images/graphix/buttons/cloudysky.gif',
-        'images/graphix/buttons/dolby_digital.gif',
-        'images/graphix/buttons/eatsleep.gif',
-        'images/graphix/buttons/hotstuff.gif',
-        'images/graphix/buttons/kawaiicute.gif'
-      ];
-
-      // Add 10 buttons with fallbacks
-      for (let i = 0; i < 10; i++) {
-        const img = document.createElement('img');
-        img.src = buttonImages[i % buttonImages.length];
-        img.alt = 'button';
-        img.onerror = function() {
-          // Fallback to mini buttons if the specific image doesn't load
-          this.src = `images/mini${(i % 10) + 1}.gif`;
-          this.onerror = function() {
-            // Second fallback
-            this.src = 'images/Heart.png';
-          };
-        };
-        buttonContainer.appendChild(img);
-      }
+      });
     }
 
     // Spinning Cat Spell Button Functionality
@@ -961,26 +806,55 @@
       });
     }
 
-    // Fix missing images with fallbacks
-    function fixMissingImages() {
-      // Set fallbacks for key images
-      document.querySelectorAll('img').forEach(img => {
-        if (!img.hasAttribute('onerror')) {
-          img.onerror = function() {
-            // Default fallback based on image type
-            if (this.classList.contains('random-icon')) {
-              this.src = 'images/graphix/favicons/star.gif';
-            } else if (this.classList.contains('random-banner-img')) {
-              this.src = 'images/banners/bizarread.gif';
-            } else if (this.classList.contains('random-divider')) {
-              this.src = 'images/divider.gif';
-            } else {
-              this.src = 'images/Heart.png';
-            }
-          };
-        }
+    // Function to load mini buttons
+    function loadMiniButtons() {
+      const buttonContainer = document.getElementById('random-button-container');
+
+      // Clear existing buttons
+      buttonContainer.innerHTML = '';
+
+      // Mini button files from repository
+      const buttonFiles = [
+        'images/graphix/buttons/88x31.gif',
+        'images/graphix/buttons/ralseismokingadart.gif',
+        'images/graphix/buttons/segaelite.gif',
+        'images/graphix/buttons/queercoded.png',
+        'images/graphix/buttons/winamp5.gif',
+        'images/graphix/buttons/spacebar.gif'
+      ];
+
+      // Add each button with error handling
+      buttonFiles.forEach(file => {
+        const img = document.createElement('img');
+        img.src = file;
+        img.alt = 'Mini button';
+
+        // Error handler for images
+        img.onerror = function() {
+          this.src = 'images/petrafiedlogo.jpg';
+          this.classList.add('error');
+        };
+
+        buttonContainer.appendChild(img);
       });
     }
+
+    // Mobile menu setup
+    function setupMobileMenu() {
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      const sidebar = document.querySelector('.sidebar');
+
+      menuToggle.addEventListener('click', function() {
+        sidebar.classList.toggle('show-mobile');
+      });
+    }
+
+    // Close Windows 98 viewer when clicking outside
+    document.getElementById('imageViewer').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeViewer();
+      }
+    });
   </script>
 </body>
 </html>
