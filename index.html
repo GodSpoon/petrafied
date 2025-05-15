@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>~*~* Petrafied.ink - Y2K Tattoo Portal *~*~</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Petra's Tattoo Art Studio - Book appointments and explore tattoo art in Y2K style!">
   
   <!-- Custom Y2K styling -->
@@ -11,48 +11,6 @@
   
   <!-- Favicon -->
   <link rel="icon" type="image/gif" href="images/petrafiedlogo.jpg">
-  
-  <!-- Custom cursor -->
-  <style>
-    body {
-      cursor: url('images/graphix/favicons/star.gif'), auto;
-      background-image: url('images/graphix/bgs/checkered.gif');
-      background-attachment: fixed;
-    }
-    a {
-      cursor: url('images/graphix/misc/hand.gif'), pointer;
-    }
-    
-    /* Add these styles for the new elements */
-    .faq-item li {
-      list-style-type: none;
-      padding-left: 30px;
-      background-image: url('images/graphix/blinkies/stars.gif');
-      background-repeat: no-repeat;
-      background-position: left center;
-      background-size: 25px;
-    }
-
-    .mini-buttons-container img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px #ff00ff;
-      transition: all 0.3s ease;
-    }
-    
-    .stars {
-      background-image: url('images/graphix/bgs/water.gif');
-      opacity: 0.7;
-    }
-    
-    .review-stars img {
-      width: 20px;
-      height: 20px;
-    }
-    
-    .butterfly {
-      max-width: 100px;
-    }
-  </style>
 </head>
 
 <body>
@@ -75,326 +33,324 @@
       <img src="images/graphix/avi/999999th-visitor.gif" alt="Visitor counter">
     </div>
     
-    <!-- Main Layout Table -->
-    <table class="main-table">
-      <tr>
-        <!-- Sidebar -->
-        <td class="sidebar">
-          <!-- Profile Section -->
-          <div class="profile-box">
-            <div class="profile-header">
-              <img src="images/graphix/favicons/star109.gif" alt="stars">
-              <span>Artist Profile</span>
-              <img src="images/graphix/favicons/star109.gif" alt="stars">
-            </div>
-            <div class="profile-content">
-              <img src="images/graphix/characters/firefoxgirl.png" alt="Petra's avatar" class="avatar">
-              <div class="profile-text">
-                <div class="name-container">
-                  <img src="images/graphix/favicons/sparkles.gif" alt="sparkle" class="sparkle">
-                  <h1 class="username">~*~Petra~*~</h1>
-                  <img src="images/graphix/favicons/sparkles.gif" alt="sparkle" class="sparkle">
-                </div>
-                <div class="status-box">
-                  <marquee scrollamount="2">
-                    ★ Tattoo Artist ★ They/Them ★ Pisces ♓ ★
-                  </marquee>
-                </div>
-                <p class="mood">Currently: Taking Bookings 💉</p>
+    <!-- Main Layout - Flexbox instead of table -->
+    <div class="main-layout">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Profile Section -->
+        <div class="profile-box">
+          <div class="profile-header">
+            <img src="images/graphix/favicons/star109.gif" alt="stars">
+            <span>Artist Profile</span>
+            <img src="images/graphix/favicons/star109.gif" alt="stars">
+          </div>
+          <div class="profile-content">
+            <img src="images/graphix/characters/firefoxgirl.png" alt="Petra's avatar" class="avatar">
+            <div class="profile-text">
+              <div class="name-container">
+                <img src="images/graphix/favicons/sparkles.gif" alt="sparkle" class="sparkle">
+                <h1 class="username">~*~Petra~*~</h1>
+                <img src="images/graphix/favicons/sparkles.gif" alt="sparkle" class="sparkle">
               </div>
-            </div>
-          </div>
-          
-          <!-- Music Player -->
-          <div class="music-player">
-            <div class="player-header">
-              <img src="images/graphix/favicons/music.gif" alt="music note">
-              <span>Studio Playlist</span>
-              <img src="images/graphix/favicons/music.gif" alt="music note">
-            </div>
-            <div class="player-content">
-              <p>▶️ "Ink My Whole Body" - Wiz Khalifa</p>
-              <div class="volume-bar">
-                <span>Volume: </span>
-                <div class="volume-level">
-                  <div class="volume-fill"></div>
-                </div>
+              <div class="status-box">
+                <marquee scrollamount="2">
+                  ★ Tattoo Artist ★ They/Them ★ Pisces ♓ ★
+                </marquee>
               </div>
+              <p class="mood">Currently: Taking Bookings 💉</p>
             </div>
           </div>
-          
-          <!-- About Me -->
-          <div class="about-me">
-            <div class="about-header">
-              <img src="images/Heart.png" alt="heart">
-              <span>About Petra</span>
-              <img src="images/Heart.png" alt="heart">
-            </div>
-            <div class="about-content">
-              <p>Pronouns: They/Them</p>
-              <p>Location: Indianapolis, IN</p>
-              <p>Specialties: Neo-traditional, Blackwork</p>
-              <p>Studio: Private Studio</p>
-              <p>Sign: ♓ Pisces</p>
-              <p>Experience: 8+ Years</p>
-            </div>
-          </div>
-          
-          <!-- Booking Info -->
-          <div class="booking-info">
-            <div class="booking-header">
-              <img src="images/graphix/favicons/computer_65.gif" alt="calendar">
-              <span>Booking Info</span>
-              <img src="images/graphix/favicons/computer_65.gif" alt="calendar">
-            </div>
-            <div class="booking-content">
-              <p>⚡ Consultation required first</p>
-              <p>⚡ Deposit for all bookings</p>
-              <p>⚡ 48hr cancellation policy</p>
-              <p>⚡ No copying other artists!</p>
-              <p>⚡ Open Wed-Sat 12-8pm</p>
-            </div>
-          </div>
-          
-          <!-- Random Banner -->
-          <div class="random-banner">
-            <img src="images/graphix/banners/msn.gif" alt="Y2K banner" class="y2k-banner">
-          </div>
-        </td>
+        </div>
         
-        <!-- Main Content -->
-        <td class="main-content">
-          <div class="welcome-banner">
-            <img src="images/wow.jpg" alt="Welcome to Petrafied.ink">
+        <!-- Music Player -->
+        <div class="music-player">
+          <div class="player-header">
+            <img src="images/graphix/favicons/music.gif" alt="music note">
+            <span>Studio Playlist</span>
+            <img src="images/graphix/favicons/music.gif" alt="music note">
           </div>
-          
-          <div class="guestbook-banner">
-            <img src="images/graphix/favicons/heart.gif" alt="star" class="banner-star">
-            <p>❤️ Your skin is my canvas, let's create art together! ❤️</p>
-            <img src="images/graphix/favicons/heart.gif" alt="star" class="banner-star">
-          </div>
-          
-          <!-- Portfolio Section -->
-          <div class="portfolio-section">
-            <div class="section-header">
-              <img src="images/graphix/misc/paint-colors.gif" alt="needle">
-              <span>Tattoo Portfolio</span>
-              <img src="images/graphix/misc/paint-colors.gif" alt="needle">
-            </div>
-            
-            <div class="portfolio-container">
-              <div class="portfolio-item">
-                <img src="images/shmegl.jpg" alt="Tattoo 1">
-                <div class="portfolio-hover">Neo-Traditional</div>
-              </div>
-              <div class="portfolio-item">
-                <img src="images/mudkipz.png" alt="Tattoo 2">
-                <div class="portfolio-hover">Color Work</div>
-              </div>
-              <div class="portfolio-item">
-                <img src="images/wow.jpg" alt="Tattoo 3">
-                <div class="portfolio-hover">Blackwork</div>
-              </div>
-              <div class="portfolio-item">
-                <img src="images/shmegl.jpg" alt="Tattoo 4">
-                <div class="portfolio-hover">Traditional</div>
-              </div>
-              <div class="portfolio-item">
-                <img src="images/mudkipz.png" alt="Tattoo 5">
-                <div class="portfolio-hover">Flash Design</div>
-              </div>
-              <div class="portfolio-item">
-                <img src="images/wow.jpg" alt="Tattoo 6">
-                <div class="portfolio-hover">Custom Work</div>
-              </div>
-            </div>
-            
-            <div class="portfolio-button">
-              <a href="#" class="button-link" target="_blank">
-                <div class="y2k-button portfolio-more">
-                  <img src="images/graphix/avi/favorite.gif" alt="More tattoos">
-                  <span>See Full Portfolio</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Buttons Section -->
-          <div class="links-section">
-            <div class="section-header">
-              <img src="images/graphix/favicons/computer_65.gif" alt="star">
-              <span>Book & Connect</span>
-              <img src="images/graphix/favicons/computer_65.gif" alt="star">
-            </div>
-            
-            <div class="buttons-container">
-              <!-- Booking Button -->
-              <a href="https://calendly.com" class="button-link" target="_blank">
-                <div class="y2k-button booking">
-                  <img src="images/icons/calendly.svg" alt="Booking">
-                  <span>Book Consultation</span>
-                </div>
-              </a>
-              
-              <!-- Instagram Button -->
-              <a href="https://instagram.com" class="button-link" target="_blank">
-                <div class="y2k-button instagram">
-                  <img src="images/icons/instagram.svg" alt="Instagram">
-                  <span>Instagram</span>
-                </div>
-              </a>
-              
-              <!-- TikTok Button -->
-              <a href="https://tiktok.com" class="button-link" target="_blank">
-                <div class="y2k-button tiktok">
-                  <img src="images/icons/tiktok.svg" alt="TikTok">
-                  <span>TikTok</span>
-                </div>
-              </a>
-              
-              <!-- Spotify Button -->
-              <a href="https://spotify.com" class="button-link" target="_blank">
-                <div class="y2k-button spotify">
-                  <img src="images/icons/spotify.svg" alt="Spotify">
-                  <span>Studio Playlist</span>
-                </div>
-              </a>
-              
-              <!-- Email Button -->
-              <a href="mailto:info@petrafied.ink" class="button-link">
-                <div class="y2k-button email">
-                  <img src="images/icons/email.svg" alt="Email">
-                  <span>Email Me</span>
-                </div>
-              </a>
-              
-              <!-- Form Button -->
-              <a href="#" class="button-link" target="_blank">
-                <div class="y2k-button form">
-                  <img src="images/graphix/favicons/notebook.gif" alt="Tattoo Form">
-                  <span>Tattoo Request Form</span>
-                </div>
-              </a>
-              
-              <!-- Aftercare Button -->
-              <a href="#" class="button-link" target="_blank">
-                <div class="y2k-button aftercare">
-                  <img src="images/graphix/misc/bottle.gif" alt="Aftercare">
-                  <span>Aftercare Guide</span>
-                </div>
-              </a>
-              
-              <!-- Shop Button -->
-              <a href="#" class="button-link" target="_blank">
-                <div class="y2k-button shop">
-                  <img src="images/icons/shop.svg" alt="Shop">
-                  <span>Merch Shop</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Reviews Section -->
-          <div class="reviews-section">
-            <div class="section-header">
-              <img src="images/graphix/misc/planetheart.gif" alt="review">
-              <span>Happy Clients</span>
-              <img src="images/graphix/misc/planetheart.gif" alt="review">
-            </div>
-            <div class="reviews-container">
-              <div class="review">
-                <div class="review-stars">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                </div>
-                <p class="review-text">"Petra is amazing! They designed the most beautiful floral piece for my arm. Super professional and made me feel so comfortable!"</p>
-                <p class="review-author">- Jessie K.</p>
-              </div>
-              <div class="review">
-                <div class="review-stars">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                  <img src="images/graphix/favicons/star109.gif" alt="star">
-                </div>
-                <p class="review-text">"Been getting tattooed by Petra for 3 years now. They're the only artist I trust. Worth every penny and the wait!"</p>
-                <p class="review-author">- Mike T.</p>
+          <div class="player-content">
+            <p>▶️ "Ink My Whole Body" - Wiz Khalifa</p>
+            <div class="volume-bar">
+              <span>Volume: </span>
+              <div class="volume-level">
+                <div class="volume-fill"></div>
               </div>
             </div>
           </div>
-          
-          <!-- FAQ Section -->
-          <div class="faq-section">
-            <div class="section-header">
-              <img src="images/graphix/favicons/splash1.gif" alt="question">
-              <span>FAQ</span>
-              <img src="images/graphix/favicons/splash1.gif" alt="question">
-            </div>
-            <div class="faq-content">
-              <div class="faq-item">
-                <div class="faq-question">
-                  <img src="images/graphix/favicons/splash2.gif" alt="bullet">
-                  How much do you charge?
-                </div>
-                <div class="faq-answer">
-                  I have a $150 minimum, with larger pieces priced by size, detail, and placement. Consultations are free!
-                </div>
-              </div>
-              <div class="faq-item">
-                <div class="faq-question">
-                  <img src="images/graphix/favicons/splash2.gif" alt="bullet">
-                  Do you do walk-ins?
-                </div>
-                <div class="faq-answer">
-                  Occasionally! Follow my Instagram for walk-in day announcements.
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Mini Buttons Section -->
-          <div class="mini-buttons-section">
-            <div class="section-header">
-              <img src="images/graphix/favicons/heart.gif" alt="heart">
-              <span>Y2K Buttons</span>
-              <img src="images/graphix/favicons/heart.gif" alt="heart">
-            </div>
-            <div class="mini-buttons-container">
-              <img src="images/graphix/buttons/kawaii.gif" alt="kawaii">
-              <img src="images/graphix/buttons/rainbow.gif" alt="rainbow">
-              <img src="images/graphix/buttons/they.png" alt="pronouns">
-              <img src="images/graphix/buttons/blink.gif" alt="blink">
-              <img src="images/graphix/blinkies/hearts.gif" alt="hearts">
-              <img src="images/graphix/buttons/space.gif" alt="space">
-              <img src="images/graphix/buttons/bi.png" alt="bi">
-              <img src="images/graphix/blinkies/animefreak.gif" alt="anime">
-              <img src="images/graphix/buttons/pictochat.gif" alt="chat">
-              <img src="images/graphix/buttons/winamp5.gif" alt="music">
-            </div>
-          </div>
-        </td>
+        </div>
         
-        <!-- Right Sidebar (ads, etc.) -->
-        <td class="right-sidebar hide-on-mobile">
-          <div class="side-ad">
-            <img src="images/graphix/banners/bonus_ringtone.gif" alt="Y2K style ad">
-            <p>advertise with us</p>
+        <!-- About Me -->
+        <div class="about-me">
+          <div class="about-header">
+            <img src="images/Heart.png" alt="heart">
+            <span>About Petra</span>
+            <img src="images/Heart.png" alt="heart">
+          </div>
+          <div class="about-content">
+            <p>Pronouns: They/Them</p>
+            <p>Location: Indianapolis, IN</p>
+            <p>Specialties: Neo-traditional, Blackwork</p>
+            <p>Studio: Private Studio</p>
+            <p>Sign: ♓ Pisces</p>
+            <p>Experience: 8+ Years</p>
+          </div>
+        </div>
+        
+        <!-- Booking Info -->
+        <div class="booking-info">
+          <div class="booking-header">
+            <img src="images/graphix/favicons/computer_65.gif" alt="calendar">
+            <span>Booking Info</span>
+            <img src="images/graphix/favicons/computer_65.gif" alt="calendar">
+          </div>
+          <div class="booking-content">
+            <p>⚡ Consultation required first</p>
+            <p>⚡ Deposit for all bookings</p>
+            <p>⚡ 48hr cancellation policy</p>
+            <p>⚡ No copying other artists!</p>
+            <p>⚡ Open Wed-Sat 12-8pm</p>
+          </div>
+        </div>
+        
+        <!-- Random Banner -->
+        <div class="random-banner sidebar-banner">
+          <img src="images/graphix/banners/msn.gif" alt="Y2K banner" class="y2k-banner">
+        </div>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="welcome-banner">
+          <img src="images/wow.jpg" alt="Welcome to Petrafied.ink">
+        </div>
+        
+        <div class="guestbook-banner">
+          <img src="images/graphix/favicons/heart.gif" alt="star" class="banner-star">
+          <p>❤️ Your skin is my canvas, let's create art together! ❤️</p>
+          <img src="images/graphix/favicons/heart.gif" alt="star" class="banner-star">
+        </div>
+        
+        <!-- Portfolio Section -->
+        <div class="portfolio-section">
+          <div class="section-header">
+            <img src="images/graphix/misc/paint-colors.gif" alt="needle">
+            <span>Tattoo Portfolio</span>
+            <img src="images/graphix/misc/paint-colors.gif" alt="needle">
           </div>
           
-          <div class="random-banner">
-            <img src="images/graphix/banners/freeemoticons.gif" alt="Y2K banner" class="y2k-banner">
+          <div class="portfolio-container">
+            <div class="portfolio-item">
+              <img src="images/shmegl.jpg" alt="Tattoo 1">
+              <div class="portfolio-hover">Neo-Traditional</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/mudkipz.png" alt="Tattoo 2">
+              <div class="portfolio-hover">Color Work</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/wow.jpg" alt="Tattoo 3">
+              <div class="portfolio-hover">Blackwork</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/shmegl.jpg" alt="Tattoo 4">
+              <div class="portfolio-hover">Traditional</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/mudkipz.png" alt="Tattoo 5">
+              <div class="portfolio-hover">Flash Design</div>
+            </div>
+            <div class="portfolio-item">
+              <img src="images/wow.jpg" alt="Tattoo 6">
+              <div class="portfolio-hover">Custom Work</div>
+            </div>
           </div>
           
-          <div class="random-banner">
-            <img src="images/graphix/banners/kimpossible.gif" alt="Y2K banner" class="y2k-banner">
+          <div class="portfolio-button">
+            <a href="#" class="button-link" target="_blank">
+              <div class="y2k-button portfolio-more">
+                <img src="images/graphix/avi/favorite.gif" alt="More tattoos">
+                <span>See Full Portfolio</span>
+              </div>
+            </a>
           </div>
-        </td>
-      </tr>
-    </table>
+        </div>
+        
+        <!-- Buttons Section -->
+        <div class="links-section">
+          <div class="section-header">
+            <img src="images/graphix/favicons/computer_65.gif" alt="star">
+            <span>Book & Connect</span>
+            <img src="images/graphix/favicons/computer_65.gif" alt="star">
+          </div>
+          
+          <div class="buttons-container">
+            <!-- Booking Button -->
+            <a href="https://calendly.com" class="button-link" target="_blank">
+              <div class="y2k-button booking">
+                <img src="images/icons/calendly.svg" alt="Booking">
+                <span>Book Consultation</span>
+              </div>
+            </a>
+            
+            <!-- Instagram Button -->
+            <a href="https://instagram.com" class="button-link" target="_blank">
+              <div class="y2k-button instagram">
+                <img src="images/icons/instagram.svg" alt="Instagram">
+                <span>Instagram</span>
+              </div>
+            </a>
+            
+            <!-- TikTok Button -->
+            <a href="https://tiktok.com" class="button-link" target="_blank">
+              <div class="y2k-button tiktok">
+                <img src="images/icons/tiktok.svg" alt="TikTok">
+                <span>TikTok</span>
+              </div>
+            </a>
+            
+            <!-- Spotify Button -->
+            <a href="https://spotify.com" class="button-link" target="_blank">
+              <div class="y2k-button spotify">
+                <img src="images/icons/spotify.svg" alt="Spotify">
+                <span>Studio Playlist</span>
+              </div>
+            </a>
+            
+            <!-- Email Button -->
+            <a href="mailto:info@petrafied.ink" class="button-link">
+              <div class="y2k-button email">
+                <img src="images/icons/email.svg" alt="Email">
+                <span>Email Me</span>
+              </div>
+            </a>
+            
+            <!-- Form Button -->
+            <a href="#" class="button-link" target="_blank">
+              <div class="y2k-button form">
+                <img src="images/graphix/favicons/notebook.gif" alt="Tattoo Form">
+                <span>Tattoo Request Form</span>
+              </div>
+            </a>
+            
+            <!-- Aftercare Button -->
+            <a href="#" class="button-link" target="_blank">
+              <div class="y2k-button aftercare">
+                <img src="images/graphix/misc/bottle.gif" alt="Aftercare">
+                <span>Aftercare Guide</span>
+              </div>
+            </a>
+            
+            <!-- Shop Button -->
+            <a href="#" class="button-link" target="_blank">
+              <div class="y2k-button shop">
+                <img src="images/icons/shop.svg" alt="Shop">
+                <span>Merch Shop</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+          <div class="section-header">
+            <img src="images/graphix/misc/planetheart.gif" alt="review">
+            <span>Happy Clients</span>
+            <img src="images/graphix/misc/planetheart.gif" alt="review">
+          </div>
+          <div class="reviews-container">
+            <div class="review">
+              <div class="review-stars">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+              </div>
+              <p class="review-text">"Petra is amazing! They designed the most beautiful floral piece for my arm. Super professional and made me feel so comfortable!"</p>
+              <p class="review-author">- Jessie K.</p>
+            </div>
+            <div class="review">
+              <div class="review-stars">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+                <img src="images/graphix/favicons/star109.gif" alt="star">
+              </div>
+              <p class="review-text">"Been getting tattooed by Petra for 3 years now. They're the only artist I trust. Worth every penny and the wait!"</p>
+              <p class="review-author">- Mike T.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <div class="section-header">
+            <img src="images/graphix/favicons/splash1.gif" alt="question">
+            <span>FAQ</span>
+            <img src="images/graphix/favicons/splash1.gif" alt="question">
+          </div>
+          <div class="faq-content">
+            <div class="faq-item">
+              <div class="faq-question">
+                <img src="images/graphix/favicons/splash2.gif" alt="bullet">
+                How much do you charge?
+              </div>
+              <div class="faq-answer">
+                I have a $150 minimum, with larger pieces priced by size, detail, and placement. Consultations are free!
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <img src="images/graphix/favicons/splash2.gif" alt="bullet">
+                Do you do walk-ins?
+              </div>
+              <div class="faq-answer">
+                Occasionally! Follow my Instagram for walk-in day announcements.
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mini Buttons Section -->
+        <div class="mini-buttons-section">
+          <div class="section-header">
+            <img src="images/graphix/favicons/heart.gif" alt="heart">
+            <span>Y2K Buttons</span>
+            <img src="images/graphix/favicons/heart.gif" alt="heart">
+          </div>
+          <div class="mini-buttons-container">
+            <img src="images/graphix/buttons/kawaii.gif" alt="kawaii">
+            <img src="images/graphix/buttons/rainbow.gif" alt="rainbow">
+            <img src="images/graphix/buttons/they.png" alt="pronouns">
+            <img src="images/graphix/buttons/blink.gif" alt="blink">
+            <img src="images/graphix/blinkies/hearts.gif" alt="hearts">
+            <img src="images/graphix/buttons/space.gif" alt="space">
+            <img src="images/graphix/buttons/bi.png" alt="bi">
+            <img src="images/graphix/blinkies/animefreak.gif" alt="anime">
+            <img src="images/graphix/buttons/pictochat.gif" alt="chat">
+            <img src="images/graphix/buttons/winamp5.gif" alt="music">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Sidebar (ads, etc.) -->
+      <div class="right-sidebar">
+        <div class="side-ad">
+          <img src="images/graphix/banners/bonus_ringtone.gif" alt="Y2K style ad">
+          <p>advertise with us</p>
+        </div>
+        
+        <div class="random-banner sidebar-banner">
+          <img src="images/graphix/banners/freeemoticons.gif" alt="Y2K banner" class="y2k-banner">
+        </div>
+        
+        <div class="random-banner sidebar-banner">
+          <img src="images/graphix/banners/kimpossible.gif" alt="Y2K banner" class="y2k-banner">
+        </div>
+      </div>
+    </div>
     
     <!-- Flash Designs Banner -->
     <div class="flash-banner">
@@ -412,12 +368,12 @@
         © 2025 Petrafied.ink • Made with <img src="images/graphix/blinkies/heartfelt.gif" alt="heart" height="20"> • Best viewed with Internet Explorer 6.0
       </p>
       <p class="disclaimer">
-        <img src="images/graphix/dividers/slime.gif" alt="rainbow line" class="rainbow-line" width="50%">
+        <img src="images/graphix/dividers/slime.gif" alt="rainbow line" class="rainbow-line">
         <br>
         All tattoo designs and artwork are property of Petra
         <br>
         Website powered by <a href="https://littlelink.io" target="_blank">LittleLink</a>
-        <img src="images/graphix/dividers/slime.gif" alt="rainbow line" class="rainbow-line" width="50%">
+        <img src="images/graphix/dividers/slime.gif" alt="rainbow line" class="rainbow-line">
       </p>
     </div>
   </div>
