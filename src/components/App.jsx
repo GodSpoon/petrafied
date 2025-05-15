@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { XWindow, WindowContent, Button, Toolbar, Desktop, TaskBar, WindowHeader, Hourglass } from 'react95';
+import { Window, WindowContent, Button, Toolbar, Desktop, TaskBar, WindowHeader, Hourglass } from 'react95';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import original from 'react95/dist/themes/original';
 import ms_sans_serif from 'react95/dist/fonts/ms_sans_serif.woff2';
@@ -256,7 +256,7 @@ const desktopIcons = [
 ];
 
 // Window components
-const Window = ({ id, title, icon, isOpen, onClose, position, onFocus, isActive, children }) => {
+const AppWindow = ({ id, title, icon, isOpen, onClose, position, onFocus, isActive, children }) => {
   const [windowPos, setWindowPos] = useState(position);
   
   if (!isOpen) return null;
@@ -273,7 +273,7 @@ const Window = ({ id, title, icon, isOpen, onClose, position, onFocus, isActive,
       }}
       onClick={onFocus}
     >
-      <XWindow>
+      <Window>
         <WindowHeader style={{
           background: isActive 
             ? 'linear-gradient(90deg, #9966cc, #6f4b90)' 
@@ -294,7 +294,7 @@ const Window = ({ id, title, icon, isOpen, onClose, position, onFocus, isActive,
         <WindowContent className="window-content">
           {children}
         </WindowContent>
-      </XWindow>
+      </Window>
     </div>
   );
 };
@@ -659,4 +659,457 @@ const GalleryContent = () => {
 };
 
 // Contact window content
+const ContactContent = () => {
+  const [loading, setLoading] = useState(true);
+  const [activeTab, setActiveTab] = useState('email');
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 800);
+    
+    return () => clearTimeout(timer);
+  }, []);
+  
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+        <Hourglass size={32} />
+        <p style={{ marginTop: 16 }}>Loading Contact Information...</p>
+      </div>
+    );
+  }
+  
+  return (
+    <div>
+      <h2>Contact Petra</h2>
       
+      <Toolbar style={{ marginBottom: '16px' }}>
+        <Button 
+          onClick={() => setActiveTab('email')}
+          active={activeTab === 'email'}
+          style={{ marginRight: '4px' }}
+        >
+          Email
+        </Button>
+        <Button 
+          onClick={() => setActiveTab('social')}
+          active={activeTab === 'social'}
+          style={{ marginRight: '4px' }}
+        >
+          Social Media
+        </Button>
+        <Button 
+          onClick={() => setActiveTab('studio')}
+          active={activeTab === 'studio'}
+        >
+          Studio Info
+        </Button>
+      </Toolbar>
+      
+      {activeTab === 'email' && (
+        <div>
+          <div style={{ border: '2px inset #c0c0c0', padding: '8px', marginBottom: '16px' }}>
+            <h3>Email Contact</h3>
+            <p><strong>Email:</strong> petrafied@thepaintedladyfw.com</p>
+            <p>This is the preferred method of contact for booking inquiries.</p>
+            <p>Please include details about the tattoo you're interested in!</p>
+          </div>
+          
+          <div style={{ border: '2px inset #c0c0c0', padding: '8px' }}>
+            <h3>Quick Message</h3>
+            <div style={{ marginBottom: '8px' }}>
+              <label style={{ display: 'block', marginBottom: '4px' }}>Your Name:</label>
+              <input type="text" style={{ width: '100%', padding: '4px' }} />
+            </div>
+            
+            <div style={{ marginBottom: '8px' }}>
+              <label style={{ display: 'block', marginBottom: '4px' }}>Your Email:</label>
+              <input type="email" style={{ width: '100%', padding: '4px' }} />
+            </div>
+            
+            <div style={{ marginBottom: '8px' }}>
+              <label style={{ display: 'block', marginBottom: '4px' }}>Message:</label>
+              <textarea style={{ width: '100%', height: '80px', padding: '4px' }}></textarea>
+            </div>
+            
+            <div style={{ textAlign: 'center' }}>
+              <Button>Send Message</Button>
+            </div>
+          </div>
+        </div>
+      )}
+      
+      {activeTab === 'social' && (
+        <div>
+          <h3>Social Media</h3>
+          <p>Follow Petra's work on these platforms:</p>
+          
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '16px' }}>
+            <Button style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/images/icons/instagram.svg" alt="Instagram" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+              Instagram
+            </Button>
+            
+            <Button style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/images/icons/tiktok.svg" alt="TikTok" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+              TikTok
+            </Button>
+            
+            <Button style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/images/icons/facebook.svg" alt="Facebook" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+              Facebook
+            </Button>
+            
+            <Button style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/images/icons/spotify.svg" alt="Spotify" style={{ width: '24px', height: '24px', marginRight: '8px' }} />
+              Spotify
+            </Button>
+          </div>
+          
+          <div style={{ marginTop: '16px', border: '2px inset #c0c0c0', padding: '8px' }}>
+            <h3>Latest Posts</h3>
+            <div style={{ maxHeight: '200px', overflowY: 'auto', marginTop: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', padding: '4px', border: '1px solid #808080' }}>
+                <img src="/images/instagramposts/tattoo1.jpg" alt="Post" style={{ width: '40px', height: '40px', marginRight: '8px' }} />
+                <div>
+                  <p style={{ margin: '0', fontSize: '14px' }}>New piece completed yesterday! #tattoo</p>
+                  <p style={{ margin: '0', fontSize: '12px', color: '#666' }}>2 days ago</p>
+                </div>
+              </div>
+              
+              <div style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', padding: '4px', border: '1px solid #808080' }}>
+                <img src="/images/instagramposts/tattoo2.jpg" alt="Post" style={{ width: '40px', height: '40px', marginRight: '8px' }} />
+                <div>
+                  <p style={{ margin: '0', fontSize: '14px' }}>Flash day coming next month! #flashtattoo</p>
+                  <p style={{ margin: '0', fontSize: '12px', color: '#666' }}>1 week ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      
+      {activeTab === 'studio' && (
+        <div>
+          <div style={{ border: '2px inset #c0c0c0', padding: '8px', marginBottom: '16px' }}>
+            <h3>Studio Information</h3>
+            <p><strong>The Painted Lady Tattoo Studio</strong></p>
+            <p>123 Main Street</p>
+            <p>Fort Wayne, IN 46802</p>
+            <p>Phone: (555) 123-4567</p>
+          </div>
+          
+          <div style={{ border: '2px inset #c0c0c0', padding: '8px' }}>
+            <h3>Hours</h3>
+            <p>Wednesday - Saturday: 12pm - 8pm</p>
+            <p>Sunday - Tuesday: Closed</p>
+            <p>By appointment only</p>
+          </div>
+          
+          <div style={{ marginTop: '16px', textAlign: 'center' }}>
+            <Button>Get Directions</Button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+// Aftercare window content
+const AftercareContent = () => {
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    
+    return () => clearTimeout(timer);
+  }, []);
+  
+  if (loading) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+        <Hourglass size={32} />
+        <p style={{ marginTop: 16 }}>Loading Aftercare Instructions...</p>
+      </div>
+    );
+  }
+  
+  return (
+    <div>
+      <h2>Tattoo Aftercare Guide</h2>
+      
+      <div style={{ border: '2px inset #c0c0c0', padding: '8px', marginBottom: '16px' }}>
+        <h3>First 24 Hours</h3>
+        <ul style={{ paddingLeft: '20px' }}>
+          <li>Leave the bandage on for 2-4 hours after getting tattooed.</li>
+          <li>Wash gently with antibacterial soap and lukewarm water.</li>
+          <li>Pat dry with a clean paper towel or let air dry.</li>
+          <li>Apply a thin layer of aftercare ointment.</li>
+          <li>Do not re-bandage.</li>
+        </ul>
+      </div>
+      
+      <div style={{ border: '2px inset #c0c0c0', padding: '8px', marginBottom: '16px' }}>
+        <h3>Days 2-7</h3>
+        <ul style={{ paddingLeft: '20px' }}>
+          <li>Wash your tattoo 2-3 times daily.</li>
+          <li>Apply aftercare ointment for the first 3 days.</li>
+          <li>Switch to fragrance-free lotion after day 3.</li>
+          <li>Avoid direct sunlight, swimming, and soaking.</li>
+          <li>Wear loose clothing that won't stick to your tattoo.</li>
+        </ul>
+      </div>
+      
+      <div style={{ border: '2px inset #c0c0c0', padding: '8px' }}>
+        <h3>Weeks 2-4</h3>
+        <ul style={{ paddingLeft: '20px' }}>
+          <li>Continue moisturizing daily.</li>
+          <li>Avoid sun exposure or use SPF 50+ if necessary.</li>
+          <li>Do not pick or scratch at peeling skin.</li>
+          <li>Avoid swimming pools, hot tubs, and saunas.</li>
+          <li>Contact me if you have any concerns about healing!</li>
+        </ul>
+      </div>
+      
+      <div style={{ marginTop: '16px', textAlign: 'center' }}>
+        <Button>Download Aftercare Guide (PDF)</Button>
+      </div>
+    </div>
+  );
+};
+
+// Main App Component
+const App = () => {
+  const [openWindows, setOpenWindows] = useState([]);
+  const [activeWindow, setActiveWindow] = useState(null);
+  const [startMenuOpen, setStartMenuOpen] = useState(false);
+  const [currentTime, setCurrentTime] = useState(new Date());
+  
+  // Update time every minute
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 60000);
+    
+    return () => clearInterval(timer);
+  }, []);
+  
+  // Window positions
+  const windowPositions = {
+    portfolio: { x: 50, y: 50, width: 600, height: 500 },
+    about: { x: 100, y: 100, width: 500, height: 400 },
+    booking: { x: 150, y: 150, width: 550, height: 450 },
+    gallery: { x: 200, y: 80, width: 650, height: 500 },
+    contact: { x: 250, y: 120, width: 500, height: 450 },
+    aftercare: { x: 300, y: 150, width: 500, height: 400 },
+  };
+  
+  // Open a window
+  const openWindow = (id) => {
+    if (!openWindows.includes(id)) {
+      setOpenWindows([...openWindows, id]);
+    }
+    setActiveWindow(id);
+    setStartMenuOpen(false);
+  };
+  
+  // Close a window
+  const closeWindow = (id) => {
+    setOpenWindows(openWindows.filter(windowId => windowId !== id));
+    if (activeWindow === id) {
+      setActiveWindow(openWindows.length > 1 ? openWindows[0] : null);
+    }
+  };
+  
+  // Toggle the start menu
+  const toggleStartMenu = () => {
+    setStartMenuOpen(!startMenuOpen);
+  };
+  
+  // Format time for taskbar
+  const formatTime = (date) => {
+    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
+  
+  return (
+    <ThemeProvider theme={customTheme}>
+      <GlobalStyles />
+      
+      {/* Desktop */}
+      <div className="desktop">
+        {/* Desktop Icons */}
+        {desktopIcons.map(icon => (
+          <div 
+            key={icon.id}
+            className="desktop-icon"
+            onClick={() => openWindow(icon.id)}
+          >
+            <img src={`/images/icons/${icon.icon}`} alt={icon.name} />
+            <div className="desktop-icon-label">{icon.name}</div>
+          </div>
+        ))}
+        
+        {/* Windows */}
+        <AppWindow
+          id="portfolio"
+          title="Portfolio"
+          icon="portfolio.png"
+          isOpen={openWindows.includes('portfolio')}
+          onClose={() => closeWindow('portfolio')}
+          position={windowPositions.portfolio}
+          onFocus={() => setActiveWindow('portfolio')}
+          isActive={activeWindow === 'portfolio'}
+        >
+          <PortfolioContent />
+        </AppWindow>
+        
+        <AppWindow
+          id="about"
+          title="About Petra"
+          icon="about.png"
+          isOpen={openWindows.includes('about')}
+          onClose={() => closeWindow('about')}
+          position={windowPositions.about}
+          onFocus={() => setActiveWindow('about')}
+          isActive={activeWindow === 'about'}
+        >
+          <AboutContent />
+        </AppWindow>
+        
+        <AppWindow
+          id="booking"
+          title="Book Now"
+          icon="booking.png"
+          isOpen={openWindows.includes('booking')}
+          onClose={() => closeWindow('booking')}
+          position={windowPositions.booking}
+          onFocus={() => setActiveWindow('booking')}
+          isActive={activeWindow === 'booking'}
+        >
+          <BookingContent />
+        </AppWindow>
+        
+        <AppWindow
+          id="gallery"
+          title="Gallery"
+          icon="gallery.png"
+          isOpen={openWindows.includes('gallery')}
+          onClose={() => closeWindow('gallery')}
+          position={windowPositions.gallery}
+          onFocus={() => setActiveWindow('gallery')}
+          isActive={activeWindow === 'gallery'}
+        >
+          <GalleryContent />
+        </AppWindow>
+        
+        <AppWindow
+          id="contact"
+          title="Contact"
+          icon="contact.png"
+          isOpen={openWindows.includes('contact')}
+          onClose={() => closeWindow('contact')}
+          position={windowPositions.contact}
+          onFocus={() => setActiveWindow('contact')}
+          isActive={activeWindow === 'contact'}
+        >
+          <ContactContent />
+        </AppWindow>
+        
+        <AppWindow
+          id="aftercare"
+          title="Aftercare"
+          icon="help.png"
+          isOpen={openWindows.includes('aftercare')}
+          onClose={() => closeWindow('aftercare')}
+          position={windowPositions.aftercare}
+          onFocus={() => setActiveWindow('aftercare')}
+          isActive={activeWindow === 'aftercare'}
+        >
+          <AftercareContent />
+        </AppWindow>
+        
+        {/* Start Menu */}
+        {startMenuOpen && (
+          <div className="start-menu" onClick={e => e.stopPropagation()}>
+            <div className="start-menu-header">
+              <span>Petrafied.ink</span>
+            </div>
+            
+            {desktopIcons.map(icon => (
+              <div 
+                key={icon.id}
+                className="start-menu-item"
+                onClick={() => openWindow(icon.id)}
+              >
+                <img src={`/images/icons/${icon.icon}`} alt={icon.name} />
+                <span>{icon.name}</span>
+              </div>
+            ))}
+            
+            <div className="start-menu-item" style={{ borderTop: '1px solid #808080', marginTop: '8px' }}>
+              <img src="/images/icons/shutDown.png" alt="About" />
+              <span>About This Site</span>
+            </div>
+          </div>
+        )}
+      </div>
+      
+      {/* Taskbar */}
+      <TaskBar
+        onClick={() => setStartMenuOpen(false)}
+        style={{ position: 'relative', zIndex: 1000 }}
+      >
+        <Button 
+          onClick={(e) => { 
+            e.stopPropagation();
+            toggleStartMenu();
+          }}
+          active={startMenuOpen}
+          style={{ fontWeight: 'bold', marginRight: '4px', padding: '0 8px' }}
+        >
+          <img 
+            src="/images/icons/start.png" 
+            alt="Start"
+            style={{ width: '20px', height: '20px', marginRight: '4px' }}
+          />
+          Start
+        </Button>
+        
+        {/* Open window buttons */}
+        {openWindows.map(windowId => {
+          const icon = desktopIcons.find(icon => icon.id === windowId);
+          return (
+            <Button 
+              key={windowId}
+              onClick={() => setActiveWindow(windowId)}
+              active={activeWindow === windowId}
+              className="taskbar-button"
+            >
+              <img src={`/images/icons/${icon.icon}`} alt={icon.name} />
+              <span>{icon.name}</span>
+            </Button>
+          );
+        })}
+        
+        {/* Spacer to push time to the right */}
+        <div style={{ flexGrow: 1 }}></div>
+        
+        {/* Clock */}
+        <div style={{ 
+          padding: '0 8px', 
+          borderLeft: '1px solid #808080', 
+          display: 'flex', 
+          alignItems: 'center', 
+          height: '100%'
+        }}>
+          {formatTime(currentTime)}
+        </div>
+      </TaskBar>
+    </ThemeProvider>
+  );
+};
+
+export default App;
