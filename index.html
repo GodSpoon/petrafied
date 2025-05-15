@@ -10,15 +10,19 @@
   <link rel="stylesheet" href="css/emo-y2k-style.css">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/gif" href="images/petrafiedlogo.jpg">
+  <link rel="icon" type="image/jpg" href="images/petrafiedlogo.jpg">
 
   <style>
-    /* Fixed background with animation */
+    /* Custom cursor */
     body {
-      background-color: #1a1a1a;
-      position: relative;
+      cursor: url('images/labubu.cur'), auto !important;
     }
 
+    a, button, .portfolio-item, .y2k-button, .mobile-menu-toggle {
+      cursor: url('images/labubu.cur'), pointer !important;
+    }
+
+    /* Enhanced animated background with effects */
     body:before {
       content: "";
       position: fixed;
@@ -26,28 +30,48 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -2;
+      z-index: -3;
       background-image: url('images/graphix/bgs/checkered.gif');
       opacity: 0.3;
+      animation: pulse 10s infinite alternate;
     }
 
-    /* Animated texture overlay */
+    /* Primary animated background layer */
     .animated-bg {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
-      background: url('images/graphix/bgs/matrix.gif');
+      z-index: -2;
+      background: url('images/graphix/bgs/water.gif');
       opacity: 0.15;
       pointer-events: none;
       animation: scrollBg 60s linear infinite;
+      mix-blend-mode: screen;
+    }
+
+    /* Secondary overlay for extra effect */
+    .animated-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(circle at 50% 50%, rgba(153, 102, 204, 0.1), rgba(26, 26, 26, 0.3));
+      pointer-events: none;
+      animation: pulse 8s infinite alternate;
     }
 
     @keyframes scrollBg {
       from { background-position: 0 0; }
       to { background-position: -500px -500px; }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.15; }
+      100% { opacity: 0.25; }
     }
 
     /* Windows 98 style image viewer */
@@ -92,7 +116,7 @@
       height: 20px;
       text-align: center;
       line-height: 16px;
-      cursor: pointer;
+      cursor: url('images/labubu.cur'), pointer !important;
     }
 
     .win98-content {
@@ -165,7 +189,7 @@
 
     /* Better portfolio styling */
     .portfolio-item {
-      cursor: pointer;
+      cursor: url('images/labubu.cur'), pointer !important;
       transition: all 0.2s ease;
     }
 
@@ -202,7 +226,7 @@
       font-family: 'Metal Mania', cursive;
       font-size: 18px;
       text-align: center;
-      cursor: pointer;
+      cursor: url('images/labubu.cur'), pointer !important;
       box-shadow: 0 0 15px #9966cc;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
       transition: all 0.3s ease;
@@ -257,12 +281,31 @@
       width: 40px;
       height: 40px;
     }
+
+    /* Portfolio gallery improvements */
+    .portfolio-container {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)) !important;
+      gap: 12px !important;
+    }
+
+    /* Fix for glowing effects on modern browsers */
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px #9966cc;
+        filter: drop-shadow(0 0 5px #9966cc);
+      }
+      100% {
+        box-shadow: 0 0 15px #c9a3e6;
+        filter: drop-shadow(0 0 15px #c9a3e6);
+      }
+    }
   </style>
 </head>
 
 <body>
   <!-- Animated background texture -->
   <div class="animated-bg"></div>
+  <div class="animated-overlay"></div>
 
   <!-- Windows 98 Image Viewer Overlay -->
   <div class="win98-overlay" id="imageViewer">
@@ -291,9 +334,9 @@
     <!-- Top Banner -->
     <div class="top-banner">
       <marquee scrollamount="3" behavior="alternate">
-        <img src="" alt="skull" height="20" class="random-icon">
+        <img src="images/graphix/favicons/skull.gif" alt="skull" height="20" class="random-icon">
         <span class="metal-text">★彡 Welcome to Petrafied.ink - Alternative Tattoo Artist 彡★</span>
-        <img src="" alt="skull" height="20" class="random-icon">
+        <img src="images/graphix/favicons/skull.gif" alt="skull" height="20" class="random-icon">
       </marquee>
     </div>
 
@@ -301,7 +344,7 @@
     <div class="counter-box">
       <div class="damage-box">
         <span>pls take 4d6 psychic damage </span>
-        <img src="images/graphix/stamps/hex/confused.jpg" alt="4d6 psychic damage">
+        <img src="images/graphix/stamps/hex/confused.png" alt="4d6 psychic damage" onerror="this.src='images/Heart.png'">
       </div>
     </div>
 
@@ -317,17 +360,17 @@
         <!-- Profile Section -->
         <div class="profile-box">
           <div class="profile-header">
-            <img src="" alt="skull" class="random-icon">
+            <img src="images/graphix/favicons/skull.gif" alt="skull" class="random-icon">
             <span>~petrafied~</span>
-            <img src="" alt="skull" class="random-icon">
+            <img src="images/graphix/favicons/skull.gif" alt="skull" class="random-icon">
           </div>
           <div class="profile-content">
             <img src="images/shmegl.jpg" alt="Petra's avatar" class="avatar">
             <div class="profile-text">
               <div class="name-container">
-                <img src="" alt="sparkle" class="sparkle random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="sparkle" class="sparkle random-icon">
                 <h1 class="username">~*~Petra~*~</h1>
-                <img src="" alt="sparkle" class="sparkle random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="sparkle" class="sparkle random-icon">
               </div>
               <div class="status-box">
                 <marquee scrollamount="2">
@@ -342,9 +385,9 @@
         <!-- Music Player -->
         <div class="music-player">
           <div class="player-header">
-            <img src="" alt="music note" class="random-icon">
+            <img src="images/graphix/favicons/music.gif" alt="music note" class="random-icon">
             <span>Studio Playlist</span>
-            <img src="" alt="music note" class="random-icon">
+            <img src="images/graphix/favicons/music.gif" alt="music note" class="random-icon">
           </div>
           <div class="player-content">
             <iframe style="border-radius:12px; width:100%; max-width:100%; margin:0 auto; display:block;" src="https://open.spotify.com/embed/track/46bUjfJt7SVePcWtBVKa7W?utm_source=generator" height="180" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -354,9 +397,9 @@
         <!-- About Me -->
         <div class="about-me">
           <div class="about-header">
-            <img src="" alt="heart" class="random-icon">
+            <img src="images/graphix/favicons/bluheart.gif" alt="heart" class="random-icon">
             <span>About Petra</span>
-            <img src="" alt="heart" class="random-icon">
+            <img src="images/graphix/favicons/bluheart.gif" alt="heart" class="random-icon">
           </div>
           <div class="about-content">
             <p>Pronouns: They/Them</p>
@@ -375,9 +418,9 @@
         <!-- Booking Info -->
         <div class="booking-info">
           <div class="booking-header">
-            <img src="" alt="calendar" class="random-icon">
+            <img src="images/graphix/favicons/calendar.gif" alt="calendar" class="random-icon" onerror="this.src='images/graphix/favicons/window.gif'">
             <span>Booking Info</span>
-            <img src="" alt="calendar" class="random-icon">
+            <img src="images/graphix/favicons/calendar.gif" alt="calendar" class="random-icon" onerror="this.src='images/graphix/favicons/window.gif'">
           </div>
           <div class="booking-content">
             <p>⚡ Consultation required first</p>
@@ -391,9 +434,9 @@
         <!-- Links Section (moved here) -->
         <div class="links-section">
           <div class="section-header">
-            <img src="" alt="star" class="random-icon">
+            <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
             <span>Links</span>
-            <img src="" alt="star" class="random-icon">
+            <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
           </div>
 
           <div class="buttons-container">
@@ -440,7 +483,7 @@
             <!-- Form Button -->
             <a href="#" class="button-link" target="_blank">
               <div class="y2k-button form">
-                <img src="" alt="Tattoo Form" class="random-icon">
+                <img src="images/graphix/favicons/notebook.gif" alt="Tattoo Form" class="random-icon">
                 <span>Tattoo Request Form</span>
               </div>
             </a>
@@ -448,7 +491,7 @@
             <!-- Aftercare Button -->
             <a href="#" class="button-link" target="_blank">
               <div class="y2k-button aftercare">
-                <img src="" alt="Aftercare" class="random-icon">
+                <img src="images/graphix/favicons/heart.gif" alt="Aftercare" class="random-icon">
                 <span>Aftercare Guide</span>
               </div>
             </a>
@@ -465,7 +508,7 @@
 
         <!-- Random Banner -->
         <div class="random-banner sidebar-banner">
-          <img src="" alt="Y2K banner" class="y2k-banner random-banner-img">
+          <img src="images/banners/bizarread.gif" alt="Y2K banner" class="y2k-banner random-banner-img">
         </div>
       </div>
 
@@ -476,17 +519,17 @@
         </div>
 
         <div class="guestbook-banner">
-          <img src="" alt="star" class="banner-star random-icon">
+          <img src="images/graphix/favicons/star.gif" alt="star" class="banner-star random-icon">
           <p>❤️ Your skin is my canvas, let's create dark art together! ❤️</p>
-          <img src="" alt="star" class="banner-star random-icon">
+          <img src="images/graphix/favicons/star.gif" alt="star" class="banner-star random-icon">
         </div>
 
         <!-- Portfolio Section -->
         <div class="portfolio-section">
           <div class="section-header">
-            <img src="" alt="needle" class="random-icon">
+            <img src="images/graphix/favicons/gothicneedle.gif" alt="needle" class="random-icon" onerror="this.src='images/graphix/favicons/gothic.gif'">
             <span>Portfolio</span>
-            <img src="" alt="needle" class="random-icon">
+            <img src="images/graphix/favicons/gothicneedle.gif" alt="needle" class="random-icon" onerror="this.src='images/graphix/favicons/gothic.gif'">
           </div>
 
           <div class="portfolio-container" id="instagram-gallery">
@@ -496,7 +539,7 @@
           <div class="portfolio-button">
             <a href="#" class="button-link" target="_blank">
               <div class="y2k-button portfolio-more">
-                <img src="" alt="More tattoos" class="random-icon">
+                <img src="images/graphix/favicons/more.gif" alt="More tattoos" class="random-icon" onerror="this.src='images/graphix/favicons/star.gif'">
                 <span>See Full Portfolio</span>
               </div>
             </a>
@@ -506,9 +549,9 @@
         <!-- Instagram Reels Embed -->
         <div class="instagram-embed">
           <div class="section-header">
-            <img src="" alt="instagram" class="random-icon">
+            <img src="images/graphix/favicons/camera.gif" alt="instagram" class="random-icon" onerror="this.src='images/icons/instagram.svg'">
             <span>Instagram Reels</span>
-            <img src="" alt="instagram" class="random-icon">
+            <img src="images/graphix/favicons/camera.gif" alt="instagram" class="random-icon" onerror="this.src='images/icons/instagram.svg'">
           </div>
 
           <div class="instagram-embed-container">
@@ -525,29 +568,29 @@
         <!-- Reviews Section -->
         <div class="reviews-section">
           <div class="section-header">
-            <img src="" alt="review" class="random-icon">
+            <img src="images/graphix/favicons/star.gif" alt="review" class="random-icon">
             <span>Happy Clients</span>
-            <img src="" alt="review" class="random-icon">
+            <img src="images/graphix/favicons/star.gif" alt="review" class="random-icon">
           </div>
           <div class="reviews-container">
             <div class="review">
               <div class="review-stars">
-                <img src="" alt="star" class="random-icon">
-                <img src="" alt="star" class="random-icon">
-                <img src="" alt="star" class="random-icon">
-                <img src="" alt="star" class="random-icon">
-                <img src="" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
               </div>
               <p class="review-text">"Petra is amazing! They designed the most beautiful dark floral piece for my arm. Super professional and made me feel so comfortable!"</p>
               <p class="review-author">- Jessie K.</p>
             </div>
             <div class="review">
               <div class="review-stars">
-                <img src="" alt="star" class="random-icon">
-                <img src="" alt="star" class="random-icon">
-                <img src="" alt="star" class="random-icon">
-                <img src="" alt="star" class="random-icon">
-                <img src="" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
+                <img src="images/graphix/favicons/star.gif" alt="star" class="random-icon">
               </div>
               <p class="review-text">"Been getting tattooed by Petra for 3 years now. They're the only artist I trust. Worth every penny and the wait!"</p>
               <p class="review-author">- Mike T.</p>
@@ -558,14 +601,14 @@
         <!-- FAQ Section -->
         <div class="faq-section">
           <div class="section-header">
-            <img src="" alt="question" class="random-icon">
+            <img src="images/graphix/favicons/question.gif" alt="question" class="random-icon" onerror="this.src='images/graphix/favicons/help.gif'">
             <span>FAQ</span>
-            <img src="" alt="question" class="random-icon">
+            <img src="images/graphix/favicons/question.gif" alt="question" class="random-icon" onerror="this.src='images/graphix/favicons/help.gif'">
           </div>
           <div class="faq-content">
             <div class="faq-item">
               <div class="faq-question">
-                <img src="" alt="bullet" class="random-icon">
+                <img src="images/graphix/blinkies/question.gif" alt="bullet" class="random-icon" onerror="this.src='images/graphix/favicons/bullet.gif'">
                 How much do you charge?
               </div>
               <div class="faq-answer">
@@ -574,7 +617,7 @@
             </div>
             <div class="faq-item">
               <div class="faq-question">
-                <img src="" alt="bullet" class="random-icon">
+                <img src="images/graphix/blinkies/question.gif" alt="bullet" class="random-icon" onerror="this.src='images/graphix/favicons/bullet.gif'">
                 Do you do walk-ins?
               </div>
               <div class="faq-answer">
@@ -587,9 +630,9 @@
         <!-- Mini Buttons Section -->
         <div class="mini-buttons-section">
           <div class="section-header">
-            <img src="" alt="heart" class="random-icon">
+            <img src="images/graphix/favicons/bluheart.gif" alt="heart" class="random-icon">
             <span>Buttons n stuff</span>
-            <img src="" alt="heart" class="random-icon">
+            <img src="images/graphix/favicons/bluheart.gif" alt="heart" class="random-icon">
           </div>
           <div class="mini-buttons-container" id="random-button-container">
             <!-- Buttons will be inserted dynamically -->
@@ -600,49 +643,49 @@
       <!-- Right Sidebar (ads, etc.) -->
       <div class="right-sidebar">
         <div class="side-ad">
-          <img src="" alt="Y2K style ad" class="random-banner-img">
+          <img src="images/banners/nokia.gif" alt="Y2K style ad" class="random-banner-img">
           <p>advertise with us</p>
         </div>
 
         <div class="random-banner sidebar-banner">
-          <img src="" alt="Y2K banner" class="y2k-banner random-banner-img">
+          <img src="images/banners/findthequeen.gif" alt="Y2K banner" class="y2k-banner random-banner-img">
         </div>
 
         <div class="random-banner sidebar-banner">
-          <img src="" alt="Y2K banner" class="y2k-banner random-banner-img">
+          <img src="images/banners/CHEQUEO-ONLINE-s.gif" alt="Y2K banner" class="y2k-banner random-banner-img">
         </div>
       </div>
     </div>
 
     <!-- Flash Designs Banner -->
     <div class="flash-banner">
-      <img src="" alt="Flash Designs" class="random-icon">
+      <img src="images/graphix/favicons/lightning.gif" alt="Flash Designs" class="random-icon" onerror="this.src='images/graphix/favicons/flash.gif'">
       <span>Limited edition dark flash designs - Book quick before they're gone!</span>
-      <img src="" alt="Flash Designs" class="random-icon">
+      <img src="images/graphix/favicons/lightning.gif" alt="Flash Designs" class="random-icon" onerror="this.src='images/graphix/favicons/flash.gif'">
     </div>
 
     <!-- Footer -->
     <div class="footer">
       <div class="divider">
-        <img src="" alt="divider" width="100%" class="random-divider">
+        <img src="images/graphix/dividers/barbed wire.gif" alt="divider" width="100%" class="random-divider">
       </div>
       <p class="footer-text">
         © 2025 Petrafied.ink • This program is proudly brought to you by gay people • Best viewed with Netscape Navigator
       </p>
       <p class="disclaimer">
-        <img src="" alt="rainbow line" class="rainbow-line random-divider">
+        <img src="images/divider.gif" alt="rainbow line" class="rainbow-line random-divider">
         <br>
         All tattoo designs and artwork are property of Petra
-        <img src="" alt="rainbow line" class="rainbow-line random-divider">
+        <img src="images/divider.gif" alt="rainbow line" class="rainbow-line random-divider">
       </p>
     </div>
   </div>
 
   <!-- Fixed y2k elements -->
   <div class="fixed-elements">
-    <img src="" alt="cursor trail" class="cursor-trail random-icon">
-    <img src="" alt="angel" class="butterfly random-icon">
-    <img src="" alt="network" class="butterfly butterfly-2 random-icon">
+    <img src="images/butterfly.gif" alt="cursor trail" class="cursor-trail random-icon" onerror="this.src='images/graphix/characters/butterfly.gif'">
+    <img src="images/graphix/avi/angel1.gif" alt="angel" class="butterfly random-icon">
+    <img src="images/graphix/misc/networx.gif" alt="network" class="butterfly butterfly-2 random-icon">
   </div>
 
   <!-- Mobile Menu Toggle -->
@@ -653,101 +696,31 @@
   </div>
 
   <script>
-    // Random graphics and animations loader
+    // Document load event
     document.addEventListener('DOMContentLoaded', function() {
-      // Collection of edgy icon paths
-      const icons = [
-        'images/graphix/misc/flame.gif',
-        'images/graphix/misc/skull.gif',
-        'images/graphix/favicons/skull.gif',
-        'images/graphix/favicons/spider.gif',
-        'images/graphix/misc/bat.gif',
-        'images/graphix/misc/devil.gif',
-        'images/graphix/misc/blood.gif',
-        'images/graphix/favicons/eyeball.gif',
-        'images/graphix/favicons/gothic.gif',
-        'images/graphix/favicons/death.gif',
-        'images/graphix/misc/chain.gif',
-        'images/graphix/misc/barbed-wire.gif',
-        'images/graphix/misc/rose-black.gif'
-      ];
-
-      // Collection of edgy/emo banner images
-      const banners = [
-        'images/graphix/banners/dark-gothic.gif',
-        'images/graphix/banners/metal-band.gif',
-        'images/graphix/banners/cemetery.gif',
-        'images/graphix/banners/vampire.gif',
-        'images/graphix/banners/darkness.gif',
-        'images/graphix/banners/gothic-cross.gif',
-        'images/graphix/banners/emo-scene.gif'
-      ];
-
-      // Collection of edgy buttons/blinkies
-      const buttons = [
-        'images/graphix/buttons/skull.gif',
-        'images/graphix/buttons/dark-fairy.gif',
-        'images/graphix/buttons/pentagram.gif',
-        'images/graphix/buttons/goth.gif',
-        'images/graphix/blinkies/metal.gif',
-        'images/graphix/buttons/spooky.gif',
-        'images/graphix/buttons/alt.gif',
-        'images/graphix/blinkies/dark-soul.gif',
-        'images/graphix/buttons/vampire.gif',
-        'images/graphix/buttons/blackheart.gif',
-        'images/graphix/blinkies/coffin.gif',
-        'images/graphix/blinkies/corpse.gif',
-        'images/graphix/blinkies/halloweenparty.gif'
-      ];
-
-      // Collection of dark dividers
-      const dividers = [
-        'images/graphix/dividers/barbed wire.gif',
-        'images/graphix/dividers/blood.gif',
-        'images/graphix/dividers/spike.gif',
-        'images/graphix/dividers/blackbats.gif'
-      ];
-
-      // Assign edgy/emo random icons to all elements with class "random-icon"
-      document.querySelectorAll('.random-icon').forEach(element => {
-        const randomIndex = Math.floor(Math.random() * icons.length);
-        element.src = icons[randomIndex];
-        element.style.width = "auto";
-        element.style.height = "auto";
-        element.style.maxHeight = "32px"; // Scale dynamically but with maximum size
-      });
-
-      // Assign edgy/emo random banners to all elements with class "random-banner-img"
-      document.querySelectorAll('.random-banner-img').forEach(element => {
-        const randomIndex = Math.floor(Math.random() * banners.length);
-        element.src = banners[randomIndex];
-      });
-
-      // Assign dark dividers
-      document.querySelectorAll('.random-divider').forEach(element => {
-        const randomIndex = Math.floor(Math.random() * dividers.length);
-        element.src = dividers[randomIndex];
-      });
-
-      // Add random edgy/emo buttons to the mini-buttons container
-      const buttonContainer = document.getElementById('random-button-container');
-      // Clear existing buttons first
-      buttonContainer.innerHTML = '';
-
-      // Add 10 random buttons
-      for (let i = 0; i < 10; i++) {
-        const randomIndex = Math.floor(Math.random() * buttons.length);
-        const img = document.createElement('img');
-        img.src = buttons[randomIndex];
-        img.alt = 'button';
-        buttonContainer.appendChild(img);
-      }
-
       // Load Instagram photos for gallery
       loadInstagramPhotos();
 
       // Add the spinning cat button functionality
       setupCatSpellButton();
+
+      // Load random buttons in the mini-buttons section
+      loadRandomButtons();
+
+      // Apply default random icons for any that failed to load
+      fixMissingImages();
+
+      // Mobile menu toggle functionality
+      document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+        document.querySelector('.sidebar').classList.toggle('show-mobile');
+      });
+
+      // Close Windows 98 viewer when clicking outside
+      document.getElementById('imageViewer').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeViewer();
+        }
+      });
     });
 
     // Function to handle Windows 98 style viewer
@@ -778,37 +751,105 @@
       // Clear existing gallery
       gallery.innerHTML = '';
 
-      // Fixed set of portfolio images (for demonstration)
-      // In production, this would load from images/instagramposts/
-      const portfolioImages = [
-        { src: 'images/instagramposts/tattoo1.jpg', caption: 'Blackwork Skull' },
-        { src: 'images/instagramposts/tattoo2.jpg', caption: 'Neo-Traditional Rose' },
-        { src: 'images/instagramposts/tattoo3.jpg', caption: 'Cybercygilism Circuit' },
-        { src: 'images/instagramposts/tattoo4.jpg', caption: 'Illustrative Moon' },
-        { src: 'images/instagramposts/tattoo5.jpg', caption: 'Dotwork Mandala' },
-        { src: 'images/instagramposts/tattoo6.jpg', caption: 'Punk Rock Sleeve' }
+      // Get a selection of actual images from the instagram posts folder
+      const instagramImageFiles = [
+        '273645561_1528224647577205_1551991876277087620_n.jpg',
+        '273927096_470496801320892_7579560579818134441_n.jpg',
+        '273941604_251603877147501_1336858463240587424_n.jpg',
+        '274034241_1885913691613431_7557607771455068492_n.jpg',
+        '274915468_280845017455315_8070249639219070957_n.jpg',
+        '275005311_404845818074637_4155656904181216174_n.jpg',
+        '275176528_2998734277105779_3321089143429238658_n.jpg',
+        '275387030_3220207658200056_4976510420632394024_n.jpg',
+        '275536323_439500957974187_6689055583437495766_n.jpg',
+        '275617270_623392399115158_3139039588832970143_n.jpg',
+        '275902073_3018334955094084_7904898773046665215_n.jpg',
+        '275910448_697180634799067_3422955018442662034_n.jpg'
       ];
 
+      // Generate captions
+      const captions = [
+        'Blackwork Skull & Roses',
+        'Neo-Traditional Wolf',
+        'Cyberpunk Circuit Pattern',
+        'Dark Floral Sleeve',
+        'Gothic Cathedral',
+        'Anime-Inspired Piece',
+        'Dotwork Mandala',
+        'Dark Fantasy Creature',
+        'Occult Symbols',
+        'Biomechanical Design',
+        'Horror Portrait',
+        'Abstract Linework'
+      ];
+
+      // Only use the first 6 images for the gallery
+      const displayCount = Math.min(6, instagramImageFiles.length);
+
       // Add each photo to the gallery
-      portfolioImages.forEach(image => {
+      for (let i = 0; i < displayCount; i++) {
+        const imgSrc = 'images/instagramposts/' + instagramImageFiles[i];
+        const caption = captions[i];
+
         const item = document.createElement('div');
         item.className = 'portfolio-item';
         item.onclick = function() {
-          openViewer(image.src, image.caption);
+          openViewer(imgSrc, caption);
         };
 
         const img = document.createElement('img');
-        img.src = image.src;
-        img.alt = image.caption;
+        img.src = imgSrc;
+        img.alt = caption;
+        img.onerror = function() {
+          // Fallback to a default image if the Instagram post doesn't load
+          this.src = 'images/petrafiedlogo.jpg';
+        };
 
         const hover = document.createElement('div');
         hover.className = 'portfolio-hover';
-        hover.textContent = image.caption;
+        hover.textContent = caption;
 
         item.appendChild(img);
         item.appendChild(hover);
         gallery.appendChild(item);
-      });
+      }
+    }
+
+    // Function to load random buttons
+    function loadRandomButtons() {
+      const buttonContainer = document.getElementById('random-button-container');
+      // Clear existing buttons first
+      buttonContainer.innerHTML = '';
+
+      // List of actual button images from the repository
+      const buttonImages = [
+        'images/graphix/buttons/badapple.gif',
+        'images/graphix/buttons/bi.png',
+        'images/graphix/buttons/blackmagic.gif',
+        'images/graphix/buttons/chrome-suck.gif',
+        'images/graphix/buttons/clancthulhu.gif',
+        'images/graphix/buttons/cloudysky.gif',
+        'images/graphix/buttons/dolby_digital.gif',
+        'images/graphix/buttons/eatsleep.gif',
+        'images/graphix/buttons/hotstuff.gif',
+        'images/graphix/buttons/kawaiicute.gif'
+      ];
+
+      // Add 10 buttons with fallbacks
+      for (let i = 0; i < 10; i++) {
+        const img = document.createElement('img');
+        img.src = buttonImages[i % buttonImages.length];
+        img.alt = 'button';
+        img.onerror = function() {
+          // Fallback to mini buttons if the specific image doesn't load
+          this.src = `images/mini${(i % 10) + 1}.gif`;
+          this.onerror = function() {
+            // Second fallback
+            this.src = 'images/Heart.png';
+          };
+        };
+        buttonContainer.appendChild(img);
+      }
     }
 
     // Spinning Cat Spell Button Functionality
@@ -840,17 +881,26 @@
       });
     }
 
-    // Mobile menu toggle functionality
-    document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
-      document.querySelector('.sidebar').classList.toggle('show-mobile');
-    });
-
-    // Close Windows 98 viewer when clicking outside
-    document.getElementById('imageViewer').addEventListener('click', function(e) {
-      if (e.target === this) {
-        closeViewer();
-      }
-    });
+    // Fix missing images with fallbacks
+    function fixMissingImages() {
+      // Set fallbacks for key images
+      document.querySelectorAll('img').forEach(img => {
+        if (!img.hasAttribute('onerror')) {
+          img.onerror = function() {
+            // Default fallback based on image type
+            if (this.classList.contains('random-icon')) {
+              this.src = 'images/graphix/favicons/star.gif';
+            } else if (this.classList.contains('random-banner-img')) {
+              this.src = 'images/banners/bizarread.gif';
+            } else if (this.classList.contains('random-divider')) {
+              this.src = 'images/divider.gif';
+            } else {
+              this.src = 'images/Heart.png';
+            }
+          };
+        }
+      });
+    }
   </script>
 </body>
 </html>
