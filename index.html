@@ -11,6 +11,46 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/gif" href="images/petrafiedlogo.jpg">
+
+  <style>
+    /* Add additional styles for the updated layout */
+    .links-section {
+      grid-template-columns: 1fr !important; /* Force single column */
+    }
+
+    .buttons-container {
+      grid-template-columns: 1fr !important; /* Force single column */
+    }
+
+    .instagram-embed {
+      background-color: #2e2e2e;
+      border: 2px solid #b083d5;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+
+    .instagram-embed .section-header {
+      background-color: #433363;
+      padding: 5px;
+      margin-bottom: 15px;
+    }
+
+    .instagram-embed-container {
+      padding: 0 15px;
+    }
+
+    .instagram-embed-container iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      overflow: hidden;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      border: 1px solid #9966cc;
+    }
+  </style>
 </head>
 
 <body>
@@ -41,7 +81,7 @@
         <div class="profile-box">
           <div class="profile-header">
             <img src="" alt="skull" class="random-icon">
-            <span>Artist Profile</span>
+            <span>~petrafied~</span>
             <img src="" alt="skull" class="random-icon">
           </div>
           <div class="profile-content">
@@ -70,13 +110,7 @@
             <img src="" alt="music note" class="random-icon">
           </div>
           <div class="player-content">
-            <p>▶️ "The Black Parade" - My Chemical Romance</p>
-            <div class="volume-bar">
-              <span>Volume: </span>
-              <div class="volume-level">
-                <div class="volume-fill"></div>
-              </div>
-            </div>
+            <iframe style="border-radius:12px; width:100%; max-width:100%; margin:0 auto; display:block;" src="https://open.spotify.com/embed/track/46bUjfJt7SVePcWtBVKa7W?utm_source=generator" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>
         </div>
 
@@ -89,11 +123,15 @@
           </div>
           <div class="about-content">
             <p>Pronouns: They/Them</p>
-            <p>Location: Indianapolis, IN</p>
-            <p>Specialties: Neo-traditional, Blackwork</p>
-            <p>Studio: Private Studio</p>
+            <p>Location: Fart Wayne, Indiana</p>
+            <p>Studio: <a href="https://www.instagram.com/thepaintedladyfw/?hl=en" target="_blank">The Painted Lady</a></p>
+            <p>Specialties: Illustrative, Cybercygilism, Neo-traditional</p>
             <p>Sign: ♓ Pisces</p>
-            <p>Experience: 8+ Years</p>
+            <p>Also: Spiritually old, mentally unwell</p>
+            <p>• BOOKS OPEN: NO DMS - EMAIL ONLY•</p>
+            <p>• petrafied@thepaintedladyfw.com</p>
+            <p>•⬇️ Book Through My Website ⬇️</p>
+            <p>petrafied.ink</p>
           </div>
         </div>
 
@@ -113,51 +151,11 @@
           </div>
         </div>
 
-        <!-- Random Banner -->
-        <div class="random-banner sidebar-banner">
-          <img src="" alt="Y2K banner" class="y2k-banner random-banner-img">
-        </div>
-      </div>
-
-      <!-- Main Content -->
-      <div class="main-content">
-        <div class="welcome-banner">
-          <img src="images/wow.jpg" alt="Welcome to Petrafied.ink">
-        </div>
-
-        <div class="guestbook-banner">
-          <img src="" alt="star" class="banner-star random-icon">
-          <p>❤️ Your skin is my canvas, let's create dark art together! ❤️</p>
-          <img src="" alt="star" class="banner-star random-icon">
-        </div>
-
-        <!-- Portfolio Section -->
-        <div class="portfolio-section">
-          <div class="section-header">
-            <img src="" alt="needle" class="random-icon">
-            <span>Tattoo Portfolio</span>
-            <img src="" alt="needle" class="random-icon">
-          </div>
-
-          <div class="portfolio-container" id="instagram-gallery">
-            <!-- Gallery images will be loaded dynamically -->
-          </div>
-
-          <div class="portfolio-button">
-            <a href="#" class="button-link" target="_blank">
-              <div class="y2k-button portfolio-more">
-                <img src="" alt="More tattoos" class="random-icon">
-                <span>See Full Portfolio</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- Buttons Section -->
+        <!-- Links Section (moved here) -->
         <div class="links-section">
           <div class="section-header">
             <img src="" alt="star" class="random-icon">
-            <span>Book & Connect</span>
+            <span>Links</span>
             <img src="" alt="star" class="random-icon">
           </div>
 
@@ -195,7 +193,7 @@
             </a>
 
             <!-- Email Button -->
-            <a href="mailto:info@petrafied.ink" class="button-link">
+            <a href="mailto:petrafied@thepaintedladyfw.com" class="button-link">
               <div class="y2k-button email">
                 <img src="images/icons/email.svg" alt="Email">
                 <span>Email Me</span>
@@ -225,6 +223,59 @@
                 <span>Merch Shop</span>
               </div>
             </a>
+          </div>
+        </div>
+
+        <!-- Random Banner -->
+        <div class="random-banner sidebar-banner">
+          <img src="" alt="Y2K banner" class="y2k-banner random-banner-img">
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="welcome-banner">
+          <img src="images/wow.jpg" alt="Welcome to Petrafied.ink">
+        </div>
+
+        <div class="guestbook-banner">
+          <img src="" alt="star" class="banner-star random-icon">
+          <p>❤️ Your skin is my canvas, let's create dark art together! ❤️</p>
+          <img src="" alt="star" class="banner-star random-icon">
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="portfolio-section">
+          <div class="section-header">
+            <img src="" alt="needle" class="random-icon">
+            <span>Portfolio</span>
+            <img src="" alt="needle" class="random-icon">
+          </div>
+
+          <div class="portfolio-container" id="instagram-gallery">
+            <!-- Gallery images will be loaded dynamically from images/instagramposts/ -->
+          </div>
+
+          <div class="portfolio-button">
+            <a href="#" class="button-link" target="_blank">
+              <div class="y2k-button portfolio-more">
+                <img src="" alt="More tattoos" class="random-icon">
+                <span>See Full Portfolio</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Instagram Reels Embed -->
+        <div class="instagram-embed">
+          <div class="section-header">
+            <img src="" alt="instagram" class="random-icon">
+            <span>Instagram Reels</span>
+            <img src="" alt="instagram" class="random-icon">
+          </div>
+
+          <div class="instagram-embed-container">
+            <iframe src="https://www.instagram.com/shmegl/reels/" title="Instagram Reels"></iframe>
           </div>
         </div>
 
@@ -294,7 +345,7 @@
         <div class="mini-buttons-section">
           <div class="section-header">
             <img src="" alt="heart" class="random-icon">
-            <span>Fan Buttons</span>
+            <span>Buttons n stuff</span>
             <img src="" alt="heart" class="random-icon">
           </div>
           <div class="mini-buttons-container" id="random-button-container">
@@ -333,14 +384,12 @@
         <img src="" alt="divider" width="100%" class="random-divider">
       </div>
       <p class="footer-text">
-        © 2025 Petrafied.ink • Made with <img src="" alt="heart" height="20" class="random-icon"> • Best viewed with Netscape Navigator
+        © 2025 Petrafied.ink • This program is proudly brought to you by gay people • Best viewed with Netscape Navigator
       </p>
       <p class="disclaimer">
         <img src="" alt="rainbow line" class="rainbow-line random-divider">
         <br>
         All tattoo designs and artwork are property of Petra
-        <br>
-        Website powered by <a href="https://littlelink.io" target="_blank">LittleLink</a>
         <img src="" alt="rainbow line" class="rainbow-line random-divider">
       </p>
     </div>
@@ -461,35 +510,36 @@
     function loadInstagramPhotos() {
       const gallery = document.getElementById('instagram-gallery');
 
-      // We'll simulate having 6 instagram photos
-      // In a real implementation, you'd dynamically load actual files from the directory
-      const demoPhotos = [
-        { src: 'images/shmegl.jpg', caption: 'Blackwork' },
-        { src: 'images/mudkipz.png', caption: 'Color Work' },
-        { src: 'images/wow.jpg', caption: 'Neo-Traditional' },
-        { src: 'images/shmegl.jpg', caption: 'Traditional' },
-        { src: 'images/mudkipz.png', caption: 'Flash Design' },
-        { src: 'images/wow.jpg', caption: 'Custom Work' }
+      // We'll simulate loading images from the images/instagramposts/ directory
+      // In a real implementation, you would dynamically retrieve files from that directory
+      // This is a placeholder example - you would replace with actual file paths
+      const instagramPostsDir = 'images/instagramposts/';
+      const dummyPosts = [
+        { filename: 'post1.jpg', caption: 'Blackwork' },
+        { filename: 'post2.jpg', caption: 'Illustrative' },
+        { filename: 'post3.jpg', caption: 'Neo-Traditional' },
+        { filename: 'post4.jpg', caption: 'Cybercygilism' },
+        { filename: 'post5.jpg', caption: 'Flash Design' },
+        { filename: 'post6.jpg', caption: 'Custom Work' }
       ];
-
-      // In a real scenario, you would load these from images/instagramphotos/
-      // const photoPaths = ['images/instagramphotos/photo1.jpg', 'images/instagramphotos/photo2.jpg', ...];
 
       // Clear existing gallery
       gallery.innerHTML = '';
 
       // Add each photo to the gallery
-      demoPhotos.forEach(photo => {
+      dummyPosts.forEach(post => {
         const item = document.createElement('div');
         item.className = 'portfolio-item';
 
         const img = document.createElement('img');
-        img.src = photo.src;
-        img.alt = photo.caption;
+        // For demo purposes, using placeholder images since we don't have actual instagramposts directory files
+        // In production, this would be: img.src = instagramPostsDir + post.filename;
+        img.src = 'images/' + (Math.random() > 0.5 ? 'shmegl.jpg' : (Math.random() > 0.5 ? 'mudkipz.png' : 'wow.jpg'));
+        img.alt = post.caption;
 
         const hover = document.createElement('div');
         hover.className = 'portfolio-hover';
-        hover.textContent = photo.caption;
+        hover.textContent = post.caption;
 
         item.appendChild(img);
         item.appendChild(hover);
