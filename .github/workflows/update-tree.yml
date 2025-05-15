@@ -8,6 +8,10 @@ on:
     paths-ignore:
       - 'tree'  # Prevents infinite loops by ignoring commits that only change the tree file
 
+# Add permissions section to grant necessary access
+permissions:
+  contents: write
+
 jobs:
   update-tree:
     runs-on: ubuntu-latest
