@@ -13,16 +13,23 @@
   <link rel="icon" type="image/jpg" href="images/petrafiedlogo.jpg">
 
   <style>
-    /* Custom cursor */
+    /* Custom cursor - reduced to 25% size */
     body {
-      cursor: url('images/labubu.cur'), auto !important;
+      cursor: url('images/labubu.cur') 8 8, auto !important; /* Setting hotspot and forcing small size */
     }
 
     a, button, .portfolio-item, .y2k-button, .mobile-menu-toggle {
-      cursor: url('images/labubu.cur'), pointer !important;
+      cursor: url('images/labubu.cur') 8 8, pointer !important;
     }
 
-    /* Enhanced animated background with effects */
+    /* Custom cursor size adjustments */
+    @supports (-moz-appearance:none) {
+      body, a, button, .portfolio-item, .y2k-button, .mobile-menu-toggle {
+        cursor: url('images/labubu.cur'), auto !important; /* Firefox fallback */
+      }
+    }
+
+    /* Enhanced animated background with effects - made dimmer and more distant */
     body:before {
       content: "";
       position: fixed;
@@ -32,11 +39,13 @@
       height: 100%;
       z-index: -3;
       background-image: url('images/graphix/bgs/checkered.gif');
-      opacity: 0.3;
-      animation: pulse 10s infinite alternate;
+      opacity: 0.15; /* Reduced opacity */
+      filter: blur(1px); /* Add slight blur for distance */
+      transform: scale(1.5); /* Make pattern appear more distant */
+      animation: pulse 20s infinite alternate; /* Slower animation */
     }
 
-    /* Primary animated background layer */
+    /* Primary animated background layer - reduced visibility */
     .animated-bg {
       position: fixed;
       top: 0;
@@ -45,13 +54,14 @@
       height: 100%;
       z-index: -2;
       background: url('images/graphix/bgs/water.gif');
-      opacity: 0.15;
+      opacity: 0.08; /* Reduced opacity */
       pointer-events: none;
-      animation: scrollBg 60s linear infinite;
+      animation: scrollBg 120s linear infinite; /* Slower animation */
       mix-blend-mode: screen;
+      filter: blur(0.5px); /* Slight blur */
     }
 
-    /* Secondary overlay for extra effect */
+    /* Secondary overlay for extra effect - more subtle */
     .animated-overlay {
       position: fixed;
       top: 0;
@@ -59,19 +69,61 @@
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: radial-gradient(circle at 50% 50%, rgba(153, 102, 204, 0.1), rgba(26, 26, 26, 0.3));
+      background: radial-gradient(circle at 50% 50%, rgba(153, 102, 204, 0.05), rgba(26, 26, 26, 0.2));
       pointer-events: none;
-      animation: pulse 8s infinite alternate;
+      animation: pulse 15s infinite alternate; /* Slower animation */
     }
 
+    /* Fixed animations for a more sporadic feel */
     @keyframes scrollBg {
-      from { background-position: 0 0; }
-      to { background-position: -500px -500px; }
+      0% { background-position: 0 0; }
+      25% { background-position: -100px -150px; } /* Random movement */
+      50% { background-position: -300px -200px; }
+      75% { background-position: -150px -350px; }
+      100% { background-position: -500px -500px; }
     }
 
     @keyframes pulse {
-      0% { opacity: 0.15; }
-      100% { opacity: 0.25; }
+      0% { opacity: 0.05; }
+      40% { opacity: 0.05; } /* Long pause at low opacity */
+      50% { opacity: 0.12; } /* Quick flash */
+      60% { opacity: 0.06; }
+      100% { opacity: 0.08; }
+    }
+
+    /* Reduced frequency for animated elements */
+    .butterfly, .cursor-trail {
+      animation-duration: 30s !important; /* Slower animation */
+      opacity: 0.6; /* Reduced visibility */
+    }
+
+    .butterfly-2 {
+      animation-duration: 45s !important; /* Even slower for second element */
+      animation-delay: 15s !important;
+    }
+
+    /* Portfolio gallery fixed styling */
+    .portfolio-container {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+      gap: 15px !important;
+      padding: 15px !important;
+    }
+
+    .portfolio-item {
+      position: relative !important;
+      overflow: hidden !important;
+      border: 2px solid #9966cc !important;
+      border-radius: 5px !important;
+      background-color: #1a1a1a !important;
+      height: 120px !important;
+    }
+
+    .portfolio-item img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
     }
 
     /* Windows 98 style image viewer */
@@ -86,6 +138,60 @@
       z-index: 9999;
       align-items: center;
       justify-content: center;
+    }
+
+    /* Combined damage box and cat spell */
+    .damage-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgba(67, 51, 99, 0.6);
+      border: 2px solid #9966cc;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    .damage-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      width: 100%;
+    }
+
+    .damage-box img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .cat-spell-link {
+      font-family: 'Metal Mania', cursive;
+      color: #ff00cc;
+      text-decoration: none;
+      text-shadow: 0 0 5px #9966cc;
+      font-size: 16px;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .cat-spell-link:hover {
+      color: #ff66ff;
+      text-shadow: 0 0 8px #ff00ff;
+      transform: scale(1.05);
+    }
+
+    .cat-spell-fail {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ff0000;
+      text-shadow: 0 0 10px #ff6666;
+      animation: pulse 1s infinite alternate;
+      text-align: center;
+      margin: 8px 0;
+      font-family: 'Metal Mania', cursive;
+      display: none;
     }
 
     .win98-window {
@@ -116,7 +222,7 @@
       height: 20px;
       text-align: center;
       line-height: 16px;
-      cursor: url('images/labubu.cur'), pointer !important;
+      cursor: url('images/labubu.cur') 8 8, pointer !important;
     }
 
     .win98-content {
@@ -143,7 +249,7 @@
       color: #000;
     }
 
-    /* Larger elements on desktop */
+    /* Fix for large elements on desktop */
     .music-player .player-content {
       padding: 15px 10px;
     }
@@ -152,13 +258,14 @@
       height: 180px;
     }
 
-    /* Better scaled icons */
+    /* Better scaled icons - reduced frequency */
     .random-icon {
-      min-width: 20px;
-      min-height: 20px;
-      max-width: 32px;
-      max-height: 32px;
+      min-width: 16px;
+      min-height: 16px;
+      max-width: 24px;
+      max-height: 24px;
       object-fit: contain;
+      opacity: 0.85; /* Slightly transparent */
     }
 
     /* Improved banner text contrast */
@@ -170,6 +277,23 @@
       font-weight: bold;
     }
 
+    /* Simplified and more uniform button styling */
+    .y2k-button {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-family: 'Fredoka', sans-serif;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 8px; /* Consistent spacing */
+    }
+
     /* Additional responsive improvements */
     @media (min-width: 992px) {
       .sidebar {
@@ -177,19 +301,19 @@
       }
 
       .y2k-button {
-        padding: 12px 15px;
-        font-size: 16px;
+        padding: 10px 12px;
+        font-size: 15px;
       }
 
       .y2k-button img {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
       }
     }
 
-    /* Better portfolio styling */
+    /* Better portfolio styling - moved to the common styles section above */
     .portfolio-item {
-      cursor: url('images/labubu.cur'), pointer !important;
+      cursor: url('images/labubu.cur') 8 8, pointer !important;
       transition: all 0.2s ease;
     }
 
@@ -198,88 +322,50 @@
       z-index: 2;
     }
 
-    .portfolio-item img {
-      height: 140px;
-    }
-
     /* Links section single column */
     .buttons-container {
       grid-template-columns: 1fr !important; /* Force single column */
+      padding: 12px !important;
+      gap: 8px !important;
     }
 
     /* Instagram embed styling */
     .instagram-embed-container {
-      padding: 0 15px;
+      padding: 0 12px;
       margin-bottom: 15px;
       width: 100%;
     }
 
-    /* Spinning cat button */
-    .cat-spell-button {
-      display: block;
-      margin: 20px auto;
-      padding: 15px 25px;
-      background: linear-gradient(45deg, #9966cc, #c9a3e6);
-      color: #ffffff;
-      border: 3px solid #b083d5;
-      border-radius: 10px;
-      font-family: 'Metal Mania', cursive;
-      font-size: 18px;
-      text-align: center;
-      cursor: url('images/labubu.cur'), pointer !important;
-      box-shadow: 0 0 15px #9966cc;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      transition: all 0.3s ease;
-    }
-
-    .cat-spell-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #9966cc;
-    }
-
-    .cat-spell-fail {
-      font-size: 28px;
-      font-weight: bold;
-      color: #ff0000;
-      text-shadow: 0 0 10px #ff6666;
-      animation: pulse 1s infinite alternate;
-      text-align: center;
-      margin: 20px 0;
-      font-family: 'Metal Mania', cursive;
-    }
-
-    /* Spinning cat video overlay */
+    /* Video overlay - simplified */
     .video-overlay {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.85);
       z-index: 10000;
       display: none;
       align-items: center;
       justify-content: center;
-      opacity: 0;
     }
 
     .video-container {
       width: 90%;
-      max-width: 800px;
-      transform: scale(0.1);
-      transition: transform 60s ease-in;
+      max-width: 640px;
     }
 
-    .damage-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
+    /* Fix for iOS Safari and other mobile browsers */
+    @supports (-webkit-touch-callout: none) {
+      .page-container {
+        width: 100vw;
+        overflow: hidden;
+      }
 
-    .damage-box img {
-      width: 40px;
-      height: 40px;
+      body {
+        width: 100vw;
+        overflow-x: hidden;
+      }
     }
 
     /* Portfolio gallery improvements */
@@ -303,10 +389,6 @@
 </head>
 
 <body>
-  <!-- Animated background texture -->
-  <div class="animated-bg"></div>
-  <div class="animated-overlay"></div>
-
   <!-- Windows 98 Image Viewer Overlay -->
   <div class="win98-overlay" id="imageViewer">
     <div class="win98-window">
@@ -321,7 +403,7 @@
     </div>
   </div>
 
-  <!-- Spinning Cat Video Overlay -->
+  <!-- Video Overlay - Simplified -->
   <div class="video-overlay" id="catVideoOverlay">
     <div class="video-container" id="videoContainer">
       <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
@@ -340,21 +422,19 @@
       </marquee>
     </div>
 
-    <!-- Page counter -->
-    <div class="counter-box">
+    <!-- Combined damage box and cat spell -->
+    <div class="damage-container">
       <div class="damage-box">
         <span>pls take 4d6 psychic damage </span>
         <img src="images/graphix/stamps/hex/confused.png" alt="4d6 psychic damage" onerror="this.src='images/Heart.png'">
       </div>
+      <a href="#" class="cat-spell-link" id="catSpellLink">✧･ﾟ: *✧･ﾟ:* click to cast spinning cat 10hrs *:･ﾟ✧*:･ﾟ✧</a>
+      <div class="cat-spell-fail" id="catSpellFail">IT FAILED THE CONSTITUTION SAVING THROW</div>
     </div>
 
-    <!-- Spinning Cat Spell Button -->
-    <div id="catSpellContainer">
-      <button class="cat-spell-button" id="catSpellButton">click to cast spinning cat 10hrs</button>
-    </div>
-
-    <!-- Main Layout - Flexbox instead of table -->
-    <div class="main-layout">
+  <!-- Animated background texture - background elements moved here -->
+  <div class="animated-bg"></div>
+  <div class="animated-overlay"></div>
       <!-- Sidebar -->
       <div class="sidebar">
         <!-- Profile Section -->
