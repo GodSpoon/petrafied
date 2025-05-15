@@ -1,0 +1,39 @@
+name: Update Tree File
+
+on:
+  push:
+    branches:
+      - main
+      - react-version
+    paths-ignore:
+      - 'tree'  # Prevents infinite loops by ignoring commits that only change the tree file
+
+jobs:
+  update-tree:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetches all history for all branches and tags
+          
+      - name: Install tree command
+        run: sudo apt-get install -y tree
+      
+      - name: Generate tree structure
+        run: tree -a -I '.git|node_modules|.github' > tree
+        
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --quiet tree || echo "tree_changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit tree file if changed
+        if: steps.git-check.outputs.tree_changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add tree
+          git commit -m "Update tree file [skip ci]"
+          git push
