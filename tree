@@ -2,6 +2,7 @@
 ├── CNAME
 ├── css
 │   ├── brands.css
+│   ├── emo-y2k-style.css
 │   ├── normalize.css
 │   ├── skeleton-auto.css
 │   ├── skeleton-dark.css
@@ -104,6 +105,7 @@
 │   │   ├── yumenikki.gif
 │   │   └── zodiacalzephyr.gif
 │   ├── butterfly.gif
+│   ├── cleanup_images.sh
 │   ├── counter.gif
 │   ├── cursor.cur
 │   ├── cursor-link.cur
@@ -649,8 +651,6 @@
 │   │   │   ├── puter.gif
 │   │   │   ├── smiley1.gif
 │   │   │   ├── sparx.gif
-│   │   │   ├── splash1.gif
-│   │   │   ├── splash2.gif
 │   │   │   ├── sprout1.gif
 │   │   │   ├── sprout2.gif
 │   │   │   ├── star109.gif
@@ -1377,6 +1377,7 @@
 │   │   ├── AQPsHkXrH7MnRjWg4m8_NzaEQSBWp-gzwbnaI_rerUpKLwsfJ83vHlw6L_uR8ReiVwTIcVqMlTGt9JzJ19CkgQvl5wrbijwgkoSc4h4.mp4
 │   │   ├── AQPwiVruQw4zINBBS8YiVHX0n_JqI6vjZmDWXOyBpxWPNX_b9HzSyOKtNxM291v6QuGZawbeStujy2mn-jWpxd8OBwxCcvK0jiq0nK0.mp4
 │   │   └── AQPxfVNyU5h9GVk_OYu7CoWXayey5kD2R5GcU85PWB_SZcZjCngEFlCy-dlgpDjE1ecUr2fFikWWDjudwEj5kXGRmErHgP_iFqSFYCU.mp4
+│   ├── labubu.cur
 │   ├── mini10.gif
 │   ├── mini1.gif
 │   ├── mini2.gif
@@ -1391,6 +1392,7 @@
 │   ├── petrafiedlogo.jpg
 │   ├── shmegl.jpg
 │   ├── stars-bg.gif
+│   ├── tree
 │   └── wow.jpg
 ├── index.html
 ├── LICENSE.md
@@ -1398,4 +1400,4 @@
 ├── README.md
 └── tree
 
-36 directories, 1363 files
+36 directories, 1365 files
