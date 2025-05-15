@@ -1,4 +1,8 @@
 .
+├── .gitignore
+├── CNAME
+├── LICENSE.md
+├── README.md
 ├── audio
 │   ├── Bach's Brandenburg Concerto No. 3.rmi
 │   ├── Beethoven's 5th Symphony.rmi
@@ -6,9 +10,9 @@
 │   ├── CANYON.MID
 │   ├── CHIMES.WAV
 │   ├── CHORD.WAV
+│   ├── DING.WAV
 │   ├── Dance of the Sugar-Plum Fairy.rmi
 │   ├── Debussy's Claire de Lune.rmi
-│   ├── DING.WAV
 │   ├── In the Hall of the Mountain King.rmi
 │   ├── Jungle Asterisk.wav
 │   ├── Jungle Close.wav
@@ -45,7 +49,6 @@
 │   ├── Musica Restore Up.wav
 │   ├── Musica Windows Exit.wav
 │   ├── Musica Windows Start.wav
-│   ├── notes.md
 │   ├── PASSPORT.MID
 │   ├── Robotz Asterisk.wav
 │   ├── Robotz Close.wav
@@ -82,8 +85,8 @@
 │   ├── Utopia Restore Down.wav
 │   ├── Utopia Restore Up.wav
 │   ├── Utopia Windows Exit.wav
-│   └── Utopia Windows Start.wav
-├── CNAME
+│   ├── Utopia Windows Start.wav
+│   └── notes.md
 ├── css
 │   ├── brands.css
 │   ├── emo-y2k-style.css
@@ -102,6 +105,7 @@
 │   │       ├── Fredoka-Bold.ttf
 │   │       └── Fredoka-SemiBold.ttf
 │   ├── MetalMania-Regular.ttf
+│   ├── Stylish-Regular.ttf
 │   ├── open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.eot
 │   ├── open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.svg
 │   ├── open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-600.ttf
@@ -121,9 +125,89 @@
 │   ├── open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg
 │   ├── open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.ttf
 │   ├── open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff
-│   ├── open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2
-│   └── Stylish-Regular.ttf
+│   └── open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2
 ├── images
+│   ├── Heart.png
+│   ├── W95
+│   │   ├── Windows95ModernIcons
+│   │   │   └── icons_512x512
+│   │   │       ├── 3d_graphics_file.png
+│   │   │       ├── 3d_graphics_program.png
+│   │   │       ├── aseprite.png
+│   │   │       ├── aseprite_file.png
+│   │   │       ├── audio_editor.png
+│   │   │       ├── audio_file.png
+│   │   │       ├── audio_music_file.png
+│   │   │       ├── briefcase.png
+│   │   │       ├── calculator.png
+│   │   │       ├── calendar.png
+│   │   │       ├── camera.png
+│   │   │       ├── cd_drive.png
+│   │   │       ├── chrome.png
+│   │   │       ├── clock.png
+│   │   │       ├── contact_book.png
+│   │   │       ├── discord.png
+│   │   │       ├── drive.png
+│   │   │       ├── firefox.png
+│   │   │       ├── flop_drive.png
+│   │   │       ├── folder_closed.png
+│   │   │       ├── folder_dark.png
+│   │   │       ├── folder_open.png
+│   │   │       ├── games.png
+│   │   │       ├── github.png
+│   │   │       ├── image_editor.png
+│   │   │       ├── image_file.png
+│   │   │       ├── mail.png
+│   │   │       ├── microphone.png
+│   │   │       ├── minecraft.png
+│   │   │       ├── movies.png
+│   │   │       ├── music.png
+│   │   │       ├── news.png
+│   │   │       ├── notepad.png
+│   │   │       ├── paint.png
+│   │   │       ├── paint_alt.png
+│   │   │       ├── parsec.png
+│   │   │       ├── password_manager.png
+│   │   │       ├── phone.png
+│   │   │       ├── printer.png
+│   │   │       ├── program.png
+│   │   │       ├── recycle_bin.png
+│   │   │       ├── recycle_bin_full.png
+│   │   │       ├── script_file.png
+│   │   │       ├── search.png
+│   │   │       ├── slack.png
+│   │   │       ├── sounds.png
+│   │   │       ├── spreadsheet_file.png
+│   │   │       ├── spreadsheet_program.png
+│   │   │       ├── stardew_valley.png
+│   │   │       ├── steam.png
+│   │   │       ├── sticky_note.png
+│   │   │       ├── text_editor.png
+│   │   │       ├── text_file.png
+│   │   │       ├── text_file_2.png
+│   │   │       ├── this_computer.png
+│   │   │       ├── tools.png
+│   │   │       ├── video_editor.png
+│   │   │       ├── video_file.png
+│   │   │       ├── video_movie_editor.png
+│   │   │       ├── vlc.png
+│   │   │       ├── webpadge_file.png
+│   │   │       ├── workspace.png
+│   │   │       └── world.png
+│   │   ├── Windows95Wallpapers
+│   │   │   ├── DA_WALL.JPG
+│   │   │   ├── DV_WALL.JPG
+│   │   │   ├── MO_WALL.JPG
+│   │   │   ├── MY_WALL.JPG
+│   │   │   ├── NA_WALL.JPG
+│   │   │   ├── PC_WALL.JPG
+│   │   │   ├── SC_WALL.JPG
+│   │   │   ├── SP_WALL.JPG
+│   │   │   ├── SX_WALL.JPG
+│   │   │   ├── TR_WALL.JPG
+│   │   │   ├── WH_WALL.JPG
+│   │   │   └── WI_WALL.JPG
+│   │   └── michaelsoft.png
 │   ├── backdrop.svg
 │   ├── ban1.gif -> banners/findthequeen.gif
 │   ├── ban2.gif -> banners/chess.gif
@@ -135,8 +219,10 @@
 │   ├── ban8.gif -> banners/chess.gif
 │   ├── banners
 │   │   ├── 0701msz_19980702.gif
-│   │   ├── address-e.gif
 │   │   ├── AdScam.gif
+│   │   ├── CHEQUEO-ONLINE-s.gif
+│   │   ├── Windows10.gif
+│   │   ├── address-e.gif
 │   │   ├── adsuck.gif
 │   │   ├── aliencivilization.gif
 │   │   ├── bb-bannar.gif
@@ -145,7 +231,6 @@
 │   │   ├── bonus_ringtone.gif
 │   │   ├── callingcard.gif
 │   │   ├── cd.gif
-│   │   ├── CHEQUEO-ONLINE-s.gif
 │   │   ├── chess.gif
 │   │   ├── ckystar.gif
 │   │   ├── coconetlab.gif
@@ -161,18 +246,18 @@
 │   │   ├── findthequeen.gif
 │   │   ├── freeemoticons.gif
 │   │   ├── fujirock.gif
-│   │   ├── gaymoz.gif
 │   │   ├── g-banner1.gif
+│   │   ├── gaymoz.gif
 │   │   ├── how2drawmanga.gif
 │   │   ├── internet_because.gif
 │   │   ├── kimpossible.gif
 │   │   ├── msn ad 3.gif
-│   │   ├── msn_ad.gif
 │   │   ├── msn.gif
+│   │   ├── msn_ad.gif
 │   │   ├── nbanna-2.gif
 │   │   ├── nec_1027.gif
-│   │   ├── nokia2.gif
 │   │   ├── nokia.gif
+│   │   ├── nokia2.gif
 │   │   ├── nosmoke.gif
 │   │   ├── ocarina.gif
 │   │   ├── odd.gif
@@ -184,15 +269,14 @@
 │   │   ├── shuraki.gif
 │   │   ├── smileysad.gif
 │   │   ├── tom.gif
-│   │   ├── Windows10.gif
 │   │   ├── yugi.gif
 │   │   ├── yumenikki.gif
 │   │   └── zodiacalzephyr.gif
 │   ├── butterfly.gif
 │   ├── cleanup_images.sh
 │   ├── counter.gif
-│   ├── cursor.cur
 │   ├── cursor-link.cur
+│   ├── cursor.cur
 │   ├── divider.gif
 │   ├── email
 │   │   ├── background_pattern.png
@@ -209,6 +293,7 @@
 │   │   │   ├── 687646nqrss7qo3x.gif
 │   │   │   ├── 68e7eb35.jpg
 │   │   │   ├── 999999th-visitor.gif
+│   │   │   ├── ZrYOo1t.gif
 │   │   │   ├── avatarhell_broken4everx0x_aol.gif
 │   │   │   ├── avatarhell_caoilfhinionn_505.gif
 │   │   │   ├── blue_butterfly.gif
@@ -224,12 +309,13 @@
 │   │   │   ├── transalien.gif
 │   │   │   ├── waffles.jpg
 │   │   │   ├── walmart.jpg
-│   │   │   ├── windows_17.gif
-│   │   │   └── ZrYOo1t.gif
+│   │   │   └── windows_17.gif
 │   │   ├── banners
 │   │   │   ├── 0701msz_19980702.gif
-│   │   │   ├── address-e.gif
 │   │   │   ├── AdScam.gif
+│   │   │   ├── CHEQUEO-ONLINE-s.gif
+│   │   │   ├── Windows10.gif
+│   │   │   ├── address-e.gif
 │   │   │   ├── adsuck.gif
 │   │   │   ├── aliencivilization.gif
 │   │   │   ├── bb-bannar.gif
@@ -238,7 +324,6 @@
 │   │   │   ├── bonus_ringtone.gif
 │   │   │   ├── callingcard.gif
 │   │   │   ├── cd.gif
-│   │   │   ├── CHEQUEO-ONLINE-s.gif
 │   │   │   ├── chess.gif
 │   │   │   ├── ckystar.gif
 │   │   │   ├── coconetlab.gif
@@ -254,20 +339,20 @@
 │   │   │   ├── findthequeen.gif
 │   │   │   ├── freeemoticons.gif
 │   │   │   ├── fujirock.gif
-│   │   │   ├── gaymoz.gif
 │   │   │   ├── g-banner1.gif
+│   │   │   ├── gaymoz.gif
 │   │   │   ├── how2drawmanga.gif
 │   │   │   ├── internet_because.gif
 │   │   │   ├── kimpossible.gif
 │   │   │   ├── miku.jpg
 │   │   │   ├── msn ad 3.gif
-│   │   │   ├── msn_ad.gif
 │   │   │   ├── msn.gif
+│   │   │   ├── msn_ad.gif
 │   │   │   ├── nbanna-2.gif
 │   │   │   ├── nec_1027.gif
+│   │   │   ├── nokia.gif
 │   │   │   ├── nokia2.gif
 │   │   │   ├── nokia2.jpg
-│   │   │   ├── nokia.gif
 │   │   │   ├── nosmoke.gif
 │   │   │   ├── ocarina.gif
 │   │   │   ├── odd.gif
@@ -284,7 +369,6 @@
 │   │   │   ├── smileysad.gif
 │   │   │   ├── teleca.png
 │   │   │   ├── tom.gif
-│   │   │   ├── Windows10.gif
 │   │   │   ├── yotsuba.jpg
 │   │   │   ├── youkoso.png
 │   │   │   ├── yugi.gif
@@ -299,6 +383,7 @@
 │   │   │   ├── 02112342.gif
 │   │   │   ├── 1564055h9zarit76d.gif
 │   │   │   ├── 1stperson.gif
+│   │   │   ├── RADIOTROPHICBLUESCREENED.gif
 │   │   │   ├── acid.gif
 │   │   │   ├── alien.gif
 │   │   │   ├── alifewhatsthat.gif
@@ -347,8 +432,8 @@
 │   │   │   ├── fakedownload.gif
 │   │   │   ├── fishy.gif
 │   │   │   ├── floppydisk.gif
-│   │   │   ├── fuckai.gif
 │   │   │   ├── fuck.gif
+│   │   │   ├── fuckai.gif
 │   │   │   ├── gamer.gif
 │   │   │   ├── glitchy.gif
 │   │   │   ├── glow.gif
@@ -387,7 +472,6 @@
 │   │   │   ├── pixels_pencils.gif
 │   │   │   ├── popcorn.gif
 │   │   │   ├── ppgirlie.gif
-│   │   │   ├── RADIOTROPHICBLUESCREENED.gif
 │   │   │   ├── ransomware.gif
 │   │   │   ├── reality.gif
 │   │   │   ├── reallifecomputerai.gif
@@ -428,25 +512,25 @@
 │   │   │   ├── 800x600.gif
 │   │   │   ├── 88x31.gif
 │   │   │   ├── 98plusani.gif
+│   │   │   ├── Censor_14c.gif
 │   │   │   ├── a3.gif
 │   │   │   ├── affection.gif
 │   │   │   ├── animanga.gif
 │   │   │   ├── atsmacpt.gif
+│   │   │   ├── b-parentaladvisory5.png
 │   │   │   ├── badapple.gif
 │   │   │   ├── basedandratpilled.gif
 │   │   │   ├── besteyes.gif
-│   │   │   ├── bi2.png
 │   │   │   ├── bi.png
+│   │   │   ├── bi2.png
 │   │   │   ├── blackmagic.gif
 │   │   │   ├── blink.gif
 │   │   │   ├── blinkiestar.gif
 │   │   │   ├── blockads.gif
-│   │   │   ├── b-parentaladvisory5.png
-│   │   │   ├── breakup.jpg
 │   │   │   ├── br.GIF
+│   │   │   ├── breakup.jpg
 │   │   │   ├── ca2.gif
 │   │   │   ├── capido.gif
-│   │   │   ├── Censor_14c.gif
 │   │   │   ├── chrome-suck.gif
 │   │   │   ├── clancthulhu.gif
 │   │   │   ├── click_here.gif
@@ -460,8 +544,8 @@
 │   │   │   ├── eatsleep.gif
 │   │   │   ├── emulacity.gif
 │   │   │   ├── enhance.png
-│   │   │   ├── freeware.gif
 │   │   │   ├── freeware-guide.gif
+│   │   │   ├── freeware.gif
 │   │   │   ├── freeware.png
 │   │   │   ├── freewmp.gif
 │   │   │   ├── gears.gif
@@ -473,8 +557,8 @@
 │   │   │   ├── imagination.gif
 │   │   │   ├── imissxp.gif
 │   │   │   ├── internetcitizen.png
-│   │   │   ├── kawaiicute.gif
 │   │   │   ├── kawaii.gif
+│   │   │   ├── kawaiicute.gif
 │   │   │   ├── keyboard.png
 │   │   │   ├── killsfascists.jpg
 │   │   │   ├── kris.png
@@ -484,6 +568,9 @@
 │   │   │   ├── links
 │   │   │   │   ├── 14-4ml.gif
 │   │   │   │   ├── 2h-banner.gif
+│   │   │   │   ├── ETTM.png
+│   │   │   │   ├── MukkysWorld_Button.gif
+│   │   │   │   ├── ZENOSLOTS_Mini.png
 │   │   │   │   ├── alecwest.gif
 │   │   │   │   ├── antikristnewbutton2.png
 │   │   │   │   ├── awababa.gif
@@ -498,15 +585,14 @@
 │   │   │   │   ├── dokodemobutton3.gif
 │   │   │   │   ├── dxjunk.gif
 │   │   │   │   ├── emptyhalls.gif
-│   │   │   │   ├── ETTM.png
 │   │   │   │   ├── expnembutton.png
 │   │   │   │   ├── fauux-btn-01.gif
 │   │   │   │   ├── fe9_banner01.gif
 │   │   │   │   ├── feelingmachine.gif
 │   │   │   │   ├── firefoxget.gif
 │   │   │   │   ├── flashpoint.gif
-│   │   │   │   ├── frutigeraeroarchive_button_3.png
 │   │   │   │   ├── frutigeraeroarchive_button.png
+│   │   │   │   ├── frutigeraeroarchive_button_3.png
 │   │   │   │   ├── ia.gif
 │   │   │   │   ├── ita-button-02.gif
 │   │   │   │   ├── item64.gif
@@ -518,12 +604,11 @@
 │   │   │   │   ├── matthew_now.gif
 │   │   │   │   ├── melonking.gif
 │   │   │   │   ├── milfgod.gif
-│   │   │   │   ├── MukkysWorld_Button.gif
+│   │   │   │   ├── n-razm_button_v2.png
 │   │   │   │   ├── nammac.gif
 │   │   │   │   ├── neocitiesblue.gif
 │   │   │   │   ├── neonaut-banner.png
 │   │   │   │   ├── ninacti0n.gif
-│   │   │   │   ├── n-razm_button_v2.png
 │   │   │   │   ├── pastelhello.png
 │   │   │   │   ├── randsel-tora.gif
 │   │   │   │   ├── rrnet_button.gif
@@ -544,15 +629,14 @@
 │   │   │   │   ├── warpzone_button.gif
 │   │   │   │   ├── wiby.gif
 │   │   │   │   ├── winrar.jpg
-│   │   │   │   ├── xzyolotl.gif
-│   │   │   │   └── ZENOSLOTS_Mini.png
+│   │   │   │   └── xzyolotl.gif
 │   │   │   ├── lol.gif
 │   │   │   ├── marijuana.gif
 │   │   │   ├── microsoft_inhaler.gif
 │   │   │   ├── miku.gif
 │   │   │   ├── mine
-│   │   │   │   ├── bsky2.png
 │   │   │   │   ├── bsky.png
+│   │   │   │   ├── bsky2.png
 │   │   │   │   ├── email.gif
 │   │   │   │   ├── kofi2.png
 │   │   │   │   ├── kofi3.png
@@ -583,8 +667,8 @@
 │   │   │   ├── sburb.gif
 │   │   │   ├── segaelite.gif
 │   │   │   ├── smile.png
-│   │   │   ├── spaceamp.gif
 │   │   │   ├── space.gif
+│   │   │   ├── spaceamp.gif
 │   │   │   ├── steam.gif
 │   │   │   ├── strawberry.gif
 │   │   │   ├── teapot.png
@@ -599,33 +683,33 @@
 │   │   │   ├── win2k.png
 │   │   │   ├── win98.png
 │   │   │   ├── winamp5.gif
-│   │   │   ├── windowsme.png
 │   │   │   ├── windows_xp.gif
+│   │   │   ├── windowsme.png
 │   │   │   ├── wmp10.gif
 │   │   │   ├── www dot.gif
 │   │   │   ├── www.gif
 │   │   │   └── zorg.gif
 │   │   ├── characters
 │   │   │   ├── 0TJKr88.gif
+│   │   │   ├── GLITTERSTAR.gif
 │   │   │   ├── amyrose.gif
 │   │   │   ├── angel1.gif
 │   │   │   ├── angel2.gif
-│   │   │   ├── animegirlfan.gif
 │   │   │   ├── ani_shii.gif
+│   │   │   ├── animegirlfan.gif
 │   │   │   ├── arcueid.gif
 │   │   │   ├── bathtub.gif
 │   │   │   ├── breakrave.gif
 │   │   │   ├── brighton.gif
-│   │   │   ├── busuko2.gif
 │   │   │   ├── busuko.gif
+│   │   │   ├── busuko2.gif
 │   │   │   ├── cherrysakura84_logo.gif
 │   │   │   ├── construction (1).gif
 │   │   │   ├── cryingangel.gif
 │   │   │   ├── djing.gif
-│   │   │   ├── firefoxgirl2'.png
 │   │   │   ├── firefoxgirl.png
+│   │   │   ├── firefoxgirl2'.png
 │   │   │   ├── getwellsoon.gif
-│   │   │   ├── GLITTERSTAR.gif
 │   │   │   ├── good.gif
 │   │   │   ├── gun.gif
 │   │   │   ├── i-9807.gif
@@ -652,15 +736,15 @@
 │   │   │   ├── barbed wire.gif
 │   │   │   ├── bow.png
 │   │   │   ├── c4ltcz.gif
-│   │   │   ├── chains2.png
 │   │   │   ├── chains.gif
+│   │   │   ├── chains2.png
 │   │   │   ├── computers.gif
 │   │   │   ├── construction.gif
 │   │   │   ├── hb.png
-│   │   │   ├── scissors2.gif
 │   │   │   ├── scissors.gif
-│   │   │   ├── slime2.gif
+│   │   │   ├── scissors2.gif
 │   │   │   ├── slime.gif
+│   │   │   ├── slime2.gif
 │   │   │   ├── stripeywings.png
 │   │   │   └── ufo.gif
 │   │   ├── fanlist
@@ -691,13 +775,13 @@
 │   │   │   ├── blulove.gif
 │   │   │   ├── book.gif
 │   │   │   ├── bubbles.gif
+│   │   │   ├── butterfly.gif
 │   │   │   ├── butterfly1.gif
 │   │   │   ├── butterfly2.gif
-│   │   │   ├── butterfly.gif
 │   │   │   ├── cassetteplayer.gif
 │   │   │   ├── catputer.gif
-│   │   │   ├── cd1.gif
 │   │   │   ├── cd.gif
+│   │   │   ├── cd1.gif
 │   │   │   ├── cellphone.gif
 │   │   │   ├── circuitry.gif
 │   │   │   ├── computer-0036.gif
@@ -718,8 +802,8 @@
 │   │   │   ├── guitar.gif
 │   │   │   ├── ipod.gif
 │   │   │   ├── laptop.gif
-│   │   │   ├── mac2.png
 │   │   │   ├── mac.png
+│   │   │   ├── mac2.png
 │   │   │   ├── meeku.png
 │   │   │   ├── mini081.gif
 │   │   │   ├── monitor.gif
@@ -743,8 +827,8 @@
 │   │   │   ├── stars.gif
 │   │   │   ├── stuffs.gif
 │   │   │   ├── succulent.gif
-│   │   │   ├── swirl1.gif
 │   │   │   ├── swirl.gif
+│   │   │   ├── swirl1.gif
 │   │   │   ├── tv.png
 │   │   │   ├── vidya.gif
 │   │   │   ├── wand.gif
@@ -755,11 +839,11 @@
 │   │   │   ├── 3D-Torrent-icon.png
 │   │   │   ├── Application-icon.png
 │   │   │   ├── Games-icon.png
-│   │   │   ├── mail.png
-│   │   │   ├── msn.png
 │   │   │   ├── My-Documents-icon.png
 │   │   │   ├── Recycle-Bin-full.png
 │   │   │   ├── Tumblr_l_590479670147040.png
+│   │   │   ├── mail.png
+│   │   │   ├── msn.png
 │   │   │   └── xp
 │   │   │       ├── Appearance.png
 │   │   │       ├── Charmap.png
@@ -777,26 +861,27 @@
 │   │   │       ├── Network and Internet.png
 │   │   │       ├── Notepad.png
 │   │   │       ├── Paint.png
+│   │   │       ├── Windows Catalog.png
+│   │   │       ├── Windows Movie Maker.png
 │   │   │       ├── recycle bin (empty).png
 │   │   │       ├── recycle bin (full).png
 │   │   │       ├── user.png
-│   │   │       ├── Windows Catalog.png
-│   │   │       ├── Windows Movie Maker.png
 │   │   │       └── win.gif
 │   │   ├── misc
 │   │   │   ├── 90scomputer.gif
+│   │   │   ├── BLOODLAMP.gif
+│   │   │   ├── Howyourcomputerworks.gif
 │   │   │   ├── angelwings.gif
 │   │   │   ├── axxlogo.gif
-│   │   │   ├── BLOODLAMP.gif
-│   │   │   ├── bluelamp2.gif
 │   │   │   ├── bluelamp.gif
+│   │   │   ├── bluelamp2.gif
 │   │   │   ├── bottle.gif
 │   │   │   ├── can.gif
-│   │   │   ├── computer-01.gif
 │   │   │   ├── computer 15.gif
+│   │   │   ├── computer-01.gif
+│   │   │   ├── computer.gif
 │   │   │   ├── computer_7.gif
 │   │   │   ├── computerangel.png
-│   │   │   ├── computer.gif
 │   │   │   ├── cursorheart.gif
 │   │   │   ├── edpc19.gif
 │   │   │   ├── explodingcomputer.gif
@@ -807,7 +892,6 @@
 │   │   │   ├── greenlavalamp.gif
 │   │   │   ├── hand.gif
 │   │   │   ├── homepage.gif
-│   │   │   ├── Howyourcomputerworks.gif
 │   │   │   ├── lap.gif
 │   │   │   ├── marquee.gif
 │   │   │   ├── melt.gif
@@ -846,10 +930,13 @@
 │   │   │   ├── 1.jpg
 │   │   │   ├── 2010.png
 │   │   │   ├── 2k-tan.png
+│   │   │   ├── Hell.png
+│   │   │   ├── METAL_SONIC_STAMP.gif
+│   │   │   ├── [STAMP] Luigi Victory Pose 1 (SSBU) azuhreidii.gif
 │   │   │   ├── abducted.png
 │   │   │   ├── akira.png
-│   │   │   ├── arcade2.png
 │   │   │   ├── arcade.png
+│   │   │   ├── arcade2.png
 │   │   │   ├── asdf.gif
 │   │   │   ├── autistic.png
 │   │   │   ├── awesomeface.png
@@ -897,11 +984,21 @@
 │   │   │   ├── grim.jpg
 │   │   │   ├── hatecancer.png
 │   │   │   ├── hb.gif
-│   │   │   ├── Hell.png
 │   │   │   ├── hex
 │   │   │   │   ├── 8D.png
-│   │   │   │   ├── blk-tmasc2.png
+│   │   │   │   ├── EndlessFantasy.png
+│   │   │   │   ├── Honeycomb stamp sushi.png
+│   │   │   │   ├── Honeycomb stamp tuna.png
+│   │   │   │   ├── Honeycomb strawberries.png
+│   │   │   │   ├── PuiPuiMolcar.png
+│   │   │   │   ├── Win98dialup.gif
+│   │   │   │   ├── Win98internetclick.gif
+│   │   │   │   ├── Win98mycomp.png
+│   │   │   │   ├── Win98paint.png
+│   │   │   │   ├── WinXPmsn.png
+│   │   │   │   ├── WinXPpaint.png
 │   │   │   │   ├── blk-tmasc.png
+│   │   │   │   ├── blk-tmasc2.png
 │   │   │   │   ├── capricorn.png
 │   │   │   │   ├── carpet_01.png
 │   │   │   │   ├── carpet_04.png
@@ -910,15 +1007,11 @@
 │   │   │   │   ├── carpet_08.png
 │   │   │   │   ├── confused.png
 │   │   │   │   ├── contact.png
-│   │   │   │   ├── EndlessFantasy.png
 │   │   │   │   ├── evil.png
 │   │   │   │   ├── flamechain.gif
 │   │   │   │   ├── heart.gif
 │   │   │   │   ├── hexstamp spaghetti.png
 │   │   │   │   ├── holo_05.png
-│   │   │   │   ├── Honeycomb stamp sushi.png
-│   │   │   │   ├── Honeycomb stamp tuna.png
-│   │   │   │   ├── Honeycomb strawberries.png
 │   │   │   │   ├── lain.gif
 │   │   │   │   ├── mHmTNYS.png
 │   │   │   │   ├── mine
@@ -939,24 +1032,17 @@
 │   │   │   │   ├── nights_hexstamp.gif
 │   │   │   │   ├── nonbinary.png
 │   │   │   │   ├── progress.png
-│   │   │   │   ├── PuiPuiMolcar.png
 │   │   │   │   ├── ring.png
 │   │   │   │   ├── sRSGjzI.png
 │   │   │   │   ├── tama.gif
 │   │   │   │   ├── uRwoiGA.gif
-│   │   │   │   ├── Win98dialup.gif
-│   │   │   │   ├── Win98internetclick.gif
-│   │   │   │   ├── Win98mycomp.png
-│   │   │   │   ├── Win98paint.png
-│   │   │   │   ├── windows.gif
-│   │   │   │   ├── WinXPmsn.png
-│   │   │   │   └── WinXPpaint.png
+│   │   │   │   └── windows.gif
 │   │   │   ├── honor1.gif
 │   │   │   ├── hottopic.gif
+│   │   │   ├── i love to hug my plushies.png
 │   │   │   ├── idiot.png
 │   │   │   ├── ihateslowinternet.png
 │   │   │   ├── ilovecookies.jpg
-│   │   │   ├── i love to hug my plushies.png
 │   │   │   ├── insufferable.png
 │   │   │   ├── introvery.gif
 │   │   │   ├── jazz.png
@@ -972,7 +1058,6 @@
 │   │   │   ├── maplestoryplayer.png
 │   │   │   ├── marina.gif
 │   │   │   ├── matroska.gif
-│   │   │   ├── METAL_SONIC_STAMP.gif
 │   │   │   ├── me-tan.gif
 │   │   │   ├── me-tan.png
 │   │   │   ├── milkchan.png
@@ -1003,8 +1088,8 @@
 │   │   │   ├── nights.png
 │   │   │   ├── nonbinary.gif
 │   │   │   ├── ogorki.gif
-│   │   │   ├── okage.png
 │   │   │   ├── ok.gif
+│   │   │   ├── okage.png
 │   │   │   ├── outside.gif
 │   │   │   ├── overactive.gif
 │   │   │   ├── pantyvsscanty.gif
@@ -1013,8 +1098,8 @@
 │   │   │   ├── pinkcheckerbling.gif
 │   │   │   ├── pizza.gif
 │   │   │   ├── pmmm.gif
-│   │   │   ├── portal2.png
 │   │   │   ├── portal.png
+│   │   │   ├── portal2.png
 │   │   │   ├── ppg.jpg
 │   │   │   ├── problem.gif
 │   │   │   ├── purpstar.gif
@@ -1032,16 +1117,15 @@
 │   │   │   ├── signedspiritcellarclover.png
 │   │   │   ├── slimerancher.gif
 │   │   │   ├── smileyfries.png
-│   │   │   ├── sonicoc.png
 │   │   │   ├── sonic stamp.png
+│   │   │   ├── sonicoc.png
 │   │   │   ├── squigly.png
 │   │   │   ├── squirmystamp.gif
 │   │   │   ├── stampfan.png
 │   │   │   ├── stamploading.gif
-│   │   │   ├── [STAMP] Luigi Victory Pose 1 (SSBU) azuhreidii.gif
 │   │   │   ├── stamponfire.gif
-│   │   │   ├── stardust.png
 │   │   │   ├── star.png
+│   │   │   ├── stardust.png
 │   │   │   ├── suselle.png
 │   │   │   ├── swirl.gif
 │   │   │   ├── talk2myself.gif
@@ -1064,22 +1148,22 @@
 │   │   │   ├── win7.png
 │   │   │   └── worm.png
 │   │   └── userbars
+│   │       ├── Clock-1.png
+│   │       ├── DVD.png
+│   │       ├── Firefox.gif
+│   │       ├── InSurfer.png
+│   │       ├── Internet_Explorer_9.png
 │   │       ├── aliens.gif
 │   │       ├── android.gif
 │   │       ├── aquastyle.gif
 │   │       ├── blueuser.gif
 │   │       ├── cheese.jpg
 │   │       ├── choco.jpg
-│   │       ├── Clock-1.png
 │   │       ├── colors.gif
-│   │       ├── DVD.png
 │   │       ├── emo.gif
 │   │       ├── emoticon.gif
 │   │       ├── error.png
-│   │       ├── Firefox.gif
 │   │       ├── i_love_music_.gif
-│   │       ├── InSurfer.png
-│   │       ├── Internet_Explorer_9.png
 │   │       ├── lgbt.gif
 │   │       ├── lifenotfound.jpg
 │   │       ├── new_vs_old.png
@@ -1104,7 +1188,6 @@
 │   │       ├── winamp.gif
 │   │       ├── wmp.png
 │   │       └── yt.gif
-│   ├── Heart.png
 │   ├── icons
 │   │   ├── amazon-music.svg
 │   │   ├── amazon.svg
@@ -1119,8 +1202,8 @@
 │   │   ├── blog.svg
 │   │   ├── bluesky.svg
 │   │   ├── buy-me-a-coffee.svg
-│   │   ├── calendly.svg
 │   │   ├── cal.svg
+│   │   ├── calendly.svg
 │   │   ├── cash-app-btc.svg
 │   │   ├── cash-app-dollar.svg
 │   │   ├── cash-app-pound.svg
@@ -1164,8 +1247,8 @@
 │   │   ├── hashnode.svg
 │   │   ├── instagram.svg
 │   │   ├── kick-alt.svg
-│   │   ├── kickstarter.svg
 │   │   ├── kick.svg
+│   │   ├── kickstarter.svg
 │   │   ├── kit.svg
 │   │   ├── ko-fi.svg
 │   │   ├── last-fm.svg
@@ -1217,253 +1300,242 @@
 │   │   ├── vsco.svg
 │   │   ├── whatsapp.svg
 │   │   ├── wordpress.svg
-│   │   ├── xing.svg
 │   │   ├── x.svg
+│   │   ├── xing.svg
 │   │   ├── youtube-music.svg
 │   │   ├── youtube.svg
 │   │   └── zoom.svg
 │   ├── instagramposts
-│   │   ├── 142503960_2142198762590102_7242957908307165821_n.jpg
-│   │   ├── 142528957_1506651439523862_3805569343775053278_n.jpg
-│   │   ├── 143290459_229954861943068_2520208387091151609_n.jpg
-│   │   ├── 143543113_1849584141864480_746021851008189936_n.jpg
-│   │   ├── 152507424_431959708034543_3824221098761578397_n.jpg
-│   │   ├── 153356321_889414561860179_3152657919419418437_n.jpg
-│   │   ├── 153586065_1384043771941124_4478257187332389707_n.jpg
-│   │   ├── 164056929_144563314155229_6423153917807481507_n.jpg
-│   │   ├── 164326518_222702209541486_7028752265271175344_n.jpg
-│   │   ├── 168871379_243881407418447_5451462357780778646_n.jpg
-│   │   ├── 170192230_3875215815859973_8979014068523502219_n.jpg
-│   │   ├── 170417880_461361548504006_4133829214877584848_n.jpg
-│   │   ├── 170658890_192955019096974_813293566735955805_n.jpg
-│   │   ├── 173242228_741422279871601_7871646767433939156_n.jpg
-│   │   ├── 173597178_116089310479692_6945296103772262980_n.jpg
-│   │   ├── 174858164_213935023396305_6938358859263285694_n.jpg
-│   │   ├── 176228313_570038907277176_4482501576989817493_n.jpg
-│   │   ├── 177739604_761838004704371_1996199338261803336_n.jpg
-│   │   ├── 177748705_228676532351685_4288845853275260094_n.jpg
-│   │   ├── 177890058_313522556837319_54065139777407604_n.jpg
-│   │   ├── 177993596_139888434712513_606477659241389685_n.jpg
-│   │   ├── 178195281_448900656406930_1234976321169866726_n.jpg
-│   │   ├── 178201221_545350299788050_4587327280832729889_n.jpg
-│   │   ├── 178456130_1816871281820088_7805824175497299062_n.jpg
-│   │   ├── 178509084_499116091520027_521070529249752953_n.jpg
-│   │   ├── 178513187_802778247036846_4656106564486214657_n.jpg
-│   │   ├── 178528902_292500572488578_5036645410000475569_n.jpg
-│   │   ├── 178572125_499115244604898_4138561058302478102_n.jpg
-│   │   ├── 179016467_187033263144639_2834969119374932145_n.jpg
-│   │   ├── 183898060_1279978889063917_6645183706246092989_n.jpg
-│   │   ├── 185010990_954511845361809_4368394827128367030_n.jpg
-│   │   ├── 186929072_489984219115600_8175038572942860082_n.jpg
-│   │   ├── 187366485_153266086780479_2226207009264122731_n.jpg
-│   │   ├── 203606693_552873172540196_4202482862705002737_n.jpg
-│   │   ├── 203981792_331153741791468_8289132082432751655_n.jpg
-│   │   ├── 204466231_933715697199116_8765394549388640339_n.jpg
-│   │   ├── 208744718_305128821354072_6198957589411128473_n.jpg
-│   │   ├── 210732311_1045533609601075_1887479453533133622_n.jpg
-│   │   ├── 211172317_226819085931375_6308680004404228328_n.jpg
-│   │   ├── 212080211_308150087670471_2569765910399172112_n.jpg
-│   │   ├── 214373139_862717901339958_1060231025474155038_n.jpg
-│   │   ├── 217634513_1065832440613391_6015045816099413942_n.jpg
-│   │   ├── 221161770_115174827524493_6292445464543980652_n.jpg
-│   │   ├── 240411079_113184500991920_4795884945486121802_n.jpg
-│   │   ├── 240948491_538702657211166_4841289942621228645_n.jpg
-│   │   ├── 241007525_1514493312237440_7412642643939163780_n.jpg
-│   │   ├── 241313621_967788677114257_2511512011931446406_n.jpg
-│   │   ├── 241487230_1273696629817079_8359355544815562739_n.jpg
-│   │   ├── 241800100_380138846972436_5905567943747244623_n.jpg
-│   │   ├── 241807461_4285279031562924_6769340084416899270_n.jpg
-│   │   ├── 241898181_435051241495128_4854804297395974280_n.jpg
-│   │   ├── 244305674_145680724421734_2698997946911942374_n.jpg
-│   │   ├── 244577797_304403311514060_5338779718181153571_n.jpg
-│   │   ├── 244595995_298749095056420_2385678887376204554_n.jpg
-│   │   ├── 244624329_382118030129520_2845334724763096246_n.jpg
-│   │   ├── 244810230_135717162130457_2290924533807637016_n.jpg
-│   │   ├── 244924052_585078169284218_6193087776008156793_n.jpg
-│   │   ├── 245075962_430502625357235_642931967562244315_n.jpg
-│   │   ├── 245084477_243640967732286_8661859081675326417_n.jpg
-│   │   ├── 245102891_597119958091235_7760968571210959522_n.jpg
-│   │   ├── 245166061_1573599182980173_9056313579694423655_n.jpg
-│   │   ├── 245181367_583133682837248_4159875847436054373_n.jpg
-│   │   ├── 245235722_200924798813998_533646663070365229_n.jpg
-│   │   ├── 250239551_347528123793388_6129037431255391905_n.jpg
-│   │   ├── 252082687_1309410389490601_1733036900182162232_n.jpg
-│   │   ├── 253156725_2092802414207231_4284485654271937107_n.jpg
-│   │   ├── 253609005_1310887149340287_7351933596272098026_n.jpg
-│   │   ├── 253928191_559876118431186_174851084399800954_n.jpg
-│   │   ├── 254459427_110842458072379_910173456839425399_n.jpg
-│   │   ├── 254941986_447637300089479_581378909041166367_n.jpg
-│   │   ├── 255192333_2400638513401845_254594719551101651_n.jpg
-│   │   ├── 260420672_589314275730149_7001907787359500140_n.jpg
-│   │   ├── 260518463_182756834044939_2978643790126362906_n.jpg
-│   │   ├── 261064988_609979640047387_1063660377430376339_n.jpg
-│   │   ├── 261398614_692345208411529_7507949988196940544_n.jpg
-│   │   ├── 261956250_495698018407859_7587486864830799473_n.jpg
-│   │   ├── 262172678_584702532826645_8543602966982096770_n.jpg
-│   │   ├── 262637077_439650987763672_69880900078703165_n.jpg
-│   │   ├── 269459512_957963705077406_6485051863948708437_n.jpg
-│   │   ├── 269821588_2792956610996824_1238965788977574997_n.jpg
-│   │   ├── 269838019_118781207315919_7446233154913949494_n.jpg
-│   │   ├── 270014704_1116668085813600_5045608886240459792_n.jpg
-│   │   ├── 272346960_2238759216266517_6848249917405318018_n.jpg
-│   │   ├── 273422494_697276414771416_5421823409682985424_n.jpg
-│   │   ├── 273484627_271953115009784_497428608653904303_n.jpg
-│   │   ├── 273645561_1528224647577205_1551991876277087620_n.jpg
-│   │   ├── 273927096_470496801320892_7579560579818134441_n.jpg
-│   │   ├── 273941604_251603877147501_1336858463240587424_n.jpg
-│   │   ├── 274034241_1885913691613431_7557607771455068492_n.jpg
-│   │   ├── 274915468_280845017455315_8070249639219070957_n.jpg
-│   │   ├── 275005311_404845818074637_4155656904181216174_n.jpg
-│   │   ├── 275176528_2998734277105779_3321089143429238658_n.jpg
-│   │   ├── 275387030_3220207658200056_4976510420632394024_n.jpg
-│   │   ├── 275536323_439500957974187_6689055583437495766_n.jpg
-│   │   ├── 275617270_623392399115158_3139039588832970143_n.jpg
-│   │   ├── 275902073_3018334955094084_7904898773046665215_n.jpg
-│   │   ├── 275910448_697180634799067_3422955018442662034_n.jpg
-│   │   ├── 275993517_358519442867937_2748831672799674274_n.jpg
-│   │   ├── 277082250_263765222637882_931889590619482197_n.jpg
-│   │   ├── 277150884_979101969632180_2935576691424567392_n.jpg
-│   │   ├── 277217891_646979569925873_1139712871619429909_n.jpg
-│   │   ├── 277400806_965660350788732_8248028526642660349_n.jpg
-│   │   ├── 277453543_1183198499154734_3936714826676194053_n.jpg
-│   │   ├── 277503604_1103437667103892_2946064168464026969_n.jpg
-│   │   ├── 278464420_725779858590025_6287006986882759766_n.jpg
-│   │   ├── 278962939_371201014933846_8095757034313563255_n.jpg
-│   │   ├── 279012872_680799576540313_3270581194472372040_n.jpg
-│   │   ├── 279105137_115041921033099_2100299123959505329_n.jpg
-│   │   ├── 283008723_743508270407088_4974367707848756997_n.jpg
-│   │   ├── 283129835_1411828975928709_3704409096977606608_n.jpg
-│   │   ├── 283198161_755167185494898_786589052951792049_n.jpg
-│   │   ├── 283648434_352008993666293_7402519766764574185_n.jpg
-│   │   ├── 283678875_544819517210155_2735794476556615966_n.jpg
-│   │   ├── 283928751_698625861197870_6960127566272490609_n.jpg
-│   │   ├── 284344477_707933390440919_3371034485057760598_n.jpg
-│   │   ├── 286518639_721424759176002_1352079592173358621_n.jpg
-│   │   ├── 286835776_595701335042155_2624019448067385698_n.jpg
-│   │   ├── 291368736_1152880415277370_1296139197964448938_n.jpg
-│   │   ├── 293153051_2131746620337654_9138030496271811072_n.jpg
-│   │   ├── 306130039_826174291881412_3133505475112277018_n.jpg
-│   │   ├── 308466137_619350806330094_6711880048330613510_n.jpg
-│   │   ├── 309623125_1088848035096194_4401570327205185675_n.jpg
-│   │   ├── 311157955_1351038785432973_7550264963668812038_n.jpg
-│   │   ├── 311208194_434240795513444_6538807787643455282_n.jpg
-│   │   ├── 311332320_114372641444021_3235256718856657253_n.jpg
-│   │   ├── 315301574_810050686892657_8351459796054773419_n.jpg
-│   │   ├── 315969935_1347702212724856_3758673963179900376_n.jpg
-│   │   ├── 320753912_853306379241341_158135282499200559_n.jpg
-│   │   ├── 324311046_159625420152484_3658934941830380564_n.jpg
-│   │   ├── 329166567_722309449408956_7318078869294606128_n.jpg
-│   │   ├── 343177617_284749957210386_7228968186624025695_n.jpg
-│   │   ├── 343232286_751144486473163_3407135556214991671_n.jpg
-│   │   ├── 361589196_18006793231862364_4052588577825694772_n.jpg
-│   │   ├── 361601348_18006186130862364_847365414101076945_n.jpg
-│   │   ├── 361876247_18006186127862364_7517050719154287394_n.jpg
-│   │   ├── 361893192_18006186112862364_104027774887846333_n.jpg
-│   │   ├── 361934356_18006186103862364_4731407109139479910_n.jpg
-│   │   ├── 361957078_18006793240862364_4801221983515081798_n.jpg
-│   │   ├── 362246129_18006186094862364_4115220772382069585_n.jpg
-│   │   ├── 405859882_18022651939862364_6007433978674365490_n.jpg
-│   │   ├── 409831522_18024414292862364_7614621294753960689_n.jpg
-│   │   ├── 433248662_2475096876028847_1991489111053743270_n.jpg
-│   │   ├── 453769564_304040606069977_8043065968380601303_n.jpg
-│   │   ├── 453948753_855361369388676_3688844300527084776_n.jpg
-│   │   ├── 454080179_469583389367466_120607591368610169_n.jpg
-│   │   ├── 466506023_18058496524862364_5211996389516393373_n.jpg
-│   │   ├── 466755150_18058496503862364_6314078912755929688_n.jpg
-│   │   ├── 466757172_18058496536862364_2983207182242657397_n.jpg
-│   │   ├── 467744738_18059278783862364_8869315408737556418_n.jpg
-│   │   ├── 467744741_18059278828862364_6773818806775388002_n.jpg
-│   │   ├── 467758838_18059278810862364_5468977606419401840_n.jpg
-│   │   ├── 467763700_18059278819862364_787380026249311223_n.jpg
-│   │   ├── 467763715_18059278801862364_1420354519538145600_n.jpg
-│   │   ├── 467914700_18059278792862364_2477530461547533923_n.jpg
-│   │   ├── 468963772_18060511111862364_7201944991847195712_n.jpg
-│   │   ├── 469003029_18060512218862364_4428778621097792989_n.jpg
-│   │   ├── 469028460_18060512272862364_2454167357546095350_n.jpg
-│   │   ├── 469028679_18060512227862364_5565862146515297179_n.jpg
-│   │   ├── 469070995_18060512185862364_1555837543916943769_n.jpg
-│   │   ├── 469087941_18060512317862364_7620666376272184053_n.jpg
-│   │   ├── 469089888_18060512449862364_2767270403635968722_n.jpg
-│   │   ├── 469106930_18060512437862364_6090695298017517291_n.jpg
-│   │   ├── 469123798_18060512170862364_4052966779891048478_n.jpg
-│   │   ├── 469172938_18060511414862364_3416963080621225983_n.jpg
-│   │   ├── 469184067_18060511525862364_4255481741488569759_n.jpg
-│   │   ├── 469187551_18060511270862364_4867713250344208326_n.jpg
-│   │   ├── 469198696_18060512191862364_1507613636704857229_n.jpg
-│   │   ├── 469249912_18060512314862364_8747750980028149366_n.jpg
-│   │   ├── 469263333_18060512182862364_7865711479740459981_n.jpg
-│   │   ├── 481623247_18068867344862364_8629525432856859147_n.jpg
-│   │   ├── 481686328_18068867335862364_8295763658806534758_n.jpg
-│   │   ├── 481773048_18068867353862364_8329047207259582324_n.jpg
-│   │   ├── 481903321_18069180874862364_3657190763599579814_n.jpg
-│   │   ├── 481915465_18069180892862364_1506228877611285768_n.jpg
-│   │   ├── 482130183_18069180865862364_3419695374372761322_n.jpg
-│   │   ├── 482158403_18069180856862364_2804784559103821924_n.jpg
-│   │   ├── 482279976_18069180883862364_7569031092972877820_n.jpg
-│   │   ├── 482348150_18069180844862364_4191768748266249624_n.jpg
-│   │   ├── 489696087_18497985931017766_2519528479271231618_n.jpg
-│   │   ├── 489733745_18497985949017766_7846700470003666652_n.jpg
-│   │   ├── 489746925_18497985979017766_7031305746761299556_n.jpg
-│   │   ├── 489839930_18497986045017766_1390060752437599653_n.jpg
-│   │   ├── 489867596_18497986030017766_1101896801711702361_n.jpg
-│   │   ├── 489926322_18497985991017766_5960776515895224029_n.jpg
-│   │   ├── 489941904_18497985919017766_4342152306593278709_n.jpg
-│   │   ├── 490013123_18497985961017766_4278759138916130472_n.jpg
-│   │   ├── 490024541_18497985970017766_3673283734386567922_n.jpg
-│   │   ├── 490103688_18073537900862364_3500516238413433796_n.jpg
-│   │   ├── 490226234_18073537903862364_4130628071831133213_n.jpg
-│   │   ├── 490296843_18497986021017766_5313695591736762354_n.jpg
-│   │   ├── 490297734_18497985940017766_2480722636955926812_n.jpg
-│   │   ├── 490302656_18497986000017766_638997135188956745_n.jpg
-│   │   ├── 490330208_18497986012017766_4961834412944554770_n.jpg
-│   │   ├── 490340203_18497985907017766_3686010786873873696_n.jpg
-│   │   ├── 490446752_18497985889017766_2349234849477503926_n.jpg
-│   │   ├── 491422363_18073537876862364_7088717810003104998_n.jpg
-│   │   ├── 491496948_18073537891862364_5750920415188725360_n.jpg
-│   │   ├── AQM-1bMFwEAGST5rPJCv6zYxP6hqhe-snKF0pDrceDE3T7GGInUS_A98Kl_BSClegjbb2-MMgfqU1_cbDdfxvwViOJ2k9aVCNPzM7pI.mp4
-│   │   ├── AQMCEVgVPzBq0fI-P-UyiKVNJj2qSOfrwyU7WFaQgx4WzVBQjMtn-UCw_hBZmdeyjRunUAeotP8XOrGG31e90UduXxl_IdpTMDc5g2M.mp4
-│   │   ├── AQMEHmxXQDa877AgxPrXdViNoUidG15ICGOiKfneJ8_B8P4mIAsSsdVCi6ZB5GW2boGyfLpkVYxaG2pxGZohvenmwu_2nFEfS56Oitc.mp4
-│   │   ├── AQMEqtSDuFFA1t_cYS5oVMtbQW8_Mq2enlitbaXFFbkeNOQHe1SIO9RoHSc0CK2vAsa1KD9Zqep_VHQK6HRrNUkWIule6eyY-7N5HFc.mp4
-│   │   ├── AQMI6_M24Ma3mVj0yWBDDawsbBjEL68RaO9m8xy_wrVjX338_4ybDENVsPBTzfz42qPsJbjm5fl2pn1XFGpEctaqt8mkYMAbh3KgbUY.mp4
-│   │   ├── AQMMJM9I9qoGFtMBD-tlM3FyYTbLztk0ydaLqkHcTGhF5dSYcYT3OnjfYKUXIR91n88fCSfJ7opOBKoAg2Jh6K7A3yy0X38PkptapKo.mp4
-│   │   ├── AQMo1KfBeyR3Iti9Pdw0-xHIfpmSs6DbbqgNI4ILzyiWyvg5YND-mQEhGU9puzxb016uSNwRHDWxjyY4VRJvI15H.mp4
-│   │   ├── AQMOs0CzmjCriPe7ZL8d7E6SIZXXEVZ1ZBE2r8k-JEyzzCLmE2yDB8JtWgh0XO16SJZG6eBnksnVMO1loqKI7Z-d1Kqasc-mCm17Ycw.mp4
-│   │   ├── AQMR7x43MnLwgwavshEpuVcNiU0KmX7Sy4K5ramPTUGSPQTTFmxsTDwoL-aGLgb_oTZvLezwPR5iXPQdN10aESuEch8saqBaXJrT3Ws.mp4
-│   │   ├── AQMu-ShvvGNeIadZbbYl9O7VRdzBcoYitjcWWj5BU-kGjCX4qUe6w6GVEyP3z8hSY2Nu-dXCk1eaPR1EKosgJnwRad_8aglKruiHjTU.mp4
-│   │   ├── AQN1oy2SiJfQL6EKfUOuocp3uQ5Ey4X3wyKe__o3W-fmwmqphyZ1G17CJWJRFhzOz4cJh-g4sbAyUlAh7YB42z2I.mp4
-│   │   ├── AQN1q5TnE8U87_p1gpMtS0hyYRxOW414uquwJqQ49Sx5PYAdJMSsXc1iVoUTUCjDaCP6Fz10LnoeIZKEI6p7YEBc.mp4
-│   │   ├── AQN8AK5dOnXfcx47gG91jVSFF0yAd4Kcpo7g4U5cLIABPnLN_tduiJbRoOMIX_SqHuIQtgC67tjsv_ix3baPGcqXE9LQswZmhFCeqg4.mp4
-│   │   ├── AQNaTjwUFp1pClC2dKkYQxOrj4baPyCGyaE30-fRv3ykP06xE_iuQ3QXPt-whHF4tnt29-_JxDqDUlkf-Ske5rqvv3deq6prGerOb2U.mp4
-│   │   ├── AQNfoVRe10O_juL8t3rRmtCQ3lY310zU-Bktoyj-x9UH103JCJIqIIGqEbHgSylczv_FEdl8VjOjk67a9v1CxfBcLgHSpIdTqoGGaU8.mp4
-│   │   ├── AQNHj7ZtxZ0Vwg69r5Od3-0mquAcMz8-eEqTfBtytx4pXWWMtgOExGnkpRZ2cP4kD8JhDN_CVqIG7k_5i7Uk9a4gB5mKpDT4XnNaGU4.mp4
-│   │   ├── AQNJ2ThbYfvlfQoDttpgZlRFjvM92sJx2wjUcx9jWOzuOqIOHJ_G19ja7Jc17K3M-FYgy-fRth6Rd1P-7Bmx0Td6rcLEog8K2_ntssA.mp4
-│   │   ├── AQNRqWN4-HvrqIzS9HWIekRTAOgGU-utp3qnKIughM9WPBrS7GlZh584pthMDoLqO5KVKe6jomqJzQ01tU2RId3AU5G_XYSy4fTdFME.mp4
-│   │   ├── AQNYejyrEUgrzUyXCSt_EoMHRJ83OE4G6RzJ9Gb7RU5sh-3KnjAK842127XfP_Ec2xgFq8mXtMo7ufKF9j4gJSW_Q54JkW007R0iwM8.mp4
-│   │   ├── AQOFPdxIFtPFb2mgwRH5yPYkhXzyG7yTE6-SJrN1r6WxhUxlwb7VjgdBeMq6r9d_PfiD6l5HE2u0C8LjGhl0DmKd.mp4
-│   │   ├── AQOi_4FA5qg8WMyUtLb8f02OHSyc3zJC9lldWjXfsWlBT28pWbTbrgme3IIAUro5QBfioFCyD_Fxwn7K-a-EtDXRgIRMp5hjfh8XAqE.mp4
-│   │   ├── AQOKnfP28_xiRCpbzWPK-ZPEzUP7LBmqH46evGALDgW6Ncu3miLX7hKc0WsQCPNnNvipFBsRJ8flA5Q34J8jJTit.mp4
-│   │   ├── AQOMo7wimFefTvdf_fNzf7g6SOaoclQpw0wonYAXMT_amaXcWjjGMfrplx8YPE_TjRNzHU8QF_leQPIm0qq4XB0s.mp4
-│   │   ├── AQOQtX2FIkI1fyRAajsAoEDDnVvpVluMfdCWyBSKwuQ3gTakh_oIHptz_TB7DPuP9InMCPSqc-V-Ng8fKPRG6n0woOjvWI6mKKlGS2s.mp4
-│   │   ├── AQORgMBuQtGwP57RO5kWhcxLhI6aeCB_6N7fS524AnMR39c2cGrZqTZcHTOJFXJUczZcTgAUfp8AUO6zaqUcmcE3B503UAYj8nTAI9k.mp4
-│   │   ├── AQP1wPSTofW0GTwctp7_L9gnT7wa7lX8lpDMAsQM_mByYXDsJrnzTfHYzlV3aVoGiSrcJk-40HaF8wqc703SWzgFo1uX1uU0zsv703g.mp4
-│   │   ├── AQP2TEaBSkxg_JzQTsJNaX2re8kusqeeNcyJ_N_phYeUWeQGpDJ8hdvth9O7GiEldCn6v5CVp5kPsgO8C6V7qesKWkNL_kX7fhvBi8c.mp4
-│   │   ├── AQPCfkzo04m1X0D9YJlb5jLY70oJbvczX49nw2v8PvNfPfj5iiHIdGe5eJZwJMBb-OwCKRDDx3WZ50g2DrAyFTaY-2-G0pNYFEixg4Q.mp4
-│   │   ├── AQPDL8cbXDXgwbWD39bC4FYyBiafMNSoHNXg4_gjnwmPH3zBVvXJnm4-tFoBIf0uOkqIgx8dbITt_9jnReBGEF3XoqzNttraVlbrEBA.mp4
-│   │   ├── AQPf8mBN6r5mrz6I8_ldLChwTpyB6oih2FN-2J6eucuskyOj0VLfEk0UmLddUgL7iw6p17elBQcrsVZhgaevICd8BvpMHJFt120oE30.mp4
-│   │   ├── AQPFBzOp3CUeBmI8wIW-NH2qpmiwSjMKCdVjUZ9f1nKEkyytzcF_ZCHWzSqd2je8gGD2wXU5btQaRlKp-Pm09OXLy55sUJ0FoPyk1KY.mp4
-│   │   ├── AQPHw5eoTGbBZBqqJKLTY0PoDQB8eZNdYIW_Z63mRtgCfjhSDhMtJeMK_HFRbAUqDl88CpP4juGGgZgXDKGmaniM.mp4
-│   │   ├── AQPK0yBGIh6033HxM-mlWO9-HePDlQayEtFNjCcqtyO4DUvRia1SgZLwfLgDc6G7UqU0Hv8RvEvj5VuUWDieSDY-JRrycXZrF6rHG0E.mp4
-│   │   ├── AQPM-D8MkWi6QWXP425DIGHD_SpJnnU4MfWEvRBxz_3ImUiEhurv5-8M2ZvjUxaSM-LPwfWMAFcCOHT_f9rtMd1TWaVDNpr2KmRFiyg.mp4
-│   │   ├── AQPoHOTVS5NGZWmmybtvs2cvUabR_FvoDyxF-Fl9QJvbgoUaZTv_eG74vYgFLpIR3ttWvjkUPHife0XTw9Z-RRB_VqDAxQDGoklN7AA.mp4
-│   │   ├── AQPp28EO6jEbF7f0L01BUE5353H3MpEQccja-yaTLxQKwhWCE_w08hgXHf9q31jDGppzfGx39yfrpuol10nk3FKZ.mp4
-│   │   ├── AQPpru43XoJlfMVUvg2HJnWwJJU_wHZpsfj8QnhR_HK18NdaMS29N22Uy990xPGRQpK4TYHbRX2vfsf8Drl8ZdnuZLhosH970_cJOKA.mp4
-│   │   ├── AQPRZvL5DcXQYOEy1CnF3r5OQc99GpT4dcDTKi6prN18MS7AOY4R8WNp97uCnXmQBD8NxX7VqBt_ff0hNdmI0hKKiN74QZOc_bhZ-d4.mp4
-│   │   ├── AQPsHkXrH7MnRjWg4m8_NzaEQSBWp-gzwbnaI_rerUpKLwsfJ83vHlw6L_uR8ReiVwTIcVqMlTGt9JzJ19CkgQvl5wrbijwgkoSc4h4.mp4
-│   │   ├── AQPwiVruQw4zINBBS8YiVHX0n_JqI6vjZmDWXOyBpxWPNX_b9HzSyOKtNxM291v6QuGZawbeStujy2mn-jWpxd8OBwxCcvK0jiq0nK0.mp4
-│   │   └── AQPxfVNyU5h9GVk_OYu7CoWXayey5kD2R5GcU85PWB_SZcZjCngEFlCy-dlgpDjE1ecUr2fFikWWDjudwEj5kXGRmErHgP_iFqSFYCU.mp4
+│   │   ├── piece1.jpg
+│   │   ├── piece10.jpg
+│   │   ├── piece100.jpg
+│   │   ├── piece101.jpg
+│   │   ├── piece102.jpg
+│   │   ├── piece103.jpg
+│   │   ├── piece104.jpg
+│   │   ├── piece105.jpg
+│   │   ├── piece106.jpg
+│   │   ├── piece107.jpg
+│   │   ├── piece108.jpg
+│   │   ├── piece109.jpg
+│   │   ├── piece11.jpg
+│   │   ├── piece110.jpg
+│   │   ├── piece111.jpg
+│   │   ├── piece112.jpg
+│   │   ├── piece113.jpg
+│   │   ├── piece114.jpg
+│   │   ├── piece115.jpg
+│   │   ├── piece116.jpg
+│   │   ├── piece117.jpg
+│   │   ├── piece118.jpg
+│   │   ├── piece119.jpg
+│   │   ├── piece12.jpg
+│   │   ├── piece120.jpg
+│   │   ├── piece121.jpg
+│   │   ├── piece122.jpg
+│   │   ├── piece123.jpg
+│   │   ├── piece124.jpg
+│   │   ├── piece125.jpg
+│   │   ├── piece126.jpg
+│   │   ├── piece127.jpg
+│   │   ├── piece128.jpg
+│   │   ├── piece129.jpg
+│   │   ├── piece13.jpg
+│   │   ├── piece130.jpg
+│   │   ├── piece131.jpg
+│   │   ├── piece132.jpg
+│   │   ├── piece133.jpg
+│   │   ├── piece134.jpg
+│   │   ├── piece135.jpg
+│   │   ├── piece136.jpg
+│   │   ├── piece137.jpg
+│   │   ├── piece138.jpg
+│   │   ├── piece139.jpg
+│   │   ├── piece14.jpg
+│   │   ├── piece140.jpg
+│   │   ├── piece141.jpg
+│   │   ├── piece142.jpg
+│   │   ├── piece143.jpg
+│   │   ├── piece144.jpg
+│   │   ├── piece145.jpg
+│   │   ├── piece146.jpg
+│   │   ├── piece147.jpg
+│   │   ├── piece148.jpg
+│   │   ├── piece149.jpg
+│   │   ├── piece15.jpg
+│   │   ├── piece150.jpg
+│   │   ├── piece151.jpg
+│   │   ├── piece152.jpg
+│   │   ├── piece153.jpg
+│   │   ├── piece154.jpg
+│   │   ├── piece155.jpg
+│   │   ├── piece156.jpg
+│   │   ├── piece157.jpg
+│   │   ├── piece158.jpg
+│   │   ├── piece159.jpg
+│   │   ├── piece16.jpg
+│   │   ├── piece160.jpg
+│   │   ├── piece161.jpg
+│   │   ├── piece162.jpg
+│   │   ├── piece163.jpg
+│   │   ├── piece164.jpg
+│   │   ├── piece165.jpg
+│   │   ├── piece166.jpg
+│   │   ├── piece167.jpg
+│   │   ├── piece168.jpg
+│   │   ├── piece169.jpg
+│   │   ├── piece17.jpg
+│   │   ├── piece170.jpg
+│   │   ├── piece171.jpg
+│   │   ├── piece172.jpg
+│   │   ├── piece173.jpg
+│   │   ├── piece174.jpg
+│   │   ├── piece175.jpg
+│   │   ├── piece176.jpg
+│   │   ├── piece177.jpg
+│   │   ├── piece178.jpg
+│   │   ├── piece179.jpg
+│   │   ├── piece18.jpg
+│   │   ├── piece19.jpg
+│   │   ├── piece2.jpg
+│   │   ├── piece20.jpg
+│   │   ├── piece21.jpg
+│   │   ├── piece22.jpg
+│   │   ├── piece23.jpg
+│   │   ├── piece24.jpg
+│   │   ├── piece25.jpg
+│   │   ├── piece26.jpg
+│   │   ├── piece27.jpg
+│   │   ├── piece28.jpg
+│   │   ├── piece29.jpg
+│   │   ├── piece3.jpg
+│   │   ├── piece30.jpg
+│   │   ├── piece31.jpg
+│   │   ├── piece32.jpg
+│   │   ├── piece33.jpg
+│   │   ├── piece34.jpg
+│   │   ├── piece35.jpg
+│   │   ├── piece36.jpg
+│   │   ├── piece37.jpg
+│   │   ├── piece38.jpg
+│   │   ├── piece39.jpg
+│   │   ├── piece4.jpg
+│   │   ├── piece40.jpg
+│   │   ├── piece41.jpg
+│   │   ├── piece42.jpg
+│   │   ├── piece43.jpg
+│   │   ├── piece44.jpg
+│   │   ├── piece45.jpg
+│   │   ├── piece46.jpg
+│   │   ├── piece47.jpg
+│   │   ├── piece48.jpg
+│   │   ├── piece49.jpg
+│   │   ├── piece5.jpg
+│   │   ├── piece50.jpg
+│   │   ├── piece51.jpg
+│   │   ├── piece52.jpg
+│   │   ├── piece53.jpg
+│   │   ├── piece54.jpg
+│   │   ├── piece55.jpg
+│   │   ├── piece56.jpg
+│   │   ├── piece57.jpg
+│   │   ├── piece58.jpg
+│   │   ├── piece59.jpg
+│   │   ├── piece6.jpg
+│   │   ├── piece60.jpg
+│   │   ├── piece61.jpg
+│   │   ├── piece62.jpg
+│   │   ├── piece63.jpg
+│   │   ├── piece64.jpg
+│   │   ├── piece65.jpg
+│   │   ├── piece66.jpg
+│   │   ├── piece67.jpg
+│   │   ├── piece68.jpg
+│   │   ├── piece69.jpg
+│   │   ├── piece7.jpg
+│   │   ├── piece70.jpg
+│   │   ├── piece71.jpg
+│   │   ├── piece72.jpg
+│   │   ├── piece73.jpg
+│   │   ├── piece74.jpg
+│   │   ├── piece75.jpg
+│   │   ├── piece76.jpg
+│   │   ├── piece77.jpg
+│   │   ├── piece78.jpg
+│   │   ├── piece79.jpg
+│   │   ├── piece8.jpg
+│   │   ├── piece80.jpg
+│   │   ├── piece81.jpg
+│   │   ├── piece82.jpg
+│   │   ├── piece83.jpg
+│   │   ├── piece84.jpg
+│   │   ├── piece85.jpg
+│   │   ├── piece86.jpg
+│   │   ├── piece87.jpg
+│   │   ├── piece88.jpg
+│   │   ├── piece89.jpg
+│   │   ├── piece9.jpg
+│   │   ├── piece90.jpg
+│   │   ├── piece91.jpg
+│   │   ├── piece92.jpg
+│   │   ├── piece93.jpg
+│   │   ├── piece94.jpg
+│   │   ├── piece95.jpg
+│   │   ├── piece96.jpg
+│   │   ├── piece97.jpg
+│   │   ├── piece98.jpg
+│   │   ├── piece99.jpg
+│   │   └── reels
+│   │       ├── reel1.mp4
+│   │       ├── reel10.mp4
+│   │       ├── reel11.mp4
+│   │       ├── reel12.mp4
+│   │       ├── reel13.mp4
+│   │       ├── reel14.mp4
+│   │       ├── reel15.mp4
+│   │       ├── reel16.mp4
+│   │       ├── reel17.mp4
+│   │       ├── reel18.mp4
+│   │       ├── reel19.mp4
+│   │       ├── reel2.mp4
+│   │       ├── reel20.mp4
+│   │       ├── reel21.mp4
+│   │       ├── reel22.mp4
+│   │       ├── reel23.mp4
+│   │       ├── reel24.mp4
+│   │       ├── reel25.mp4
+│   │       ├── reel26.mp4
+│   │       ├── reel27.mp4
+│   │       ├── reel28.mp4
+│   │       ├── reel29.mp4
+│   │       ├── reel3.mp4
+│   │       ├── reel30.mp4
+│   │       ├── reel31.mp4
+│   │       ├── reel32.mp4
+│   │       ├── reel33.mp4
+│   │       ├── reel34.mp4
+│   │       ├── reel35.mp4
+│   │       ├── reel36.mp4
+│   │       ├── reel37.mp4
+│   │       ├── reel38.mp4
+│   │       ├── reel39.mp4
+│   │       ├── reel4.mp4
+│   │       ├── reel40.mp4
+│   │       ├── reel5.mp4
+│   │       ├── reel6.mp4
+│   │       ├── reel7.mp4
+│   │       ├── reel8.mp4
+│   │       └── reel9.mp4
 │   ├── labubu.cur
-│   ├── mini10.gif
+│   ├── memes
+│   │   ├── meme1.jpg
+│   │   ├── meme2.jpg
+│   │   ├── meme3.jpg
+│   │   ├── meme4.jpg
+│   │   ├── meme5.jpg
+│   │   └── spinningcatloop.mp4
 │   ├── mini1.gif
+│   ├── mini10.gif
 │   ├── mini2.gif
 │   ├── mini3.gif
 │   ├── mini4.gif
@@ -1473,40 +1545,1462 @@
 │   ├── mini8.gif
 │   ├── mini9.gif
 │   ├── mudkipz.png
+│   ├── petra
+│   │   ├── 208744718_305128821354072_6198957589411128473_n.jpg
+│   │   ├── 252082687_1309410389490601_1733036900182162232_n.jpg
+│   │   ├── 253156725_2092802414207231_4284485654271937107_n.jpg
+│   │   ├── 361893192_18006186112862364_104027774887846333_n.jpg
+│   │   ├── 361934356_18006186103862364_4731407109139479910_n.jpg
+│   │   └── 481773048_18068867353862364_8329047207259582324_n.jpg
 │   ├── petrafiedlogo.jpg
 │   ├── shmegl.jpg
 │   ├── stars-bg.gif
 │   ├── tree
-│   ├── W95
-│   │   ├── 01-win95plus.jpg
-│   │   ├── DA_WALL.JPG
-│   │   ├── DV_WALL.JPG
-│   │   ├── __ia_thumb.jpg
-│   │   ├── MO_WALL.JPG
-│   │   ├── MY_WALL.JPG
-│   │   ├── NA_WALL.JPG
-│   │   ├── notes.md
-│   │   ├── PC_WALL.JPG
-│   │   ├── sc-wall_files.xml
-│   │   ├── SC_WALL.JPG
-│   │   ├── sc-wall_meta.sqlite
-│   │   ├── sc-wall_meta.xml
-│   │   ├── SP_WALL.JPG
-│   │   ├── SX_WALL.JPG
-│   │   ├── TR_WALL.JPG
-│   │   ├── WH_WALL.JPG
-│   │   └── WI_WALL.JPG
 │   └── wow.jpg
 ├── index.html
-├── LICENSE.md
+├── package-lock.json
 ├── package.json
 ├── privacy.html
-├── README.md
+├── public
+│   └── images
+│       ├── Heart.png
+│       ├── W95
+│       │   ├── Windows95ModernIcons
+│       │   │   └── icons_512x512
+│       │   │       ├── 3d_graphics_file.png
+│       │   │       ├── 3d_graphics_program.png
+│       │   │       ├── aseprite.png
+│       │   │       ├── aseprite_file.png
+│       │   │       ├── audio_editor.png
+│       │   │       ├── audio_file.png
+│       │   │       ├── audio_music_file.png
+│       │   │       ├── briefcase.png
+│       │   │       ├── calculator.png
+│       │   │       ├── calendar.png
+│       │   │       ├── camera.png
+│       │   │       ├── cd_drive.png
+│       │   │       ├── chrome.png
+│       │   │       ├── clock.png
+│       │   │       ├── contact_book.png
+│       │   │       ├── discord.png
+│       │   │       ├── drive.png
+│       │   │       ├── firefox.png
+│       │   │       ├── flop_drive.png
+│       │   │       ├── folder_closed.png
+│       │   │       ├── folder_dark.png
+│       │   │       ├── folder_open.png
+│       │   │       ├── games.png
+│       │   │       ├── github.png
+│       │   │       ├── image_editor.png
+│       │   │       ├── image_file.png
+│       │   │       ├── mail.png
+│       │   │       ├── microphone.png
+│       │   │       ├── minecraft.png
+│       │   │       ├── movies.png
+│       │   │       ├── music.png
+│       │   │       ├── news.png
+│       │   │       ├── notepad.png
+│       │   │       ├── paint.png
+│       │   │       ├── paint_alt.png
+│       │   │       ├── parsec.png
+│       │   │       ├── password_manager.png
+│       │   │       ├── phone.png
+│       │   │       ├── printer.png
+│       │   │       ├── program.png
+│       │   │       ├── recycle_bin.png
+│       │   │       ├── recycle_bin_full.png
+│       │   │       ├── script_file.png
+│       │   │       ├── search.png
+│       │   │       ├── slack.png
+│       │   │       ├── sounds.png
+│       │   │       ├── spreadsheet_file.png
+│       │   │       ├── spreadsheet_program.png
+│       │   │       ├── stardew_valley.png
+│       │   │       ├── steam.png
+│       │   │       ├── sticky_note.png
+│       │   │       ├── text_editor.png
+│       │   │       ├── text_file.png
+│       │   │       ├── text_file_2.png
+│       │   │       ├── this_computer.png
+│       │   │       ├── tools.png
+│       │   │       ├── video_editor.png
+│       │   │       ├── video_file.png
+│       │   │       ├── video_movie_editor.png
+│       │   │       ├── vlc.png
+│       │   │       ├── webpadge_file.png
+│       │   │       ├── workspace.png
+│       │   │       └── world.png
+│       │   ├── Windows95Wallpapers
+│       │   │   ├── DA_WALL.JPG
+│       │   │   ├── DV_WALL.JPG
+│       │   │   ├── MO_WALL.JPG
+│       │   │   ├── MY_WALL.JPG
+│       │   │   ├── NA_WALL.JPG
+│       │   │   ├── PC_WALL.JPG
+│       │   │   ├── SC_WALL.JPG
+│       │   │   ├── SP_WALL.JPG
+│       │   │   ├── SX_WALL.JPG
+│       │   │   ├── TR_WALL.JPG
+│       │   │   ├── WH_WALL.JPG
+│       │   │   └── WI_WALL.JPG
+│       │   └── michaelsoft.png
+│       ├── backdrop.svg
+│       ├── ban1.gif -> banners/findthequeen.gif
+│       ├── ban2.gif -> banners/chess.gif
+│       ├── ban3.gif -> banners/address-e.gif
+│       ├── ban4.gif -> banners/CHEQUEO-ONLINE-s.gif
+│       ├── ban5.gif -> banners/odd.gif
+│       ├── ban6.gif -> banners/bizarread.gif
+│       ├── ban7.gif -> banners/nokia.gif
+│       ├── ban8.gif -> banners/chess.gif
+│       ├── banners
+│       │   ├── 0701msz_19980702.gif
+│       │   ├── AdScam.gif
+│       │   ├── CHEQUEO-ONLINE-s.gif
+│       │   ├── Windows10.gif
+│       │   ├── address-e.gif
+│       │   ├── adsuck.gif
+│       │   ├── aliencivilization.gif
+│       │   ├── bb-bannar.gif
+│       │   ├── bejeweled.gif
+│       │   ├── bizarread.gif
+│       │   ├── bonus_ringtone.gif
+│       │   ├── callingcard.gif
+│       │   ├── cd.gif
+│       │   ├── chess.gif
+│       │   ├── ckystar.gif
+│       │   ├── coconetlab.gif
+│       │   ├── conduits-ad.gif
+│       │   ├── cospa.gif
+│       │   ├── crazy_frog.gif
+│       │   ├── cursors.gif
+│       │   ├── dolphin.gif
+│       │   ├── dreamcast.gif
+│       │   ├── ebayjp.gif
+│       │   ├── enlargeyourguineapig.gif
+│       │   ├── fajbluefireban.gif
+│       │   ├── findthequeen.gif
+│       │   ├── freeemoticons.gif
+│       │   ├── fujirock.gif
+│       │   ├── g-banner1.gif
+│       │   ├── gaymoz.gif
+│       │   ├── how2drawmanga.gif
+│       │   ├── internet_because.gif
+│       │   ├── kimpossible.gif
+│       │   ├── msn ad 3.gif
+│       │   ├── msn.gif
+│       │   ├── msn_ad.gif
+│       │   ├── nbanna-2.gif
+│       │   ├── nec_1027.gif
+│       │   ├── nokia.gif
+│       │   ├── nokia2.gif
+│       │   ├── nosmoke.gif
+│       │   ├── ocarina.gif
+│       │   ├── odd.gif
+│       │   ├── osxnewdesktop_20010922.gif
+│       │   ├── powermp3_nokia.gif
+│       │   ├── ra_comeback_slider_19990505.gif
+│       │   ├── sa2.gif
+│       │   ├── sf_image.gif
+│       │   ├── shuraki.gif
+│       │   ├── smileysad.gif
+│       │   ├── tom.gif
+│       │   ├── yugi.gif
+│       │   ├── yumenikki.gif
+│       │   └── zodiacalzephyr.gif
+│       ├── butterfly.gif
+│       ├── cleanup_images.sh
+│       ├── counter.gif
+│       ├── cursor-link.cur
+│       ├── cursor.cur
+│       ├── divider.gif
+│       ├── email
+│       │   ├── background_pattern.png
+│       │   ├── petrafiedlogo.jpg
+│       │   └── wow.png
+│       ├── graphix
+│       │   ├── avi
+│       │   │   ├── 0135.jpg
+│       │   │   ├── 108.gif
+│       │   │   ├── 177.gif
+│       │   │   ├── 48477rtq7rx7xlr.jpg
+│       │   │   ├── 4emilygoth_4.gif
+│       │   │   ├── 531668bmoeryga4s.jpg
+│       │   │   ├── 687646nqrss7qo3x.gif
+│       │   │   ├── 68e7eb35.jpg
+│       │   │   ├── 999999th-visitor.gif
+│       │   │   ├── ZrYOo1t.gif
+│       │   │   ├── avatarhell_broken4everx0x_aol.gif
+│       │   │   ├── avatarhell_caoilfhinionn_505.gif
+│       │   │   ├── blue_butterfly.gif
+│       │   │   ├── call_me.gif
+│       │   │   ├── circuitry.gif
+│       │   │   ├── favorite.gif
+│       │   │   ├── find-x.gif
+│       │   │   ├── froggykitten.png
+│       │   │   ├── nightmare.gif
+│       │   │   ├── processing.gif
+│       │   │   ├── shooter.gif
+│       │   │   ├── smileywindow.gif
+│       │   │   ├── transalien.gif
+│       │   │   ├── waffles.jpg
+│       │   │   ├── walmart.jpg
+│       │   │   └── windows_17.gif
+│       │   ├── banners
+│       │   │   ├── 0701msz_19980702.gif
+│       │   │   ├── AdScam.gif
+│       │   │   ├── CHEQUEO-ONLINE-s.gif
+│       │   │   ├── Windows10.gif
+│       │   │   ├── address-e.gif
+│       │   │   ├── adsuck.gif
+│       │   │   ├── aliencivilization.gif
+│       │   │   ├── bb-bannar.gif
+│       │   │   ├── bejeweled.gif
+│       │   │   ├── bizarread.gif
+│       │   │   ├── bonus_ringtone.gif
+│       │   │   ├── callingcard.gif
+│       │   │   ├── cd.gif
+│       │   │   ├── chess.gif
+│       │   │   ├── ckystar.gif
+│       │   │   ├── coconetlab.gif
+│       │   │   ├── conduits-ad.gif
+│       │   │   ├── cospa.gif
+│       │   │   ├── crazy_frog.gif
+│       │   │   ├── cursors.gif
+│       │   │   ├── dolphin.gif
+│       │   │   ├── dreamcast.gif
+│       │   │   ├── ebayjp.gif
+│       │   │   ├── enlargeyourguineapig.gif
+│       │   │   ├── fajbluefireban.gif
+│       │   │   ├── findthequeen.gif
+│       │   │   ├── freeemoticons.gif
+│       │   │   ├── fujirock.gif
+│       │   │   ├── g-banner1.gif
+│       │   │   ├── gaymoz.gif
+│       │   │   ├── how2drawmanga.gif
+│       │   │   ├── internet_because.gif
+│       │   │   ├── kimpossible.gif
+│       │   │   ├── miku.jpg
+│       │   │   ├── msn ad 3.gif
+│       │   │   ├── msn.gif
+│       │   │   ├── msn_ad.gif
+│       │   │   ├── nbanna-2.gif
+│       │   │   ├── nec_1027.gif
+│       │   │   ├── nokia.gif
+│       │   │   ├── nokia2.gif
+│       │   │   ├── nokia2.jpg
+│       │   │   ├── nosmoke.gif
+│       │   │   ├── ocarina.gif
+│       │   │   ├── odd.gif
+│       │   │   ├── ostan.png
+│       │   │   ├── osxnewdesktop_20010922.gif
+│       │   │   ├── otakuspeedvibe.jpg
+│       │   │   ├── powermp3_nokia.gif
+│       │   │   ├── ra_comeback_slider_19990505.gif
+│       │   │   ├── radiolive.jpg
+│       │   │   ├── roblox.jpg
+│       │   │   ├── sa2.gif
+│       │   │   ├── sf_image.gif
+│       │   │   ├── shuraki.gif
+│       │   │   ├── smileysad.gif
+│       │   │   ├── teleca.png
+│       │   │   ├── tom.gif
+│       │   │   ├── yotsuba.jpg
+│       │   │   ├── youkoso.png
+│       │   │   ├── yugi.gif
+│       │   │   ├── yumenikki.gif
+│       │   │   └── zodiacalzephyr.gif
+│       │   ├── bgs
+│       │   │   ├── checkered.gif
+│       │   │   └── water.gif
+│       │   ├── blinkies
+│       │   │   ├── 0146-kirbydance.gif
+│       │   │   ├── 0186-angelsmiley.gif
+│       │   │   ├── 02112342.gif
+│       │   │   ├── 1564055h9zarit76d.gif
+│       │   │   ├── 1stperson.gif
+│       │   │   ├── RADIOTROPHICBLUESCREENED.gif
+│       │   │   ├── acid.gif
+│       │   │   ├── alien.gif
+│       │   │   ├── alifewhatsthat.gif
+│       │   │   ├── andishouldcarebc.gif
+│       │   │   ├── animefreak.gif
+│       │   │   ├── annoying.gif
+│       │   │   ├── arcadecarpet.gif
+│       │   │   ├── asificare.gif
+│       │   │   ├── assimilated.gif
+│       │   │   ├── asuka.gif
+│       │   │   ├── autismtbh.gif
+│       │   │   ├── autistic_and_kin.gif
+│       │   │   ├── beautiful.gif
+│       │   │   ├── beeinme.gif
+│       │   │   ├── bekind.gif
+│       │   │   ├── biohazard.gif
+│       │   │   ├── bipride.gif
+│       │   │   ├── bitsnbytes.gif
+│       │   │   ├── blinkiebug.gif
+│       │   │   ├── blinkiesrunmylife.gif
+│       │   │   ├── blipbloopglorp.gif
+│       │   │   ├── bubblewrap.gif
+│       │   │   ├── buzzkill.gif
+│       │   │   ├── caution.gif
+│       │   │   ├── cds.gif
+│       │   │   ├── chaoticevil.gif
+│       │   │   ├── cheese.gif
+│       │   │   ├── chocoholic.gif
+│       │   │   ├── clovers.gif
+│       │   │   ├── contain.gif
+│       │   │   ├── cool.gif
+│       │   │   ├── country.gif
+│       │   │   ├── ctrlaltdel.gif
+│       │   │   ├── dandelion.gif
+│       │   │   ├── diamonds.gif
+│       │   │   ├── dontlabel.gif
+│       │   │   ├── dontlikeit.gif
+│       │   │   ├── downwardspiral.gif
+│       │   │   ├── dropdead.gif
+│       │   │   ├── dumbass.gif
+│       │   │   ├── eatchocolate.gif
+│       │   │   ├── eddsworld.gif
+│       │   │   ├── ena.gif
+│       │   │   ├── establishingconnection.gif
+│       │   │   ├── evilautism.gif
+│       │   │   ├── fakedownload.gif
+│       │   │   ├── fishy.gif
+│       │   │   ├── floppydisk.gif
+│       │   │   ├── fuck.gif
+│       │   │   ├── fuckai.gif
+│       │   │   ├── gamer.gif
+│       │   │   ├── glitchy.gif
+│       │   │   ├── glow.gif
+│       │   │   ├── goldenage.gif
+│       │   │   ├── gotblinkies.gif
+│       │   │   ├── gottagofast.gif
+│       │   │   ├── hatefakepngs.gif
+│       │   │   ├── heartfelt.gif
+│       │   │   ├── hearts.gif
+│       │   │   ├── hellooldfriend.gif
+│       │   │   ├── hiiii.gif
+│       │   │   ├── ihatepopups.gif
+│       │   │   ├── insaneandlovingit.gif
+│       │   │   ├── internetloser.gif
+│       │   │   ├── loser.gif
+│       │   │   ├── madscience.gif
+│       │   │   ├── meandwho.gif
+│       │   │   ├── meat.gif
+│       │   │   ├── mnms.gif
+│       │   │   ├── monsters.gif
+│       │   │   ├── moonriver.gif
+│       │   │   ├── neocitiesuser.gif
+│       │   │   ├── nihonkokumin.gif
+│       │   │   ├── nonbinary.gif
+│       │   │   ├── nosubliminalmessageshere.gif
+│       │   │   ├── nyannyanyan.gif
+│       │   │   ├── octotime.gif
+│       │   │   ├── oofowmybones.gif
+│       │   │   ├── oreo.gif
+│       │   │   ├── otherworldly.gif
+│       │   │   ├── outoforder.gif
+│       │   │   ├── paints.gif
+│       │   │   ├── party.gif
+│       │   │   ├── pingas.gif
+│       │   │   ├── piracy.gif
+│       │   │   ├── pixels_pencils.gif
+│       │   │   ├── popcorn.gif
+│       │   │   ├── ppgirlie.gif
+│       │   │   ├── ransomware.gif
+│       │   │   ├── reality.gif
+│       │   │   ├── reallifecomputerai.gif
+│       │   │   ├── savethedragons.gif
+│       │   │   ├── science.gif
+│       │   │   ├── shadow.gif
+│       │   │   ├── sickandtired.gif
+│       │   │   ├── sparkling.gif
+│       │   │   ├── spoiledbrat.gif
+│       │   │   ├── stargaze.gif
+│       │   │   ├── strawberries.gif
+│       │   │   ├── techno.gif
+│       │   │   ├── tools.gif
+│       │   │   ├── transandgoth.gif
+│       │   │   ├── truth.gif
+│       │   │   ├── ufo.gif
+│       │   │   ├── ultraviolet.gif
+│       │   │   ├── unbirthday.gif
+│       │   │   ├── underwater.gif
+│       │   │   ├── unghh.gif
+│       │   │   ├── utterlyputrid.gif
+│       │   │   ├── vague.gif
+│       │   │   ├── weird.gif
+│       │   │   ├── whatever.gif
+│       │   │   ├── whatmeworry.gif
+│       │   │   ├── woodstock.gif
+│       │   │   ├── worldisafuck.gif
+│       │   │   ├── worldwideweb.gif
+│       │   │   ├── worm.gif
+│       │   │   └── youredead.gif
+│       │   ├── buttons
+│       │   │   ├── 000010.gif
+│       │   │   ├── 104.jpg
+│       │   │   ├── 2020SUCKS.png
+│       │   │   ├── 2hu.png
+│       │   │   ├── 31x88.png
+│       │   │   ├── 4everonline.gif
+│       │   │   ├── 800x600.gif
+│       │   │   ├── 88x31.gif
+│       │   │   ├── 98plusani.gif
+│       │   │   ├── Censor_14c.gif
+│       │   │   ├── a3.gif
+│       │   │   ├── affection.gif
+│       │   │   ├── animanga.gif
+│       │   │   ├── atsmacpt.gif
+│       │   │   ├── b-parentaladvisory5.png
+│       │   │   ├── badapple.gif
+│       │   │   ├── basedandratpilled.gif
+│       │   │   ├── besteyes.gif
+│       │   │   ├── bi.png
+│       │   │   ├── bi2.png
+│       │   │   ├── blackmagic.gif
+│       │   │   ├── blink.gif
+│       │   │   ├── blinkiestar.gif
+│       │   │   ├── blockads.gif
+│       │   │   ├── br.GIF
+│       │   │   ├── breakup.jpg
+│       │   │   ├── ca2.gif
+│       │   │   ├── capido.gif
+│       │   │   ├── chrome-suck.gif
+│       │   │   ├── clancthulhu.gif
+│       │   │   ├── click_here.gif
+│       │   │   ├── cloudysky.gif
+│       │   │   ├── cloudysky.jpg
+│       │   │   ├── copy_floppy.gif
+│       │   │   ├── desktop.gif
+│       │   │   ├── dolby_digital.gif
+│       │   │   ├── dontclick.jpg
+│       │   │   ├── download.gif
+│       │   │   ├── eatsleep.gif
+│       │   │   ├── emulacity.gif
+│       │   │   ├── enhance.png
+│       │   │   ├── freeware-guide.gif
+│       │   │   ├── freeware.gif
+│       │   │   ├── freeware.png
+│       │   │   ├── freewmp.gif
+│       │   │   ├── gears.gif
+│       │   │   ├── graphic design.png
+│       │   │   ├── grizzco.jpg
+│       │   │   ├── hotstuff.gif
+│       │   │   ├── hsgamersonly.gif
+│       │   │   ├── imaginaryland.gif
+│       │   │   ├── imagination.gif
+│       │   │   ├── imissxp.gif
+│       │   │   ├── internetcitizen.png
+│       │   │   ├── kawaii.gif
+│       │   │   ├── kawaiicute.gif
+│       │   │   ├── keyboard.png
+│       │   │   ├── killsfascists.jpg
+│       │   │   ├── kris.png
+│       │   │   ├── lain2.gif
+│       │   │   ├── learn-html.gif
+│       │   │   ├── letter.gif
+│       │   │   ├── links
+│       │   │   │   ├── 14-4ml.gif
+│       │   │   │   ├── 2h-banner.gif
+│       │   │   │   ├── ETTM.png
+│       │   │   │   ├── MukkysWorld_Button.gif
+│       │   │   │   ├── ZENOSLOTS_Mini.png
+│       │   │   │   ├── alecwest.gif
+│       │   │   │   ├── antikristnewbutton2.png
+│       │   │   │   ├── awababa.gif
+│       │   │   │   ├── bettysgraphics.gif
+│       │   │   │   ├── billsworld.gif
+│       │   │   │   ├── brawler.gif
+│       │   │   │   ├── christinee.png
+│       │   │   │   ├── cinnibutton1.gif
+│       │   │   │   ├── crystalsweb_88x31.gif
+│       │   │   │   ├── dim-btn.gif
+│       │   │   │   ├── dinbtn0.gif
+│       │   │   │   ├── dokodemobutton3.gif
+│       │   │   │   ├── dxjunk.gif
+│       │   │   │   ├── emptyhalls.gif
+│       │   │   │   ├── expnembutton.png
+│       │   │   │   ├── fauux-btn-01.gif
+│       │   │   │   ├── fe9_banner01.gif
+│       │   │   │   ├── feelingmachine.gif
+│       │   │   │   ├── firefoxget.gif
+│       │   │   │   ├── flashpoint.gif
+│       │   │   │   ├── frutigeraeroarchive_button.png
+│       │   │   │   ├── frutigeraeroarchive_button_3.png
+│       │   │   │   ├── ia.gif
+│       │   │   │   ├── ita-button-02.gif
+│       │   │   │   ├── item64.gif
+│       │   │   │   ├── keysklubhouse.png
+│       │   │   │   ├── kokumin.gif
+│       │   │   │   ├── lolicorenet.gif
+│       │   │   │   ├── lovesick-2024-88x31.gif
+│       │   │   │   ├── mani.gif
+│       │   │   │   ├── matthew_now.gif
+│       │   │   │   ├── melonking.gif
+│       │   │   │   ├── milfgod.gif
+│       │   │   │   ├── n-razm_button_v2.png
+│       │   │   │   ├── nammac.gif
+│       │   │   │   ├── neocitiesblue.gif
+│       │   │   │   ├── neonaut-banner.png
+│       │   │   │   ├── ninacti0n.gif
+│       │   │   │   ├── pastelhello.png
+│       │   │   │   ├── randsel-tora.gif
+│       │   │   │   ├── rrnet_button.gif
+│       │   │   │   ├── samhayn.png
+│       │   │   │   ├── sharpnelsound.jpg
+│       │   │   │   ├── slaibeach8.png
+│       │   │   │   ├── spacefungus.gif
+│       │   │   │   ├── spiritcellar.gif
+│       │   │   │   ├── suppi.gif
+│       │   │   │   ├── sweethard666.gif
+│       │   │   │   ├── syntheticfruits.gif
+│       │   │   │   ├── textures.gif
+│       │   │   │   ├── theoldnetanimblur2.gif
+│       │   │   │   ├── tiny_space.gif
+│       │   │   │   ├── tofokyo.gif
+│       │   │   │   ├── valarkspur.gif
+│       │   │   │   ├── w95com.gif
+│       │   │   │   ├── warpzone_button.gif
+│       │   │   │   ├── wiby.gif
+│       │   │   │   ├── winrar.jpg
+│       │   │   │   └── xzyolotl.gif
+│       │   │   ├── lol.gif
+│       │   │   ├── marijuana.gif
+│       │   │   ├── microsoft_inhaler.gif
+│       │   │   ├── miku.gif
+│       │   │   ├── mine
+│       │   │   │   ├── bsky.png
+│       │   │   │   ├── bsky2.png
+│       │   │   │   ├── email.gif
+│       │   │   │   ├── kofi2.png
+│       │   │   │   ├── kofi3.png
+│       │   │   │   ├── mailme.png
+│       │   │   │   ├── nc.png
+│       │   │   │   ├── sheezy.jpg
+│       │   │   │   ├── sheezy.png
+│       │   │   │   ├── tmblr.png
+│       │   │   │   ├── tumblr.png
+│       │   │   │   └── wacupnow.png
+│       │   │   ├── moonlink.png
+│       │   │   ├── nb2.jpg
+│       │   │   ├── nftbutton.gif
+│       │   │   ├── nftnofuckinthanks.gif
+│       │   │   ├── nin10douni.gif
+│       │   │   ├── nyan.gif
+│       │   │   ├── oe_ng.gif
+│       │   │   ├── ostan.gif
+│       │   │   ├── pictochat.gif
+│       │   │   ├── pokemon.gif
+│       │   │   ├── pride.gif
+│       │   │   ├── queercoded.png
+│       │   │   ├── rainbow.gif
+│       │   │   ├── ralseismokingadart.gif
+│       │   │   ├── repair.jpg
+│       │   │   ├── sa2.jpg
+│       │   │   ├── saynotoweb3.gif
+│       │   │   ├── sburb.gif
+│       │   │   ├── segaelite.gif
+│       │   │   ├── smile.png
+│       │   │   ├── space.gif
+│       │   │   ├── spaceamp.gif
+│       │   │   ├── steam.gif
+│       │   │   ├── strawberry.gif
+│       │   │   ├── teapot.png
+│       │   │   ├── they.png
+│       │   │   ├── thiswebsiteisgay.gif
+│       │   │   ├── tohell.gif
+│       │   │   ├── touch.gif
+│       │   │   ├── trn.png
+│       │   │   ├── ublock.jpg
+│       │   │   ├── unitedgirls.gif
+│       │   │   ├── wii.png
+│       │   │   ├── win2k.png
+│       │   │   ├── win98.png
+│       │   │   ├── winamp5.gif
+│       │   │   ├── windows_xp.gif
+│       │   │   ├── windowsme.png
+│       │   │   ├── wmp10.gif
+│       │   │   ├── www dot.gif
+│       │   │   ├── www.gif
+│       │   │   └── zorg.gif
+│       │   ├── characters
+│       │   │   ├── 0TJKr88.gif
+│       │   │   ├── GLITTERSTAR.gif
+│       │   │   ├── amyrose.gif
+│       │   │   ├── angel1.gif
+│       │   │   ├── angel2.gif
+│       │   │   ├── ani_shii.gif
+│       │   │   ├── animegirlfan.gif
+│       │   │   ├── arcueid.gif
+│       │   │   ├── bathtub.gif
+│       │   │   ├── breakrave.gif
+│       │   │   ├── brighton.gif
+│       │   │   ├── busuko.gif
+│       │   │   ├── busuko2.gif
+│       │   │   ├── cherrysakura84_logo.gif
+│       │   │   ├── construction (1).gif
+│       │   │   ├── cryingangel.gif
+│       │   │   ├── djing.gif
+│       │   │   ├── firefoxgirl.png
+│       │   │   ├── firefoxgirl2'.png
+│       │   │   ├── getwellsoon.gif
+│       │   │   ├── good.gif
+│       │   │   ├── gun.gif
+│       │   │   ├── i-9807.gif
+│       │   │   ├── inspiremari.gif
+│       │   │   ├── konatamaid.png
+│       │   │   ├── krusie.gif
+│       │   │   ├── mars_angel_chibi.gif
+│       │   │   ├── mayura.gif
+│       │   │   ├── mecha
+│       │   │   │   ├── ds.gif
+│       │   │   │   ├── ps3.gif
+│       │   │   │   ├── wii.gif
+│       │   │   │   └── xbox360.gif
+│       │   │   ├── pixeltord.gif
+│       │   │   ├── princekatamari.gif
+│       │   │   ├── psptux.png
+│       │   │   ├── rainbowmiku.gif
+│       │   │   ├── rei3.gif
+│       │   │   ├── remilia.gif
+│       │   │   ├── sweep.gif
+│       │   │   ├── twirl.gif
+│       │   │   └── yay.gif
+│       │   ├── dividers
+│       │   │   ├── barbed wire.gif
+│       │   │   ├── bow.png
+│       │   │   ├── c4ltcz.gif
+│       │   │   ├── chains.gif
+│       │   │   ├── chains2.png
+│       │   │   ├── computers.gif
+│       │   │   ├── construction.gif
+│       │   │   ├── hb.png
+│       │   │   ├── scissors.gif
+│       │   │   ├── scissors2.gif
+│       │   │   ├── slime.gif
+│       │   │   ├── slime2.gif
+│       │   │   ├── stripeywings.png
+│       │   │   └── ufo.gif
+│       │   ├── fanlist
+│       │   │   ├── 011.jpg
+│       │   │   ├── 50x50-001.jpg
+│       │   │   ├── frutiger50x503.png
+│       │   │   ├── html50x50_001.png
+│       │   │   ├── katamari.png
+│       │   │   ├── mozilla50x50.png
+│       │   │   └── webdesign.png
+│       │   ├── favicons
+│       │   │   ├── 7a057f8e_original.gif
+│       │   │   ├── 7c9f470a.gif
+│       │   │   ├── bang.gif
+│       │   │   ├── bluebow.gif
+│       │   │   ├── bluecd.png
+│       │   │   ├── bluelace
+│       │   │   │   ├── bangbang.gif
+│       │   │   │   ├── down.gif
+│       │   │   │   ├── drops.gif
+│       │   │   │   ├── heart.gif
+│       │   │   │   ├── note.gif
+│       │   │   │   ├── sparkles.gif
+│       │   │   │   ├── star.gif
+│       │   │   │   └── up.gif
+│       │   │   ├── bluesparx.gif
+│       │   │   ├── bluheart.gif
+│       │   │   ├── blulove.gif
+│       │   │   ├── book.gif
+│       │   │   ├── bubbles.gif
+│       │   │   ├── butterfly.gif
+│       │   │   ├── butterfly1.gif
+│       │   │   ├── butterfly2.gif
+│       │   │   ├── cassetteplayer.gif
+│       │   │   ├── catputer.gif
+│       │   │   ├── cd.gif
+│       │   │   ├── cd1.gif
+│       │   │   ├── cellphone.gif
+│       │   │   ├── circuitry.gif
+│       │   │   ├── computer-0036.gif
+│       │   │   ├── computer_65.gif
+│       │   │   ├── computer_9.gif
+│       │   │   ├── computicon3.gif
+│       │   │   ├── conch.gif
+│       │   │   ├── coral.gif
+│       │   │   ├── dialup.gif
+│       │   │   ├── disc.png
+│       │   │   ├── earth.gif
+│       │   │   ├── equalizer.gif
+│       │   │   ├── fan.gif
+│       │   │   ├── floppy.gif
+│       │   │   ├── flower.gif
+│       │   │   ├── gir.gif
+│       │   │   ├── greenputers.gif
+│       │   │   ├── guitar.gif
+│       │   │   ├── ipod.gif
+│       │   │   ├── laptop.gif
+│       │   │   ├── mac.png
+│       │   │   ├── mac2.png
+│       │   │   ├── meeku.png
+│       │   │   ├── mini081.gif
+│       │   │   ├── monitor.gif
+│       │   │   ├── moon.gif
+│       │   │   ├── music.gif
+│       │   │   ├── network.png
+│       │   │   ├── notebook.gif
+│       │   │   ├── o5el7t.gif
+│       │   │   ├── paint pallet 3.gif
+│       │   │   ├── phone.gif
+│       │   │   ├── playing.gif
+│       │   │   ├── psp.gif
+│       │   │   ├── puter.gif
+│       │   │   ├── smiley1.gif
+│       │   │   ├── sparx.gif
+│       │   │   ├── sprout1.gif
+│       │   │   ├── sprout2.gif
+│       │   │   ├── star109.gif
+│       │   │   ├── starblue.gif
+│       │   │   ├── stargreen.gif
+│       │   │   ├── stars.gif
+│       │   │   ├── stuffs.gif
+│       │   │   ├── succulent.gif
+│       │   │   ├── swirl.gif
+│       │   │   ├── swirl1.gif
+│       │   │   ├── tv.png
+│       │   │   ├── vidya.gif
+│       │   │   ├── wand.gif
+│       │   │   ├── washingmachine.gif
+│       │   │   ├── wii.gif
+│       │   │   └── window.gif
+│       │   ├── icons
+│       │   │   ├── 3D-Torrent-icon.png
+│       │   │   ├── Application-icon.png
+│       │   │   ├── Games-icon.png
+│       │   │   ├── My-Documents-icon.png
+│       │   │   ├── Recycle-Bin-full.png
+│       │   │   ├── Tumblr_l_590479670147040.png
+│       │   │   ├── mail.png
+│       │   │   ├── msn.png
+│       │   │   └── xp
+│       │   │       ├── Appearance.png
+│       │   │       ├── Charmap.png
+│       │   │       ├── Command Prompt.png
+│       │   │       ├── Favorites.png
+│       │   │       ├── File Explorer.png
+│       │   │       ├── Folder Closed.png
+│       │   │       ├── Folder Opened.png
+│       │   │       ├── Information.png
+│       │   │       ├── Keyboard.png
+│       │   │       ├── MSN.png
+│       │   │       ├── My Computer.png
+│       │   │       ├── My Music.png
+│       │   │       ├── My Photos.png
+│       │   │       ├── Network and Internet.png
+│       │   │       ├── Notepad.png
+│       │   │       ├── Paint.png
+│       │   │       ├── Windows Catalog.png
+│       │   │       ├── Windows Movie Maker.png
+│       │   │       ├── recycle bin (empty).png
+│       │   │       ├── recycle bin (full).png
+│       │   │       ├── user.png
+│       │   │       └── win.gif
+│       │   ├── misc
+│       │   │   ├── 90scomputer.gif
+│       │   │   ├── BLOODLAMP.gif
+│       │   │   ├── Howyourcomputerworks.gif
+│       │   │   ├── angelwings.gif
+│       │   │   ├── axxlogo.gif
+│       │   │   ├── bluelamp.gif
+│       │   │   ├── bluelamp2.gif
+│       │   │   ├── bottle.gif
+│       │   │   ├── can.gif
+│       │   │   ├── computer 15.gif
+│       │   │   ├── computer-01.gif
+│       │   │   ├── computer.gif
+│       │   │   ├── computer_7.gif
+│       │   │   ├── computerangel.png
+│       │   │   ├── cursorheart.gif
+│       │   │   ├── edpc19.gif
+│       │   │   ├── explodingcomputer.gif
+│       │   │   ├── float.gif
+│       │   │   ├── flower_6.gif
+│       │   │   ├── global-wireframe.gif
+│       │   │   ├── globe.gif
+│       │   │   ├── greenlavalamp.gif
+│       │   │   ├── hand.gif
+│       │   │   ├── homepage.gif
+│       │   │   ├── lap.gif
+│       │   │   ├── marquee.gif
+│       │   │   ├── melt.gif
+│       │   │   ├── midiarchive.gif
+│       │   │   ├── neonlamp.gif
+│       │   │   ├── networx.gif
+│       │   │   ├── now_playing.gif
+│       │   │   ├── ocuitic-sinful.gif
+│       │   │   ├── original.gif
+│       │   │   ├── paint-colors.gif
+│       │   │   ├── planetheart.gif
+│       │   │   ├── plushputer.png
+│       │   │   ├── portrait.gif
+│       │   │   ├── reverseearth.gif
+│       │   │   ├── saucer.gif
+│       │   │   ├── snake5.gif
+│       │   │   ├── ufo_2.gif
+│       │   │   ├── welcome.gif
+│       │   │   ├── windowspaint.gif
+│       │   │   ├── winflag.gif
+│       │   │   ├── wqwand7.gif
+│       │   │   ├── wwwbadge.gif
+│       │   │   └── xpload.gif
+│       │   ├── pics
+│       │   │   └── ocean1.png
+│       │   ├── quizzes
+│       │   │   ├── 1592_Brunette.jpg
+│       │   │   ├── 4031_Perserverance.jpg
+│       │   │   ├── 4097_Kuudere.jpg
+│       │   │   ├── dark.png
+│       │   │   ├── dragon.png
+│       │   │   ├── e8976aab52.gif
+│       │   │   ├── lsr.gif
+│       │   │   └── quitemasculine.png
+│       │   ├── stamps
+│       │   │   ├── 1.jpg
+│       │   │   ├── 2010.png
+│       │   │   ├── 2k-tan.png
+│       │   │   ├── Hell.png
+│       │   │   ├── METAL_SONIC_STAMP.gif
+│       │   │   ├── [STAMP] Luigi Victory Pose 1 (SSBU) azuhreidii.gif
+│       │   │   ├── abducted.png
+│       │   │   ├── akira.png
+│       │   │   ├── arcade.png
+│       │   │   ├── arcade2.png
+│       │   │   ├── asdf.gif
+│       │   │   ├── autistic.png
+│       │   │   ├── awesomeface.png
+│       │   │   ├── badger.gif
+│       │   │   ├── balls.png
+│       │   │   ├── barbedwire.jpg
+│       │   │   ├── bass.gif
+│       │   │   ├── bi80s.png
+│       │   │   ├── bitch.png
+│       │   │   ├── blank.png
+│       │   │   ├── bliss.png
+│       │   │   ├── boobs.png
+│       │   │   ├── boombox.gif
+│       │   │   ├── caramelldansen.gif
+│       │   │   ├── cd_stamp.png
+│       │   │   ├── cellphone.png
+│       │   │   ├── cereal.gif
+│       │   │   ├── chocolate.png
+│       │   │   ├── cirnohijack.png
+│       │   │   ├── clefairy.png
+│       │   │   ├── clubpenguin.gif
+│       │   │   ├── collar.png
+│       │   │   ├── corsola.jpg
+│       │   │   ├── cringeworthy.png
+│       │   │   ├── dangerouswhenwet.jpeg
+│       │   │   ├── daydreamer.gif
+│       │   │   ├── defrag.gif
+│       │   │   ├── digitalartists.gif
+│       │   │   ├── dumbass.png
+│       │   │   ├── dvd logo bouncing around.gif
+│       │   │   ├── eddsworld
+│       │   │   │   ├── eddsworld.png
+│       │   │   │   ├── itsmetord.gif
+│       │   │   │   └── wellwellwell.gif
+│       │   │   ├── evidence.gif
+│       │   │   ├── evilautism.png
+│       │   │   ├── explode.jpg
+│       │   │   ├── fakeandgay.gif
+│       │   │   ├── filia.png
+│       │   │   ├── frutigeraero.gif
+│       │   │   ├── frye.gif
+│       │   │   ├── funky.png
+│       │   │   ├── gatekeeping.png
+│       │   │   ├── germs.png
+│       │   │   ├── grim.jpg
+│       │   │   ├── hatecancer.png
+│       │   │   ├── hb.gif
+│       │   │   ├── hex
+│       │   │   │   ├── 8D.png
+│       │   │   │   ├── EndlessFantasy.png
+│       │   │   │   ├── Honeycomb stamp sushi.png
+│       │   │   │   ├── Honeycomb stamp tuna.png
+│       │   │   │   ├── Honeycomb strawberries.png
+│       │   │   │   ├── PuiPuiMolcar.png
+│       │   │   │   ├── Win98dialup.gif
+│       │   │   │   ├── Win98internetclick.gif
+│       │   │   │   ├── Win98mycomp.png
+│       │   │   │   ├── Win98paint.png
+│       │   │   │   ├── WinXPmsn.png
+│       │   │   │   ├── WinXPpaint.png
+│       │   │   │   ├── blk-tmasc.png
+│       │   │   │   ├── blk-tmasc2.png
+│       │   │   │   ├── capricorn.png
+│       │   │   │   ├── carpet_01.png
+│       │   │   │   ├── carpet_04.png
+│       │   │   │   ├── carpet_06.png
+│       │   │   │   ├── carpet_07.png
+│       │   │   │   ├── carpet_08.png
+│       │   │   │   ├── confused.png
+│       │   │   │   ├── contact.png
+│       │   │   │   ├── evil.png
+│       │   │   │   ├── flamechain.gif
+│       │   │   │   ├── heart.gif
+│       │   │   │   ├── hexstamp spaghetti.png
+│       │   │   │   ├── holo_05.png
+│       │   │   │   ├── lain.gif
+│       │   │   │   ├── mHmTNYS.png
+│       │   │   │   ├── mine
+│       │   │   │   │   ├── aroace.png
+│       │   │   │   │   ├── bliss.png
+│       │   │   │   │   ├── blueexec.png
+│       │   │   │   │   ├── ena.gif
+│       │   │   │   │   ├── gplus.png
+│       │   │   │   │   ├── greenscientist.png
+│       │   │   │   │   ├── null500.png
+│       │   │   │   │   ├── redleader.png
+│       │   │   │   │   ├── sea.png
+│       │   │   │   │   ├── trixic.png
+│       │   │   │   │   ├── winstamp.png
+│       │   │   │   │   ├── yellowking.png
+│       │   │   │   │   └── yotsuba.png
+│       │   │   │   ├── neurodivergent.png
+│       │   │   │   ├── nights_hexstamp.gif
+│       │   │   │   ├── nonbinary.png
+│       │   │   │   ├── progress.png
+│       │   │   │   ├── ring.png
+│       │   │   │   ├── sRSGjzI.png
+│       │   │   │   ├── tama.gif
+│       │   │   │   ├── uRwoiGA.gif
+│       │   │   │   └── windows.gif
+│       │   │   ├── honor1.gif
+│       │   │   ├── hottopic.gif
+│       │   │   ├── i love to hug my plushies.png
+│       │   │   ├── idiot.png
+│       │   │   ├── ihateslowinternet.png
+│       │   │   ├── ilovecookies.jpg
+│       │   │   ├── insufferable.png
+│       │   │   ├── introvery.gif
+│       │   │   ├── jazz.png
+│       │   │   ├── kaiba.png
+│       │   │   ├── katamari.gif
+│       │   │   ├── keyboard.png
+│       │   │   ├── kneesocks.gif
+│       │   │   ├── koneko.gif
+│       │   │   ├── labspecimen.png
+│       │   │   ├── lgpacman.gif
+│       │   │   ├── luigirave.gif
+│       │   │   ├── maplestory.gif
+│       │   │   ├── maplestoryplayer.png
+│       │   │   ├── marina.gif
+│       │   │   ├── matroska.gif
+│       │   │   ├── me-tan.gif
+│       │   │   ├── me-tan.png
+│       │   │   ├── milkchan.png
+│       │   │   ├── mlaatr.gif
+│       │   │   ├── msfortune.gif
+│       │   │   ├── msn.png
+│       │   │   ├── musicgf.gif
+│       │   │   ├── my shit
+│       │   │   │   ├── aroace.png
+│       │   │   │   ├── bi-nb.png
+│       │   │   │   ├── computerbugs.png
+│       │   │   │   ├── delectablecheese.png
+│       │   │   │   ├── findeverything.png
+│       │   │   │   ├── hanipan.png
+│       │   │   │   ├── kokumin.png
+│       │   │   │   ├── mami-chan.png
+│       │   │   │   ├── nightmare.png
+│       │   │   │   ├── otactics.png
+│       │   │   │   ├── platinedispositif-C87-STG.png
+│       │   │   │   ├── poinie.png
+│       │   │   │   ├── problemsleuth.gif
+│       │   │   │   ├── psychonauts.png
+│       │   │   │   ├── psyclone.png
+│       │   │   │   ├── resistance.png
+│       │   │   │   ├── rinko.png
+│       │   │   │   ├── silhouettemirage.png
+│       │   │   │   └── trixic.png
+│       │   │   ├── nights.png
+│       │   │   ├── nonbinary.gif
+│       │   │   ├── ogorki.gif
+│       │   │   ├── ok.gif
+│       │   │   ├── okage.png
+│       │   │   ├── outside.gif
+│       │   │   ├── overactive.gif
+│       │   │   ├── pantyvsscanty.gif
+│       │   │   ├── paswg.png
+│       │   │   ├── peacock.png
+│       │   │   ├── pinkcheckerbling.gif
+│       │   │   ├── pizza.gif
+│       │   │   ├── pmmm.gif
+│       │   │   ├── portal.png
+│       │   │   ├── portal2.png
+│       │   │   ├── ppg.jpg
+│       │   │   ├── problem.gif
+│       │   │   ├── purpstar.gif
+│       │   │   ├── rainbeam stamp.png
+│       │   │   ├── rainbowww.gif
+│       │   │   ├── redacted.gif
+│       │   │   ├── redball.gif
+│       │   │   ├── restart.gif
+│       │   │   ├── ripwinxp.gif
+│       │   │   ├── roblox.gif
+│       │   │   ├── robotslove.gif
+│       │   │   ├── shadow.gif
+│       │   │   ├── shaky.gif
+│       │   │   ├── sharpedges.gif
+│       │   │   ├── signedspiritcellarclover.png
+│       │   │   ├── slimerancher.gif
+│       │   │   ├── smileyfries.png
+│       │   │   ├── sonic stamp.png
+│       │   │   ├── sonicoc.png
+│       │   │   ├── squigly.png
+│       │   │   ├── squirmystamp.gif
+│       │   │   ├── stampfan.png
+│       │   │   ├── stamploading.gif
+│       │   │   ├── stamponfire.gif
+│       │   │   ├── star.png
+│       │   │   ├── stardust.png
+│       │   │   ├── suselle.png
+│       │   │   ├── swirl.gif
+│       │   │   ├── talk2myself.gif
+│       │   │   ├── taskmanager.gif
+│       │   │   ├── thog.png
+│       │   │   ├── transrights.png
+│       │   │   ├── trappedinmymind.png
+│       │   │   ├── tvscreens.gif
+│       │   │   ├── twisty.gif
+│       │   │   ├── undertale.png
+│       │   │   ├── vidya.png
+│       │   │   ├── virus.jpg
+│       │   │   ├── waffles.png
+│       │   │   ├── water.gif
+│       │   │   ├── web.png
+│       │   │   ├── weird.gif
+│       │   │   ├── whack.gif
+│       │   │   ├── what.gif
+│       │   │   ├── wiggly.gif
+│       │   │   ├── win7.png
+│       │   │   └── worm.png
+│       │   └── userbars
+│       │       ├── Clock-1.png
+│       │       ├── DVD.png
+│       │       ├── Firefox.gif
+│       │       ├── InSurfer.png
+│       │       ├── Internet_Explorer_9.png
+│       │       ├── aliens.gif
+│       │       ├── android.gif
+│       │       ├── aquastyle.gif
+│       │       ├── blueuser.gif
+│       │       ├── cheese.jpg
+│       │       ├── choco.jpg
+│       │       ├── colors.gif
+│       │       ├── emo.gif
+│       │       ├── emoticon.gif
+│       │       ├── error.png
+│       │       ├── i_love_music_.gif
+│       │       ├── lgbt.gif
+│       │       ├── lifenotfound.jpg
+│       │       ├── new_vs_old.png
+│       │       ├── orchids.jpg
+│       │       ├── oreo.gif
+│       │       ├── pizza.jpg
+│       │       ├── polybius.gif
+│       │       ├── pressplay.jpg
+│       │       ├── psychonauts_copy.gif
+│       │       ├── spacebar.gif
+│       │       ├── steam.gif
+│       │       ├── strawberries.jpg
+│       │       ├── system.gif
+│       │       ├── toxicdance.gif
+│       │       ├── twt.jpg
+│       │       ├── ub_shadow1_by_key.gif
+│       │       ├── webmaster.png
+│       │       ├── win10.gif
+│       │       ├── win7.gif
+│       │       ├── win7.png
+│       │       ├── wina5.jpg
+│       │       ├── winamp.gif
+│       │       ├── wmp.png
+│       │       └── yt.gif
+│       ├── icons
+│       │   ├── amazon-music.svg
+│       │   ├── amazon.svg
+│       │   ├── apple-music-alt.svg
+│       │   ├── apple-music.svg
+│       │   ├── apple-podcasts-alt.svg
+│       │   ├── apple-podcasts.svg
+│       │   ├── apple.svg
+│       │   ├── artstation.svg
+│       │   ├── bandcamp.svg
+│       │   ├── behance.svg
+│       │   ├── blog.svg
+│       │   ├── bluesky.svg
+│       │   ├── buy-me-a-coffee.svg
+│       │   ├── cal.svg
+│       │   ├── calendly.svg
+│       │   ├── cash-app-btc.svg
+│       │   ├── cash-app-dollar.svg
+│       │   ├── cash-app-pound.svg
+│       │   ├── cat.svg
+│       │   ├── clubhouse.svg
+│       │   ├── dev-to.svg
+│       │   ├── discord.svg
+│       │   ├── dribbble.svg
+│       │   ├── email-alt.svg
+│       │   ├── email.svg
+│       │   ├── etsy.svg
+│       │   ├── facebook.svg
+│       │   ├── figma.svg
+│       │   ├── fiverr.svg
+│       │   ├── flickr.svg
+│       │   ├── generic-blog.svg
+│       │   ├── generic-calendar.svg
+│       │   ├── generic-cloud.svg
+│       │   ├── generic-code.svg
+│       │   ├── generic-computer.svg
+│       │   ├── generic-email-alt.svg
+│       │   ├── generic-email.svg
+│       │   ├── generic-homepage.svg
+│       │   ├── generic-map.svg
+│       │   ├── generic-phone.svg
+│       │   ├── generic-review.svg
+│       │   ├── generic-rss.svg
+│       │   ├── generic-shopping-bag.svg
+│       │   ├── generic-shopping-tag.svg
+│       │   ├── generic-sms.svg
+│       │   ├── generic-website.svg
+│       │   ├── github.svg
+│       │   ├── gitlab.svg
+│       │   ├── gofundme.svg
+│       │   ├── goodreads.svg
+│       │   ├── google-drive.svg
+│       │   ├── google-play.svg
+│       │   ├── google-podcasts.svg
+│       │   ├── google-scholar.svg
+│       │   ├── guilded.svg
+│       │   ├── hashnode.svg
+│       │   ├── instagram.svg
+│       │   ├── kick-alt.svg
+│       │   ├── kick.svg
+│       │   ├── kickstarter.svg
+│       │   ├── kit.svg
+│       │   ├── ko-fi.svg
+│       │   ├── last-fm.svg
+│       │   ├── letterboxd.svg
+│       │   ├── line.svg
+│       │   ├── linkedin.svg
+│       │   ├── littlelink.svg
+│       │   ├── mailchimp.svg
+│       │   ├── mastodon.svg
+│       │   ├── medium.svg
+│       │   ├── messenger.svg
+│       │   ├── ngl.svg
+│       │   ├── notion.svg
+│       │   ├── onlyfans.svg
+│       │   ├── patreon.svg
+│       │   ├── paypal.svg
+│       │   ├── pinterest.svg
+│       │   ├── post-news.svg
+│       │   ├── product-hunt.svg
+│       │   ├── read-cv.svg
+│       │   ├── redbubble.svg
+│       │   ├── reddit.svg
+│       │   ├── shop.svg
+│       │   ├── signal.svg
+│       │   ├── skoob.svg
+│       │   ├── slack.svg
+│       │   ├── snapchat.svg
+│       │   ├── soundcloud.svg
+│       │   ├── spotify-alt.svg
+│       │   ├── spotify.svg
+│       │   ├── square.svg
+│       │   ├── steam.svg
+│       │   ├── strava.svg
+│       │   ├── substack.svg
+│       │   ├── telegram.svg
+│       │   ├── threads.svg
+│       │   ├── threema.svg
+│       │   ├── tiktok.svg
+│       │   ├── trello.svg
+│       │   ├── tumblr.svg
+│       │   ├── twitch.svg
+│       │   ├── twitter.svg
+│       │   ├── unsplash.svg
+│       │   ├── untappd.svg
+│       │   ├── upwork.svg
+│       │   ├── venmo.svg
+│       │   ├── vimeo.svg
+│       │   ├── vrchat.svg
+│       │   ├── vsco.svg
+│       │   ├── whatsapp.svg
+│       │   ├── wordpress.svg
+│       │   ├── x.svg
+│       │   ├── xing.svg
+│       │   ├── youtube-music.svg
+│       │   ├── youtube.svg
+│       │   └── zoom.svg
+│       ├── instagramposts
+│       │   ├── piece1.jpg
+│       │   ├── piece10.jpg
+│       │   ├── piece100.jpg
+│       │   ├── piece101.jpg
+│       │   ├── piece102.jpg
+│       │   ├── piece103.jpg
+│       │   ├── piece104.jpg
+│       │   ├── piece105.jpg
+│       │   ├── piece106.jpg
+│       │   ├── piece107.jpg
+│       │   ├── piece108.jpg
+│       │   ├── piece109.jpg
+│       │   ├── piece11.jpg
+│       │   ├── piece110.jpg
+│       │   ├── piece111.jpg
+│       │   ├── piece112.jpg
+│       │   ├── piece113.jpg
+│       │   ├── piece114.jpg
+│       │   ├── piece115.jpg
+│       │   ├── piece116.jpg
+│       │   ├── piece117.jpg
+│       │   ├── piece118.jpg
+│       │   ├── piece119.jpg
+│       │   ├── piece12.jpg
+│       │   ├── piece120.jpg
+│       │   ├── piece121.jpg
+│       │   ├── piece122.jpg
+│       │   ├── piece123.jpg
+│       │   ├── piece124.jpg
+│       │   ├── piece125.jpg
+│       │   ├── piece126.jpg
+│       │   ├── piece127.jpg
+│       │   ├── piece128.jpg
+│       │   ├── piece129.jpg
+│       │   ├── piece13.jpg
+│       │   ├── piece130.jpg
+│       │   ├── piece131.jpg
+│       │   ├── piece132.jpg
+│       │   ├── piece133.jpg
+│       │   ├── piece134.jpg
+│       │   ├── piece135.jpg
+│       │   ├── piece136.jpg
+│       │   ├── piece137.jpg
+│       │   ├── piece138.jpg
+│       │   ├── piece139.jpg
+│       │   ├── piece14.jpg
+│       │   ├── piece140.jpg
+│       │   ├── piece141.jpg
+│       │   ├── piece142.jpg
+│       │   ├── piece143.jpg
+│       │   ├── piece144.jpg
+│       │   ├── piece145.jpg
+│       │   ├── piece146.jpg
+│       │   ├── piece147.jpg
+│       │   ├── piece148.jpg
+│       │   ├── piece149.jpg
+│       │   ├── piece15.jpg
+│       │   ├── piece150.jpg
+│       │   ├── piece151.jpg
+│       │   ├── piece152.jpg
+│       │   ├── piece153.jpg
+│       │   ├── piece154.jpg
+│       │   ├── piece155.jpg
+│       │   ├── piece156.jpg
+│       │   ├── piece157.jpg
+│       │   ├── piece158.jpg
+│       │   ├── piece159.jpg
+│       │   ├── piece16.jpg
+│       │   ├── piece160.jpg
+│       │   ├── piece161.jpg
+│       │   ├── piece162.jpg
+│       │   ├── piece163.jpg
+│       │   ├── piece164.jpg
+│       │   ├── piece165.jpg
+│       │   ├── piece166.jpg
+│       │   ├── piece167.jpg
+│       │   ├── piece168.jpg
+│       │   ├── piece169.jpg
+│       │   ├── piece17.jpg
+│       │   ├── piece170.jpg
+│       │   ├── piece171.jpg
+│       │   ├── piece172.jpg
+│       │   ├── piece173.jpg
+│       │   ├── piece174.jpg
+│       │   ├── piece175.jpg
+│       │   ├── piece176.jpg
+│       │   ├── piece177.jpg
+│       │   ├── piece178.jpg
+│       │   ├── piece179.jpg
+│       │   ├── piece18.jpg
+│       │   ├── piece19.jpg
+│       │   ├── piece2.jpg
+│       │   ├── piece20.jpg
+│       │   ├── piece21.jpg
+│       │   ├── piece22.jpg
+│       │   ├── piece23.jpg
+│       │   ├── piece24.jpg
+│       │   ├── piece25.jpg
+│       │   ├── piece26.jpg
+│       │   ├── piece27.jpg
+│       │   ├── piece28.jpg
+│       │   ├── piece29.jpg
+│       │   ├── piece3.jpg
+│       │   ├── piece30.jpg
+│       │   ├── piece31.jpg
+│       │   ├── piece32.jpg
+│       │   ├── piece33.jpg
+│       │   ├── piece34.jpg
+│       │   ├── piece35.jpg
+│       │   ├── piece36.jpg
+│       │   ├── piece37.jpg
+│       │   ├── piece38.jpg
+│       │   ├── piece39.jpg
+│       │   ├── piece4.jpg
+│       │   ├── piece40.jpg
+│       │   ├── piece41.jpg
+│       │   ├── piece42.jpg
+│       │   ├── piece43.jpg
+│       │   ├── piece44.jpg
+│       │   ├── piece45.jpg
+│       │   ├── piece46.jpg
+│       │   ├── piece47.jpg
+│       │   ├── piece48.jpg
+│       │   ├── piece49.jpg
+│       │   ├── piece5.jpg
+│       │   ├── piece50.jpg
+│       │   ├── piece51.jpg
+│       │   ├── piece52.jpg
+│       │   ├── piece53.jpg
+│       │   ├── piece54.jpg
+│       │   ├── piece55.jpg
+│       │   ├── piece56.jpg
+│       │   ├── piece57.jpg
+│       │   ├── piece58.jpg
+│       │   ├── piece59.jpg
+│       │   ├── piece6.jpg
+│       │   ├── piece60.jpg
+│       │   ├── piece61.jpg
+│       │   ├── piece62.jpg
+│       │   ├── piece63.jpg
+│       │   ├── piece64.jpg
+│       │   ├── piece65.jpg
+│       │   ├── piece66.jpg
+│       │   ├── piece67.jpg
+│       │   ├── piece68.jpg
+│       │   ├── piece69.jpg
+│       │   ├── piece7.jpg
+│       │   ├── piece70.jpg
+│       │   ├── piece71.jpg
+│       │   ├── piece72.jpg
+│       │   ├── piece73.jpg
+│       │   ├── piece74.jpg
+│       │   ├── piece75.jpg
+│       │   ├── piece76.jpg
+│       │   ├── piece77.jpg
+│       │   ├── piece78.jpg
+│       │   ├── piece79.jpg
+│       │   ├── piece8.jpg
+│       │   ├── piece80.jpg
+│       │   ├── piece81.jpg
+│       │   ├── piece82.jpg
+│       │   ├── piece83.jpg
+│       │   ├── piece84.jpg
+│       │   ├── piece85.jpg
+│       │   ├── piece86.jpg
+│       │   ├── piece87.jpg
+│       │   ├── piece88.jpg
+│       │   ├── piece89.jpg
+│       │   ├── piece9.jpg
+│       │   ├── piece90.jpg
+│       │   ├── piece91.jpg
+│       │   ├── piece92.jpg
+│       │   ├── piece93.jpg
+│       │   ├── piece94.jpg
+│       │   ├── piece95.jpg
+│       │   ├── piece96.jpg
+│       │   ├── piece97.jpg
+│       │   ├── piece98.jpg
+│       │   ├── piece99.jpg
+│       │   └── reels
+│       │       ├── reel1.mp4
+│       │       ├── reel10.mp4
+│       │       ├── reel11.mp4
+│       │       ├── reel12.mp4
+│       │       ├── reel13.mp4
+│       │       ├── reel14.mp4
+│       │       ├── reel15.mp4
+│       │       ├── reel16.mp4
+│       │       ├── reel17.mp4
+│       │       ├── reel18.mp4
+│       │       ├── reel19.mp4
+│       │       ├── reel2.mp4
+│       │       ├── reel20.mp4
+│       │       ├── reel21.mp4
+│       │       ├── reel22.mp4
+│       │       ├── reel23.mp4
+│       │       ├── reel24.mp4
+│       │       ├── reel25.mp4
+│       │       ├── reel26.mp4
+│       │       ├── reel27.mp4
+│       │       ├── reel28.mp4
+│       │       ├── reel29.mp4
+│       │       ├── reel3.mp4
+│       │       ├── reel30.mp4
+│       │       ├── reel31.mp4
+│       │       ├── reel32.mp4
+│       │       ├── reel33.mp4
+│       │       ├── reel34.mp4
+│       │       ├── reel35.mp4
+│       │       ├── reel36.mp4
+│       │       ├── reel37.mp4
+│       │       ├── reel38.mp4
+│       │       ├── reel39.mp4
+│       │       ├── reel4.mp4
+│       │       ├── reel40.mp4
+│       │       ├── reel5.mp4
+│       │       ├── reel6.mp4
+│       │       ├── reel7.mp4
+│       │       ├── reel8.mp4
+│       │       └── reel9.mp4
+│       ├── labubu.cur
+│       ├── memes
+│       │   ├── meme1.jpg
+│       │   ├── meme2.jpg
+│       │   ├── meme3.jpg
+│       │   ├── meme4.jpg
+│       │   ├── meme5.jpg
+│       │   └── spinningcatloop.mp4
+│       ├── mini1.gif
+│       ├── mini10.gif
+│       ├── mini2.gif
+│       ├── mini3.gif
+│       ├── mini4.gif
+│       ├── mini5.gif
+│       ├── mini6.gif
+│       ├── mini7.gif
+│       ├── mini8.gif
+│       ├── mini9.gif
+│       ├── mudkipz.png
+│       ├── petra
+│       │   ├── 208744718_305128821354072_6198957589411128473_n.jpg
+│       │   ├── 252082687_1309410389490601_1733036900182162232_n.jpg
+│       │   ├── 253156725_2092802414207231_4284485654271937107_n.jpg
+│       │   ├── 361893192_18006186112862364_104027774887846333_n.jpg
+│       │   ├── 361934356_18006186103862364_4731407109139479910_n.jpg
+│       │   └── 481773048_18068867353862364_8329047207259582324_n.jpg
+│       ├── petrafiedlogo.jpg
+│       ├── shmegl.jpg
+│       ├── stars-bg.gif
+│       ├── tree
+│       └── wow.jpg
 ├── src
-│   ├── components
-│   │   └── App.jsx
-│   └── main.jsx
+│   ├── Main.jsx
+│   └── components
+│       ├── App.js
+│       ├── Loading-Screen.js
+│       ├── Reel-Player.js
+│       └── SpinningCatPlayer.js
 ├── tree
 └── vite.config.js
 
-40 directories, 1470 files
+84 directories, 2920 files
